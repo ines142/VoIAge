@@ -1,0 +1,210 @@
+{
+    "test1": {
+        "Cape Town": [
+            {
+                "description": "Montez en gondole tournante au sommet de la montagne tabulaire et contemplez deux océans.",
+                "image_url": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99",
+                "intensite": "Calme",
+                "jour": 2,
+                "nom": "Table Mountain en téléphérique",
+                "tarif": "22€",
+                "ville": "Cape Town",
+                "ville_nom": "Cape Town"
+            },
+            {
+                "description": "Prenez vos premières vagues sur la plage arc-en-ciel du Cap, idéale pour les débutants.",
+                "image_url": "https://images.unsplash.com/photo-1502680390469-be75c86b636f",
+                "intensite": "Elevée",
+                "jour": 4,
+                "nom": "Surf à Muizenberg",
+                "tarif": "35€",
+                "ville": "Cape Town",
+                "ville_nom": "Cape Town"
+            },
+            {
+                "description": "Marchez au milieu d'une colonie de manchots africains sur une plage de granit rose.",
+                "image_url": "https://images.unsplash.com/photo-1551986782-d0169b3f8fa7",
+                "intensite": "Calme",
+                "jour": 2,
+                "nom": "Manchots à Boulders Beach",
+                "tarif": "10€",
+                "ville": "Cape Town",
+                "ville_nom": "Cape Town"
+            }
+        ],
+        "Paris": [
+            {
+                "description": "Né de la vision de Napoléon III, le parc des Buttes-Chaumont métamorphose un ancien site industriel en un décor naturel escarpé et pittoresque. Entre cascades, belvédères et sentiers sinueux, il offre aujourd’hui une escapade paisible et dépaysante dans l'est de Paris.",
+                "image_url": "https://img-4.linternaute.com/ZGgLe2mW5ACuOH5l2e95dmsa9bg=/fit-in/x630/smart/filters:fill(1D1D1B)/3878bf1335db41e1a1e25e7d8d90ca8e/ccmcms-linternaute/22798868.jpg",
+                "intensite": "Calme",
+                "jour": 3,
+                "nom": "Balade dans un des plus grands parc de Paris : le parc des Buttes-Chaumont",
+                "tarif": "Gratuit",
+                "ville": "Paris",
+                "ville_nom": "Paris"
+            },
+            {
+                "description": "Goûtez aux classiques de la cuisine française dans une ambiance chaleureuse et authentique.",
+                "image_url": "https://images.unsplash.com/photo-1662646133359-7cf4d2ab932e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "intensite": "Calme",
+                "jour": 3,
+                "nom": "Dîner dans un bistrot parisien",
+                "tarif": "40€",
+                "ville": "Paris",
+                "ville_nom": "Paris"
+            },
+            {
+                "nom": "Visite du Louvre",
+                "description": "Perdez-vous dans le plus grand musée du monde et venez à la rencontre de la Joconde.",
+                "tarif": "22€",
+                "image_url": "https://images.unsplash.com/photo-1587648415693-4a5362b2ce41?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "intensite": "Calme",
+                "jour": 1,
+                "ville_nom": "Paris",
+                "ville": "Paris"
+            }
+        ],
+        "Zanzibar": [
+            {
+                "description": "Perdez-vous dans le dédale de ruelles de la vieille ville classée UNESCO et ses portes sculptées.",
+                "image_url": "https://zanzibargetaways.com/wp-content/uploads/2024/04/stone-town-zanzibar.jpeg",
+                "intensite": "Calme",
+                "jour": 4,
+                "nom": "Visite de Stone Town",
+                "tarif": "Gratuit",
+                "ville": "Zanzibar",
+                "ville_nom": "Zanzibar"
+            },
+            {
+                "description": "Naviguez au large sur un boutre traditionnel tandis que le soleil embrase l'océan Indien.",
+                "image_url": "https://www.miragezanzibartours.co.tz/img/Zanzibar-Tours-and-Excursions/Tour-Details/Dhow-Sunset-Cruise/Sunset-Dhow-Cruise-05.jpg",
+                "intensite": "Calme",
+                "jour": 2,
+                "nom": "Coucher de soleil en dhow",
+                "tarif": "35€",
+                "ville": "Zanzibar",
+                "ville_nom": "Zanzibar"
+            },
+            {
+                "description": "Plongez parmi les dauphins sauvages dans les eaux turquoise du sud de l'île.",
+                "image_url": "https://i.pinimg.com/originals/c1/bb/ce/c1bbce83f2ddf1aa7f7a08980b311880.png",
+                "intensite": "Elevée",
+                "jour": 1,
+                "nom": "Nager avec les dauphins à Kizimkazi",
+                "tarif": "30€",
+                "ville": "Zanzibar",
+                "ville_nom": "Zanzibar"
+            },
+            {
+                "description": "Prison Island, au large de Zanzibar, mêle histoire et nature avec son ancienne prison devenue refuge pour des tortues géantes et ses eaux turquoise idéales pour le snorkeling.",
+                "image_url": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/f6/1b/43.jpg",
+                "intensite": "Elevée",
+                "jour": 1,
+                "nom": "Excursion d'une demi-journée à Prison Island pour aller admirer les tortues géantes",
+                "tarif": "85€",
+                "ville": "Zanzibar",
+                "ville_nom": "Zanzibar"
+            }
+        ]
+    },
+    "Testeurfinal": {
+        "Kyoto": [
+            {
+                "nom": "Temple Kinkaku-ji",
+                "tarif": "4€",
+                "intensite": "Calme",
+                "jour": 3,
+                "ville_nom": "Kyoto",
+                "ville": "Kyoto",
+                "activite_index": 3
+            },
+            {
+                "nom": "Sanctuaire Fushimi Inari",
+                "tarif": "Gratuit",
+                "intensite": "Elevée",
+                "jour": 2,
+                "ville_nom": "Kyoto",
+                "ville": "Kyoto",
+                "activite_index": 0
+            },
+            {
+                "nom": "Cérémonie du thé à Gion",
+                "tarif": "40€",
+                "intensite": "Calme",
+                "jour": 3,
+                "ville_nom": "Kyoto",
+                "ville": "Kyoto",
+                "activite_index": 1
+            },
+            {
+                "nom": "Bambouseraies d'Arashiyama",
+                "tarif": "Gratuit",
+                "intensite": "Calme",
+                "jour": 1,
+                "ville_nom": "Kyoto",
+                "ville": "Kyoto",
+                "activite_index": 2
+            }
+        ],
+        "Montreal": [
+            {
+                "nom": "Déguster la célèbre Smoked meat chez Schwartz's",
+                "tarif": "~13€",
+                "intensite": "Calme",
+                "jour": 14,
+                "ville_nom": "Montreal",
+                "ville": "Montreal",
+                "activite_index": 5
+            },
+            {
+                "nom": "Tyrolienne MTL Zipline — Vieux-Port",
+                "tarif": "25€",
+                "intensite": "Calme",
+                "jour": 13,
+                "ville_nom": "Montreal",
+                "ville": "Montreal",
+                "activite_index": 4
+            },
+            {
+                "nom": "Basilique Notre-Dame et spectacle AURA",
+                "tarif": "16€ (visite seule) / 32€ (forfait visite + AURA)",
+                "intensite": "Calme",
+                "jour": 13,
+                "ville_nom": "Montreal",
+                "ville": "Montreal",
+                "activite_index": 1
+            },
+            {
+                "nom": "Déguster la fameuse poutine",
+                "tarif": "~7€",
+                "intensite": "Calme",
+                "jour": 12,
+                "ville_nom": "Montreal",
+                "ville": "Montreal",
+                "activite_index": 6
+            },
+            {
+                "nom": "Flâner au Marché Jean-Talon",
+                "tarif": "Gratuit",
+                "intensite": "Calme",
+                "jour": 14,
+                "ville_nom": "Montreal",
+                "ville": "Montreal",
+                "activite_index": 7
+            }
+        ]
+    },
+    "I LOVE BRETAGNE": {
+        "Luang Prabang": [
+            {
+                "nom": "Grottes de Pak Ou",
+                "tarif": "5€",
+                "intensite": "Calme",
+                "jour": 1,
+                "ville_nom": "Luang Prabang",
+                "ville": "Luang Prabang",
+                "activite_index": 3
+            }
+        ]
+    }
+}

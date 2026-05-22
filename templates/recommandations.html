@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Résultats de recherche ✈️</h1>
+
+{% if destinations %}
+    <ul>
+    {% for dest in destinations %}
+        <li>
+            <strong>{{ dest.nom }}</strong> - {{ dest.pays }} <br>
+            {{ dest.description }}
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Aucun résultat trouvé</p>
+{% endif %}
+{% if mode == "inspiration" %}
+<p style="color: gray;">
+🌍 Mode inspiration : voici des idées de voyages selon vos envies
+</p>
+{% endif %}
+
+<a href="/trips">Retour</a>
+
+{% endblock %}

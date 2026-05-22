@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto py-12 px-4">
+    
+    <div class="relative h-[400px] rounded-[40px] overflow-hidden mb-12 shadow-2xl">
+        <img src="{{ destination.activites[0].image_url }}" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-12">
+            <p class="text-indigo-300 font-bold tracking-widest uppercase mb-2">{{ destination.pays }}</p>
+            <h1 class="text-7xl font-extrabold text-white">{{ destination.nom }}</h1>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-white p-10 rounded-[30px] shadow-sm border border-gray-100 transition-hover hover:shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-600 flex items-center">
+                <span class="mr-3">📜</span> Un peu d'histoire
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-lg">{{ destination.histoire }}</p>
+        </div>
+        <div class="bg-indigo-600 p-10 rounded-[30px] text-white shadow-xl">
+            <h2 class="text-2xl font-bold mb-4 flex items-center">
+                <span class="mr-3">🎭</span> Culture locale
+            </h2>
+            <p class="text-indigo-50 leading-relaxed text-lg">{{ destination.culture }}</p>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">Les pépites de la ville</h2>
+        <p class="text-gray-500 italic">Choisissez un jour et ajoutez l'activité à votre planning</p>
+    </div>
+    <div class="mt-8 p-6 bg-indigo-50 rounded-3xl border border-indigo-100">
+    <p class="text-indigo-900 text-sm leading-relaxed">
+        <span class="font-bold">✨ Douceur de voyage :</span> 
+        Parce que votre énergie est précieuse, si votre programme inclut une étape à <strong>intensité élevée</strong>, nous vous encourageons à équilibrer votre journée avec des moments de calme. Écouter son rythme, c'est s'offrir le plus beau des souvenirs.
+    </p>
+</div>
+</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+       {% for activite in destination.activites %}
+        <div class="group bg-white rounded-[25px] overflow-hidden shadow-lg border border-gray-50 transition-all hover:-translate-y-2 hover:shadow-2xl">
+            <div class="h-56 overflow-hidden relative">
+                <img src="{{ activite.image_url }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-sm font-bold text-indigo-600 shadow-sm">
+                    {{ activite.tarif }}
+                </div>
+            </div>
+
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-bold text-xl text-gray-800">{{ activite.nom }}</h3>
+                    <span class="text-xs font-bold uppercase tracking-wider px-2 py-1 rounded bg-gray-100 text-gray-500">
+                        {{ activite.intensite }}
+                    </span>
+                </div>
+                <p class="text-sm text-stone-600 leading-relaxed block w-full whitespace-normal break-words">
+    {{ activite.description }}
+</p>
+                
+                <form action="{{ url_for('ajouter_activite', nom_ville=destination.nom) }}" method="GET" class="space-y-3">
+    <input type="hidden" name="activite_index" value="{{ loop.index0 }}">
+    
+    <div class="flex flex-col">
+        <label class="text-[10px] uppercase font-bold text-gray-400 mb-1 ml-1">Sélectionner le jour</label>
+        <select name="jour" class="w-full border border-indigo-100 rounded-xl p-2.5 text-sm bg-gray-50 focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer">
+            {% for i in range(1, (nb_jours|default(5)) + 1) %}
+                <option value="{{ i }}">Jour {{ i }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    
+    <button type="submit" class="w-full block text-center py-3 rounded-xl bg-indigo-600 text-white font-bold text-sm shadow-md hover:bg-indigo-700 transition-all">
+        + Ajouter au planning
+    </button>
+</form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}

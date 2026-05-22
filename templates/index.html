@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil — Voya'IA{% endblock %}
+
+{% block content %}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+  body { font-family: 'Poppins', sans-serif; }
+  
+  /* Effet pour masquer le fond du globe si nécessaire */
+  .globe-container {
+    border-radius: 50%;
+    overflow: hidden; /* Coupe ce qui dépasse du cercle */
+    background: transparent;
+  }
+
+  /* Planisphère en arrière-plan léger */
+  .world-map-bg {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.1; /* Très transparent */
+  }
+</style>
+
+<div class="flex flex-col md:flex-row items-center justify-between gap-12 py-12 md:py-24">
+  <div class="w-full md:w-1/2 flex justify-center order-2 md:order-1">
+    <div class="globe-container shadow-2xl"> <img src="https://th.bing.com/th/id/R.bcadcdee364bbada89f9cb5363e8788c?rik=qGeMcWlrLNXycg&riu=http%3a%2f%2fbestanimations.com%2fEarth%26Space%2fEarth%2fearthglobeanimation%2fglobe-earth-animation-6.gif&ehk=iqxgO4GV7yj4LXg5Tb3TTr3Fd3zSTc3yJFz0VyV0er0%3d&risl=&pid=ImgRaw&r=0" 
+           alt="Globe" class="w-72 h-72 md:w-[450px] md:h-[450px] object-cover">
+    </div>
+  </div>
+
+  <div class="w-full md:w-1/2 text-center md:text-left order-1 md:order-2">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-indigo-600 mb-6 tracking-tight leading-tight">
+      Bienvenue sur Voya'IA
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-500 mb-10 max-w-lg">
+      Pour passer les plus belles vacances de votre vie.
+    </p>
+
+    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+      {% if not current_user.is_authenticated %}
+        <a href="/register" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg transition transform hover:scale-105">
+          Rejoindre l'aventure
+        </a>
+      {% endif %}
+      <a href="/planifier" class="bg-white border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-bold px-8 py-4 rounded-2xl shadow-sm transition transform hover:scale-105">
+        🚀 Planifier un voyage
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="mt-16 pb-10"> 
+  <div class="mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Destinations à la une</h2>
+    <p class="text-gray-500 mt-2 italic">
+      Toutes les villes ne sont pas encore disponibles car nous sommes en plein lancement !
+    </p>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for ville in destinations %}
+    
+    <!-- 🔥 TOUTE LA CARD EST CLIQUABLE -->
+    <a href="{{ url_for('destination_detail', nom_ville=ville.nom) }}" 
+       class="group block bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+
+        <div class="relative overflow-hidden">
+            
+            {% if ville.image_url %}
+              <img src="{{ ville.image_url }}" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+            
+            {% elif ville.activites and ville.activites[0].image_url %}
+              <img src="{{ ville.activites[0].image_url }}" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+            
+            {% else %}
+              <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+                <span class="text-gray-400">Image indisponible</span>
+              </div>
+            {% endif %}
+            
+            {% if ville.prenom_coeur %}
+            <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-indigo-600">
+                Coup de cœur de {{ ville.prenom_coeur }} ❤️
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="p-6">
+            <h3 class="text-xl font-bold">{{ ville.nom }}</h3>
+            
+            <p class="text-gray-500 text-sm mt-2 italic">
+              "{{ ville.phrase_accroche }}"
+            </p>
+            
+            <div class="mt-4 flex justify-between items-center">
+                <span class="text-indigo-600 font-bold group-hover:underline">
+                  Découvrir →
+                </span>
+                
+                <span class="text-yellow-500 font-bold">
+                  ⭐ {{ ville.note }}
+                </span>
+            </div>
+        </div>
+
+    </a>
+    
+    {% endfor %}
+  </div> 
+</div>
+
+<hr class="my-20 border-gray-100">
+
+<div class="relative py-20 overflow-hidden">
+  <div class="world-map-bg absolute inset-0"></div> <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      Vous accompagner pour les plus belles expériences de votre vie. ✨
+    </h2>
+    
+    <div class="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-xl border border-white mb-16">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-4">Notre Histoire</h3>
+      <p class="text-gray-600 leading-relaxed italic">
+        "Voya'IA est né d'une passion commune pour l'exploration et d'un constat simple : planifier un voyage ne devrait pas être un stress, mais le début du plaisir. Nous avons donc imaginé une solution capable de transformer une idée en expérience concrète, sans complexité ni perte de temps.En combinant intelligence artificielle et réflexion humaine, nous avons créé un outil qui comprend vos envies, s’adapte à votre budget et vous propose des destinations réellement pertinentes. Derrière Voya'IA, il y a une volonté claire : rendre le voyage accessible, inspirant et surtout personnalisé.
+Parce que chaque voyageur est unique, nous croyons qu’un bon voyage ne se résume pas à une destination, mais à une expérience sur mesure. Voya'IA devient alors bien plus qu’un simple outil : un véritable compagnon de route, pensé pour vous guider, vous inspirer et vous faire rêver dès les premières étapes de votre aventure."
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full bg-indigo-100 mb-4 border-4 border-white shadow-lg overflow-hidden">
+          <img src="https://www.mifuguemiraison.com/wp-content/uploads/2019/10/chebika-oasis-lac-palmier-1400x933.jpg" alt="Toi" class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-bold text-gray-800">Inès.H</h4>
+        <p class="text-indigo-500 text-sm">Co-fondatrice & CEO</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full bg-indigo-100 mb-4 border-4 border-white shadow-lg overflow-hidden">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.AIH8d4O4kra5FZLTBdxchQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Associé" class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-bold text-gray-800">Ines.A</h4>
+        <p class="text-indigo-500 text-sm">Lead Développeur</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full bg-indigo-100 mb-4 border-4 border-white shadow-lg overflow-hidden">
+          <img src="https://lematindalgerie.com/wp-content/uploads/2022/11/pexels-noureddine-metatla-12961082-scaled.jpg" alt="Associé" class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-bold text-gray-800">Laetitia</h4>
+        <p class="text-indigo-500 text-sm">Expert Voyage</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,2463 @@
+{
+  "destinations": [
+    {
+      "nom": "Paris",
+      "pays": "France",
+      "phrase_accroche": "La ville qui a inventé l'art de vivre — flânez, dégustez, tombez amoureux.",
+      "budget_categorie": "élevé",
+      "type": "culture",
+      "meteo": "tempéré",
+      "description": "La Ville Lumière, capitale mondiale de l'art, de la mode et de la gastronomie.",
+      "histoire": "Fondée il y a plus de 2 000 ans par les Parisii, une tribu celtique, Paris a traversé l'Empire romain sous le nom de Lutèce avant de devenir le cœur du royaume de France. Théâtre de la Révolution de 1789, capitale napoléonienne, puis ville remodelée par le baron Haussmann au XIXe siècle, Paris a façonné l'histoire mondiale comme peu de villes ont su le faire.",
+      "culture": "Paris vit au rythme des bistrots animés, des marchés du dimanche et des terrasses ensoleillées. La gastronomie y est religion : croissants au beurre, steak-frites, boeuf bourguignon,plateaux de fromages et macarons sont autant de rituels quotidiens. La mode, l'art contemporain et la littérature y cohabitent dans une effervescence créative unique au monde.",
+      "activites": [
+        {
+          "nom": "Tour Eiffel au coucher du soleil",
+          "description": "Montez au sommet de la Dame de Fer quand Paris s'embrase de lumières dorées.",
+          "tarif": "29€",
+          "image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Visite du Louvre",
+          "description": "Perdez-vous dans le plus grand musée du monde et venez à la rencontre de la Joconde.",
+          "tarif": "22€",
+          "image_url": "https://images.unsplash.com/photo-1587648415693-4a5362b2ce41?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Balade à Montmartre",
+          "description": "Flânez dans les ruelles pavées du village des artistes et admirez le Sacré-Cœur.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1582026520655-87425c172847?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Shopping sur les Champs-Élysées",
+          "description": "Arpentez la plus belle avenue du monde, entre boutiques de luxe et brasseries mythiques pour finir par admirer l'arc de Triomphe.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Croisière sur la Seine au bord du célébre Bateau-Mouche",
+          "description": "Glissez sur la Seine et contemplez Notre-Dame, le Louvre et l'Île de la Cité depuis l'eau.",
+          "tarif": "17€",
+          "image_url": "https://mediaim.expedia.com/localexpert/414362/2a69d2aa-3d6c-4b8c-b1d6-8efbb37cd7ab.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Dîner dans un bistrot parisien",
+          "description": "Goûtez aux classiques de la cuisine française dans une ambiance chaleureuse et authentique.",
+          "tarif": "40€",
+          "image_url": "https://images.unsplash.com/photo-1662646133359-7cf4d2ab932e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Balade dans un des plus grands parc de Paris : le parc des Buttes-Chaumont",
+          "description": "Né de la vision de Napoléon III, le parc des Buttes-Chaumont métamorphose un ancien site industriel en un décor naturel escarpé et pittoresque. Entre cascades, belvédères et sentiers sinueux, il offre aujourd'hui une escapade paisible et dépaysante dans l'est de Paris.",
+          "tarif": "Gratuit",
+          "image_url": "https://img-4.linternaute.com/ZGgLe2mW5ACuOH5l2e95dmsa9bg=/fit-in/x630/smart/filters:fill(1D1D1B)/3878bf1335db41e1a1e25e7d8d90ca8e/ccmcms-linternaute/22798868.jpg",
+          "intensite": "Calme"
+        }
+      ],
+      "a_la_une": true
+    },
+    {
+      "nom": "Tokyo",
+      "pays": "Japon",
+      "phrase_accroche": "Entre temples millénaires et néons futuristes, Tokyo vous engloutit et vous transforme.",
+      "budget_categorie": "moyen",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Métropole futuriste mêlant tradition millénaire et innovation high-tech.",
+      "histoire": "Ancienne ville d'Edo, simple bourg de pêcheurs devenu siège du shogunat Tokugawa au XVIIe siècle, Tokyo s'est imposée comme capitale impériale en 1869. Rasée par le tremblement de terre de 1923 puis les bombardements de 1945, elle a renié ses cendres pour devenir l'une des mégalopoles les plus avancées et sûres du monde.",
+      "culture": "Tokyo est une superposition de mondes parallèles : l'univers des salarymen en costume, les havres de paix des jardins zen, les sous-cultures pop d'Akihabara et les ryokans traditionnels. La gastronomie y est un art d'État — la ville détient plus d'étoiles Michelin que Paris — et chaque quartier possède sa propre identité gustative.",
+      "activites": [
+        {
+          "nom": "Quartier de Shibuya",
+          "description": "Vivez l'adrénaline du carrefour le plus fréquenté du monde et plongez dans l'énergie tokyoïte.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Dégustation de ramen authentique",
+          "description": "Glissez-vous dans un minuscule comptoir de ramen et laissez-vous envoûter par un bouillon mijoté 48 heures.",
+          "tarif": "12€",
+          "image_url": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Randonnée au Mont Fuji",
+          "description": "Gravissez le volcan sacré du Japon et contemplez le lever du soleil depuis son sommet à 3 776 m.",
+          "tarif": "20€",
+          "image_url": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "New York",
+      "pays": "États-Unis",
+      "phrase_accroche": "La ville où chaque coin de rue raconte une histoire — et où la vôtre commence vraiment.",
+      "budget_categorie": "élevé",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "La ville qui ne dort jamais : skyline iconique, musées de renommée mondiale et melting-pot culturel unique.",
+      "histoire": "Fondée en 1626 par les Hollandais sous le nom de Nouvelle-Amsterdam, New York est passée sous pavillon britannique avant de devenir le premier port d'entrée des immigrants vers le Nouveau Monde. De la Lower East Side aux gratte-ciels de Midtown érigés dans les années 1930, la ville n'a cessé de se réinventer comme symbole de la promesse américaine.",
+      "culture": "New York est une mosaïque de 800 langues et autant de traditions culinaires. On dévore un bagel à Brooklyn, un dim sum à Chinatown et une pizza au fromage fondu en regardant défiler les taxis jaunes. La ville pulse au rythme du jazz, du hip-hop né dans le Bronx et des comédie musicales de Broadway qui font pleurer les plus stoïques.",
+      "activites": [
+        {
+          "nom": "Promenade dans Central Park",
+          "description": "Échappez au béton dans ce poumon vert de 341 hectares, terrain de jeu des New-Yorkais.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1568515387631-8b650bbcdb90",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Visite du MoMA",
+          "description": "Confrontez-vous à Van Gogh, Picasso et Warhol dans le temple de l'art moderne new-yorkais.",
+          "tarif": "25€",
+          "image_url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Spectacle à Broadway",
+          "description": "Vivez la magie d'une comédie musicale dans l'un des théâtres les plus mythiques de la planète.",
+          "tarif": "95€",
+          "image_url": "https://images.unsplash.com/photo-1503095396549-807759245b35",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Quartier de Harlem et gospel",
+          "description": "Laissez-vous emporter par les chœurs gospel dans une église du dimanche matin à Harlem.",
+          "tarif": "Gratuit",
+          "image_url": "https://newyorkmonamour.fr/wp-content/uploads/2017/11/east-harlem.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marchés artisanaux de Brooklyn",
+          "description": "Chinez créations locales et street food inventive dans les marchés branchés de Brooklyn.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1571204829887-3b8d69e4094d",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Zanzibar",
+      "pays": "Tanzanie",
+      "phrase_accroche": "Sable blanc, épices enivrantes et océan turquoise — le paradis a un nom.",
+      "budget_categorie": "moyen",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Archipel de l'océan Indien aux plages immaculées et à l'histoire swahilie.",
+      "histoire": "Carrefour des routes commerciales entre l'Afrique, l'Arabie et l'Inde depuis le Xe siècle, Zanzibar a été tour à tour sultanat omanais, protectorat britannique et place centrale du commerce des épices et, hélas, de l'esclavage. Son Stone Town, labyrinthe de ruelles et de portes sculptées, porte encore les empreintes de ces civilisations superposées.",
+      "culture": "La culture zanzibarite est un métissage envoûtant de traditions arabes, africaines et indiennes. On y déguste du pilau parfumé à la cardamome, des brochettes de viande épicées et des fruits de mer grillés sur le marché nocturne de Forodhani. Le soir, les femmes en buibui noir et les appels à la prière des mosquées donnent au Stone Town une atmosphère d'une rare poésie.",
+      "activites": [
+        {
+          "nom": "Plongée au récif corallien",
+          "description": "Explorez des jardins de coraux multicolores peuplés de tortues et de poissons-perroquets.",
+          "tarif": "45€",
+          "image_url": "https://www.easytravel.co.tz/wp-content/uploads/2023/06/Coral-Reefs-in-Kizimkazi-Mkunguni-Beach-Zanzibar-Easy-Travel-Tanzania_result.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Visite de Stone Town",
+          "description": "Perdez-vous dans le dédale de ruelles de la vieille ville classée UNESCO et ses portes sculptées.",
+          "tarif": "Gratuit",
+          "image_url": "https://zanzibargetaways.com/wp-content/uploads/2024/04/stone-town-zanzibar.jpeg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Coucher de soleil en dhow",
+          "description": "Naviguez au large sur un boutre traditionnel tandis que le soleil embrase l'océan Indien.",
+          "tarif": "35€",
+          "image_url": "https://www.miragezanzibartours.co.tz/img/Zanzibar-Tours-and-Excursions/Tour-Details/Dhow-Sunset-Cruise/Sunset-Dhow-Cruise-05.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Nager avec les dauphins à Kizimkazi",
+          "description": "Plongez parmi les dauphins sauvages dans les eaux turquoise du sud de l'île.",
+          "tarif": "30€",
+          "image_url": "https://i.pinimg.com/originals/c1/bb/ce/c1bbce83f2ddf1aa7f7a08980b311880.png",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Excursion d'une demi-journée à Prison Island pour aller admirer les tortues géantes",
+          "description": "Prison Island, au large de Zanzibar, mêle histoire et nature avec son ancienne prison devenue refuge pour des tortues géantes et ses eaux turquoise idéales pour le snorkeling.",
+          "tarif": "85€",
+          "image_url": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/f6/1b/43.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Baignade dans la Grotte de Salaam à Kizimkazi",
+          "description": "La grotte Salaam, plus secrète, offre un décor fascinant de formations rocheuses et d'eaux limpides, propice à une exploration paisible et dépaysante.",
+          "tarif": "42€",
+          "image_url": "https://cdn.getyourguide.com/image/format=auto,fit=contain,gravity=auto,quality=60,width=1440,height=650,dpr=1/tour_img/a05c7e7fb3ce13d3426b2dbb82a327258f275580267390d13b8c4e3f52e05ed1.jpg",
+          "intensite": "Elevée"
+        }
+      ],
+      "a_la_une": false
+    },
+    {
+      "nom": "Queenstown",
+      "pays": "Nouvelle-Zélande",
+      "phrase_accroche": "Pour ceux qui ne se contentent pas de regarder les montagnes — ils les dévalent.",
+      "budget_categorie": "élevé",
+      "type": "montagne",
+      "meteo": "tempéré",
+      "description": "Capitale mondiale de l'aventure, nichée entre lacs turquoise et pics enneigés.",
+      "histoire": "Queenstown doit son nom aux chercheurs d'or qui, en 1862, déclarèrent le site 'assez beau pour une reine'. Fondée sur la ruée vers l'or de l'Otago, la ville s'est transformée au XXe siècle en capitale mondiale des sports extrêmes, inventant notamment le saut à l'élastique commercial en 1988 depuis le pont Kawarau.",
+      "culture": "L'âme de Queenstown est celle de l'aventurier : on y vit vite, on y mange bien et on y célèbre chaque coucher de soleil comme une victoire. La scène culinaire est à la hauteur du paysage, avec des vins de la région de Central Otago reconnus mondialement et des restaurants de bord de lac où l'agneau de Nouvelle-Zélande règne en maître.",
+      "activites": [
+        {
+          "nom": "Croisière sur le lac Wakatipu",
+          "description": "Naviguez sur le TSS Earnslaw, un bateau à vapeur centenaire, face aux sommets enneigés.",
+          "tarif": "55€",
+          "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/89/4f/ee/caption.jpg?w=800&h=800&s=1",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Saut en bungy au pont Kawarau",
+          "description": "Sautez dans le vide depuis le pont qui a inventé le bungy commercial, au-dessus d'une rivière turquoise.",
+          "tarif": "175€",
+          "image_url": "https://www.tenckhoff.de/sites/default/files/2024-12/2024-12-31_Bungee-Springen%20(2%20von%2023).jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Ski aux Remarkables",
+          "description": "Dévalez des pistes légendaires avec vue sur le lac Wakatipu, dans un décor de bout du monde.",
+          "tarif": "80€",
+          "image_url": "https://i0.wp.com/www.frogs-in-nz.com/blog/wp-content/uploads/2023/05/Remarkables-Ski-lac.jpg?resize=900%2C600&ssl=1",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Machu Picchu",
+      "pays": "Pérou",
+      "phrase_accroche": "Une cité perdue dans les nuages qui vous rappelle que l'humain peut toucher les dieux.",
+      "budget_categorie": "moyen",
+      "type": "montagne",
+      "meteo": "tempéré",
+      "description": "Cité inca perchée dans les nuages des Andes, patrimoine mondial de l'UNESCO.",
+      "histoire": "Construite au XVe siècle sous le règne de l'Inca Pachacutec, Machu Picchu fut abandonnée mystérieusement lors de la conquête espagnole et resta inconnue du monde occidental jusqu'en 1911, quand l'explorateur Hiram Bingham la révéla au monde. Ses terrasses agricoles, ses temples et ses canaux d'irrigation témoignent du génie de la civilisation inca.",
+      "culture": "Les communautés quechuas des Andes perpétuent les traditions incas : tissage aux couleurs vives, offrandes à la Pachamama et cuisine à base de quinoa, pommes de terre et cuy (cochon d'Inde). À Aguas Calientes, la ville de base, l'ambiance est chaleureuse et les marchés artisanaux regorgent de textiles andins authentiques.",
+      "activites": [
+        {
+          "nom": "Randonnée sur le Chemin Inca",
+          "description": "Marchez 4 jours sur les traces des Incas à travers la jungle et les nuages jusqu'à la cité sacrée.",
+          "tarif": "600€",
+          "image_url": "https://images.unsplash.com/photo-1526392060635-9d6019884377",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Visite des ruines au lever du soleil",
+          "description": "Soyez parmi les premiers à franchir les portes du Soleil quand la brume révèle lentement la cité.",
+          "tarif": "45€",
+          "image_url": "https://images.unsplash.com/photo-1587595431973-160d0d94add1",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Excursion à Aguas Calientes",
+          "description": "Détendez-vous dans les sources thermales naturelles au pied de la montagne sacrée.",
+          "tarif": "20€",
+          "image_url": "https://adventuresofaplusk.com/wp-content/uploads/2024/11/Depositphotos_173971304_L.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Séoul",
+      "pays": "Corée du Sud",
+      "phrase_accroche": "K-pop, kimchi et palais royaux — Séoul vous dévore d'énergie et ne vous rend pas.",
+      "budget_categorie": "moyen",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Métropole dynamique alliant K-pop, street food et palais royaux.",
+      "histoire": "Fondée en 1394 comme capitale de la dynastie Joseon, Séoul a survécu aux invasions japonaises, à la Seconde Guerre mondiale et à la guerre de Corée pour renaître comme l'une des économies les plus dynamiques d'Asie. En moins de 70 ans, elle est passée d'un champ de ruines à une mégapole de 10 millions d'habitants à la pointe de la technologie mondiale.",
+      "culture": "Séoul pulse à mille à l'heure : la hallyu wave (vague coréenne) y est née, les cafés à thème y fleurissent à chaque coin de rue et le barbecue coréen est un rituel social incontournable. La cosmétique est religion, le style une identité, et les marchés comme Namdaemun regorgent de saveurs et de trouvailles à toute heure.",
+      "activites": [
+        {
+          "nom": "Palais Gyeongbokgung",
+          "description": "Déambulez dans le palais royal de la dynastie Joseon et assistez à la relève de la garde en hanbok.",
+          "tarif": "3€",
+          "image_url": "https://thisiskoreatours.com/wp-content/uploads/2017/03/Gyeongbokgung-Palace.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Shopping à Myeongdong",
+          "description": "Plongez dans l'épicentre de la mode et de la K-beauty coréenne, entre testeurs de crèmes et street food.",
+          "tarif": "Gratuit",
+          "image_url": "https://tse3.mm.bing.net/th/id/OIP.0HynENzhLwpQ94n44hLkqQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Randonnée au parc Bukhansan",
+          "description": "Grimpez les crêtes granitiques du parc national en plein cœur de la capitale pour une vue à 360°.",
+          "tarif": "Gratuit",
+          "image_url": "https://windows10spotlight.com/wp-content/uploads/2020/05/bca4d5e4fab6c7a2c2f124a2d2008b60-1024x576.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Cafés à thème de Hongdae",
+          "description": "Siroter un latte en compagnie de chats, de cactus géants ou dans un décor de manhwa — Hongdae a tout.",
+          "tarif": "8€",
+          "image_url": "https://livingnomads.com/wp-content/uploads/2018/08/03/night-street-seoul-south-korea-seoul-travel-blog-seoul-blog-696x465.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Barbecue coréen local",
+          "description": "Grillez galbi et samgyeopsal sur braise, entouré de banchan colorés, dans un restaurant de quartier.",
+          "tarif": "18€",
+          "image_url": "https://th.bing.com/th/id/R.c4ef955e80a5b07a7ce15e4f8c6911cb?rik=1X2NaG7puftGEg&pid=ImgRaw&r=0",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Cape Town",
+      "pays": "Afrique du Sud",
+      "phrase_accroche": "Entre deux océans, au pied d'une montagne, Cape Town redéfinit la notion de beauté.",
+      "budget_categorie": "moyen",
+      "type": "montagne",
+      "meteo": "tempéré",
+      "description": "Ville arc-en-ciel entre océans, montagnes et vignobles.",
+      "histoire": "Fondée en 1652 par la Compagnie néerlandaise des Indes orientales comme point de ravitaillement, Le Cap est devenu le berceau de la colonisation d'Afrique australe. Pendant l'apartheid, Robben Island, visible depuis la ville, servit de prison à Nelson Mandela durant 27 ans. Aujourd'hui, Cape Town incarne la renaissance de l'Afrique du Sud arc-en-ciel.",
+      "culture": "Cape Town est une explosion de cultures : cuisine Cap-malaise héritée des esclaves d'Asie du Sud-Est, braais (barbecues) du week-end, vins de Stellenbosch primés et jazz de township. Le quartier de Bo-Kaap, peint en couleurs vives, raconte à lui seul l'histoire du métissage capetan.",
+      "activites": [
+        {
+          "nom": "Table Mountain en téléphérique",
+          "description": "Montez en gondole tournante au sommet de la montagne tabulaire et contemplez deux océans.",
+          "tarif": "22€",
+          "image_url": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Île Robben",
+          "description": "Visitez la prison où Mandela fut détenu, guidé par d'anciens prisonniers politiques.",
+          "tarif": "30€",
+          "image_url": "https://api2.kojaro.com/media/2016-9-e330857d-1c43-4a9b-ab02-6e258833c77f-67c460c3c1067c5ba75daf3f",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Route des vins de Stellenbosch",
+          "description": "Roulez entre les domaines viticoles centenaires et dégustez les meilleurs pinotages du monde.",
+          "tarif": "40€",
+          "image_url": "https://cdn.audleytravel.com/3987/2847/79/1029092-vineyards-in-stellenbosch.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Manchots à Boulders Beach",
+          "description": "Marchez au milieu d'une colonie de manchots africains sur une plage de granit rose.",
+          "tarif": "10€",
+          "image_url": "https://images.unsplash.com/photo-1551986782-d0169b3f8fa7",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Surf à Muizenberg",
+          "description": "Prenez vos premières vagues sur la plage arc-en-ciel du Cap, idéale pour les débutants.",
+          "tarif": "35€",
+          "image_url": "https://images.unsplash.com/photo-1502680390469-be75c86b636f",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Dubrovnik",
+      "pays": "Croatie",
+      "phrase_accroche": "Des remparts médiévaux plongés dans une mer d'azur — Game of Thrones n'a pas menti.",
+      "budget_categorie": "élevé",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Perle de l'Adriatique aux remparts médiévaux et aux eaux cristallines.",
+      "histoire": "Fondée au VIIe siècle, la République de Raguse fut pendant des siècles une puissance maritime rivale de Venise, bâtissant sa prospérité sur le commerce et la diplomatie habile plutôt que sur la guerre. Ses remparts du XIVe siècle, qui ont résisté à un terrible séisme en 1667 et aux bombardements serbes de 1991, font aujourd'hui partie des mieux conservés d'Europe.",
+      "culture": "Dubrovnik respire la Méditerranée dans toute sa splendeur : les habitants sirotent leur rakija (eau-de-vie locale) à l'ombre des orangers, les restaurants servent des risottos à l'encre de seiche et des grillades de poissons pêchés le matin même. Malgré l'afflux touristique, l'identité dalmate reste farouche et chaleureuse.",
+      "activites": [
+        {
+          "nom": "Tour des remparts",
+          "description": "Marchez sur les 2 km de remparts médiévaux qui surplombent l'Adriatique d'un bleu irréel.",
+          "tarif": "35€",
+          "image_url": "https://images.unsplash.com/photo-1555990793-da11153b2473",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Kayak de mer",
+          "description": "Pagayez sous les remparts et explorez les grottes marines et les plages secrètes accessibles par l'eau.",
+          "tarif": "45€",
+          "image_url": "https://media.tacdn.com/media/attractions-splice-spp-360x240/06/70/da/72.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Îles Élaphites en bateau",
+          "description": "Naviguez vers ces îles préservées aux villages de pêcheurs endormis et aux baies secrètes.",
+          "tarif": "55€",
+          "image_url": "https://image.arrivalguides.com/1230x800/05/9b89cf96c56e2337467a90e2fe85988b.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Téléphérique vers le mont Srđ",
+          "description": "Montez au fort napoléonien pour une vue panoramique sur la vieille ville et les îles dalmates.",
+          "tarif": "18€",
+          "image_url": "https://assets-global.website-files.com/609171e52ab58f79692ae11b/64fc63e315ed201d5b6fbb74_Mont-Srd-dubrovnik.webp",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Banff",
+      "pays": "Canada",
+      "phrase_accroche": "Des lacs couleur émeraude, des ours en liberté et un ciel sans fond — bienvenue dans les Rocheuses.",
+      "budget_categorie": "élevé",
+      "type": "montagne",
+      "meteo": "froid",
+      "description": "Parc national dans les Rocheuses canadiennes aux lacs turquoise et à la faune sauvage.",
+      "histoire": "Banff est né en 1883 lorsque des ouvriers du chemin de fer canadien-pacifique découvrirent des sources thermales dans la vallée de la Bow. Le gouvernement canadien créa aussitôt la première réserve nationale du pays, qui deviendra le parc national de Banff en 1930 — le plus ancien du Canada et l'un des plus spectaculaires du monde.",
+      "culture": "La culture de Banff est celle de la nature vécue comme aventure quotidienne : raquettes au lever du soleil, observation des orignaux au crépuscule et soirées au coin du feu dans des lodges en rondins. La ville de Banff, malgré sa vocation touristique, conserve un caractère alpin authentique avec ses galeries d'art autochtones et ses festivals de plein air.",
+      "activites": [
+        {
+          "nom": "Randonnée au lac Louise",
+          "description": "Contemplez les eaux émeraude du lac Louise encadrées par les glaciers des Rocheuses.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Observation des élans",
+          "description": "Partez à l'aube avec un guide dans la vallée de la Bow pour observer élans, ours et wapitis en liberté.",
+          "tarif": "75€",
+          "image_url": "https://thumbs.dreamstime.com/b/%C3%A9lans-sauvages-ou-%C3%A9galement-connu-en-tant-que-canadensis-de-cervus-wapiti-na-banff-109093453.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Ski sur le mont Norquay",
+          "description": "Dévalez les pistes historiques du mont Norquay, premier domaine skiable des Rocheuses canadiennes.",
+          "tarif": "70€",
+          "image_url": "https://travelandco.nz/wp-content/uploads/sites/2/2017/03/ImageGallery_Norquay7.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Oaxaca",
+      "pays": "Mexique",
+      "phrase_accroche": "La ville qui se mange, se peint et se célèbre — chaque journée y est une fête des sens.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "soleil",
+      "description": "Capitale culturelle du Mexique, célèbre pour sa cuisine, son artisanat et le Día de Muertos.",
+      "histoire": "Berceau de la civilisation zapotèque, Oaxaca a vu naître sur ses collines la cité de Monte Albán 500 ans avant notre ère. Après la conquête espagnole, la ville baroque qu'elle est devenue a donné naissance à Benito Juárez, premier président indigène du Mexique. Son centre historique colonial, classé UNESCO, concentre l'une des plus riches traditions artistiques du pays.",
+      "culture": "Oaxaca est la capitale gastronomique du Mexique : le mole negro aux 30 ingrédients, les tlayudas généreuses, le mezcal artisanal et les chapulines (sauterelles grillées) sont autant d'expériences gustatives uniques. Les marchés explosent de couleurs : copal, coton teint à la cochenille et poteries noires de San Bartolo Coyotepec racontent la permanence des traditions.",
+      "activites": [
+        {
+          "nom": "Ruines de Monte Albán",
+          "description": "Grimpez au sommet de la cité zapotèque perchée sur une montagne aplanie avec vue sur les vallées.",
+          "tarif": "4€",
+          "image_url": "https://images.unsplash.com/photo-1518638150340-f706e86654de",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Atelier de cuisine mexicaine",
+          "description": "Apprenez à préparer le mole negro et les tlayudas avec une cuisinière locale dans son marché.",
+          "tarif": "55€",
+          "image_url": "https://greenwingsmx.com/wp-content/uploads/2019/12/1-Cuisine-Mexicaine-Playa-Del-Carmen-Mexico.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marché artisanal de Tlacolula",
+          "description": "Parcourez le plus grand marché dominical de l'État, entre textiles zapotèques, mezcal et fromages frais.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.dotsonamap.net/wp-content/uploads/2020/11/ZEO2316-19-min-1920x1280.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Amsterdam",
+      "pays": "Pays-Bas",
+      "phrase_accroche": "Une ville qui pédale, qui pense et qui vous charme à chaque virage de canal.",
+      "budget_categorie": "élevé",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Ville des canaux, des vélos et des musées de classe mondiale.",
+      "histoire": "Fondée au XIIIe siècle autour d'un barrage sur la rivière Amstel, Amsterdam est devenue au XVIIe siècle — son Âge d'or — la première place financière mondiale, berceau de la Bourse et des premières multinationales. Ses 165 canaux creusés à cette époque, ses maisons à pignon et ses entrepôts témoignent encore de cette puissance commerciale rayonnante.",
+      "culture": "Amsterdam incarne la tolérance et la liberté : la culture du vélo y est quasi religieuse, les bruine kroegen (cafés bruns) invitent à la philosophie autour d'un jenever, et les marchés de fromages et de fleurs ponctuent le quotidien. La scène artistique, héritière de Rembrandt et Van Gogh, reste l'une des plus dynamiques d'Europe.",
+      "activites": [
+        {
+          "nom": "Balade en vélo le long des canaux",
+          "description": "Pédalez comme un Amsterdamois le long des canaux dorés par le soleil du soir.",
+          "tarif": "15€",
+          "image_url": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Musée Van Gogh",
+          "description": "Contemplez la plus grande collection au monde du peintre maudit, dans un musée conçu pour l'émotion.",
+          "tarif": "22€",
+          "image_url": "https://viagemeturismo.abril.com.br/wp-content/uploads/2018/06/vangogh.jpg?quality=70&strip=info&w=1024",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Maison d'Anne Frank",
+          "description": "Traversez en silence le refuge secret de la jeune Anne Frank et laissez le journal vous raconter son histoire.",
+          "tarif": "16€",
+          "image_url": "https://images.unsplash.com/photo-1652470053540-fec83e79dc89?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Entrée au Keukenhof, le plus beau jardin printanier du monde et visite de Zaanse Schans",
+          "description": "Admirez des millions de tulipes en fleurs à Keukenhof et les moulins à vent emblématiques de Zaanse Schans lors d'une journée inoubliable.",
+          "tarif": "75€",
+          "image_url": "https://cdn-imgix.headout.com/tour/18890/TOUR-IMAGE/5049c17f-78f4-45f8-8579-1895a6e7199c-10221-amsterdam-from-amsterdam-keukenhof---flowerfields-guided-tour-01.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Croisière sur les canaux de la ville",
+          "description": "La ville d'Amsterdam a été construite autour de ses célèbres canaux – près de 100 kilomètres de voies navigables traversent le centre historique.\r\n\r\nSurnommée « la Venise du Nord », la capitale néerlandaise compte en réalité plus de canaux que Venise.\r\n\r\nAujourd'hui, la ceinture de canaux d'Amsterdam fait partie du patrimoine mondial de l'UNESCO.",
+          "tarif": "15€",
+          "jour": "1",
+          "intensite": "Calme",
+          "image_url": "https://cdn-imgix.headout.com/media/images/aef67fbd8964bbdd60e2963287f43894-10646-amsterdam-combo-rijksmuseum---amsterdam-canal-cruise-tickets-01.jpg?auto=format&q=90&fit=crop&crop=faces"
+        }
+      ]
+    },
+    {
+      "nom": "Maldives",
+      "pays": "Maldives",
+      "phrase_accroche": "Dormir au-dessus du lagon, se réveiller dans un aquarium — les Maldives, c'est le luxe à l'état pur.",
+      "budget_categorie": "élevé",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Archipel de l'océan Indien, paradis des bungalows sur pilotis et des eaux limpides.",
+      "histoire": "Les Maldives sont habitées depuis plus de 2 500 ans par des populations d'origine dravidienne et sri-lankaise, converties à l'islam au XIIe siècle. Sultanat prospère grâce au commerce des cauris et du thon séché, l'archipel devint protectorat britannique avant d'accéder à l'indépendance en 1965. Aujourd'hui, le pays fait face à une menace existentielle : la montée des eaux liée au changement climatique.",
+      "culture": "La culture maldivienne est profondément islamisée et tournée vers l'océan : la pêche au thon à la ligne est pratique ancestrale, la musique bodu beru aux percussions africaines rythme les fêtes et la cuisine, simple et savoureuse, tourne autour du thon fumé et de la noix de coco. Dans les resorts de luxe, le monde entier se retrouve dans une bulle d'isolement paradisiaque.",
+      "activites": [
+        {
+          "nom": "Snorkeling avec les raies manta",
+          "description": "Glissez dans les eaux cristallines aux côtés des majestueuses raies manta dans leur habitat naturel.",
+          "tarif": "65€",
+          "image_url": "https://australie.bucket-list.fr/wp-content/uploads/2021/05/Lady-Elliot-Island-australie-bucket-list-raie-manta-snorkeling.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Séjour en bungalow sur pilotis",
+          "description": "Dormez au-dessus du lagon turquoise dans un villa sur l'eau avec piscine et accès direct à la mer.",
+          "tarif": "500€",
+          "image_url": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Pêche au lever du soleil",
+          "description": "Embarquez avec des pêcheurs locaux à l'aube et taquinez le thon à la ligne traditionnelle.",
+          "tarif": "40€",
+          "image_url": "https://niuepocketguide.com/wp-content/uploads/2020/05/Wharf-Fishing-Sunset-MUST-CREDIT-www.niuepocketguide.com--1024x684.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Dîner romantique sur la plage",
+          "description": "Savourez fruits de mer et champagne les pieds dans le sable sous un ciel étoilé sans pollution lumineuse.",
+          "tarif": "150€",
+          "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Tbilissi",
+      "pays": "Géorgie",
+      "phrase_accroche": "Bains soufrés, vins en amphore et balcons en dentelle de bois — Tbilissi vous envoûte sans effort.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "tempéré",
+      "description": "Capitale caucasienne aux bains soufrés, aux églises rupestres et aux vins naturels.",
+      "histoire": "Fondée au Ve siècle selon la légende par le roi Vakhtang Gorgasali qui y aurait trouvé une source chaude en chassant, Tbilissi a été conquise et reconquise plus de 40 fois au cours des siècles par Perses, Arabes, Mongols et Ottomans. Son centre historique, avec ses maisons à balcons en bois sculpté et ses dômes des bains soufrés, a miraculeusement survécu à ces invasions répétées.",
+      "culture": "La Géorgie est le plus vieux pays viticole du monde — 8 000 ans de tradition —, et les Géorgiens considèrent le vin comme un don de Dieu. Les repas sont des rituels de générosité excessive : la table de fête (supra) déborde de khinkali (raviolis géants), de khachapuri (pain au fromage) et d'une hospitalité qui laisse le voyageur sans voix.",
+      "activites": [
+        {
+          "nom": "Bains soufrés d'Abanotubani",
+          "description": "Prélassez-vous dans les bains naturels soufrés qui ont donné son nom à la ville, sous des dômes mauresques.",
+          "tarif": "10€",
+          "image_url": "https://georgiantour.com/wp-content/uploads/2015/03/shutterstock_736284490.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Forteresse de Narikala",
+          "description": "Grimpez aux ruines de cette forteresse du IVe siècle qui domine Tbilissi depuis sa crête escarpée.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1565008576549-57569a49371d",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Dégustation de vins en amphore",
+          "description": "Participez à une dégustation de vins naturels géorgiens fermentés en kvevri (amphores enterrées).",
+          "tarif": "25€",
+          "image_url": "https://cdn.aveine.paris/blog/wp-content/uploads/2021/12/17103217/shutterstock_1332744590.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Patagonie",
+      "pays": "Argentine",
+      "phrase_accroche": "Au bout du monde, là où le vent sculpte les âmes et les paysages à l'identique.",
+      "budget_categorie": "moyen",
+      "type": "montagne",
+      "meteo": "froid",
+      "description": "Bout du monde sauvage entre glaciers, torres de granite et pampas infinies.",
+      "histoire": "La Patagonie doit son nom aux Patagons, peuple indigène Tehuelche rencontré par Magellan lors de son premier tour du monde en 1520. Longtemps fantasmée comme terre de géants et d'inconnu, elle fut peu à peu colonisée par des estancieros argentins et chiliens au XIXe siècle. Aujourd'hui, ses parcs nationaux — Torres del Paine, Los Glaciares — protègent l'un des derniers grands espaces sauvages de la planète.",
+      "culture": "La culture patagone est celle du bout du monde : les gauchos patagones gardent encore leurs troupeaux à cheval dans un silence de cathédrale, l'asado (barbecue argentin) au bois de lenga est un sacrement, et les vents violents ont forgé des habitants à la robustesse légendaire. Dans les villes-portes comme El Calafate, l'accueil est à la chaleur inverse des températures.",
+      "activites": [
+        {
+          "nom": "Trek à Torres del Paine",
+          "description": "Marchez le célèbre W-Trek face aux trois torres de granite rose qui s'élèvent du néant patagon.",
+          "tarif": "35€",
+          "image_url": "https://wallpaperaccess.com/full/5730164.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Glacier Perito Moreno",
+          "description": "Approchez-vous au plus près d'un glacier vivant et écoutez ses craquements et effondrements spectaculaires.",
+          "tarif": "20€",
+          "image_url": "https://bearfoottheory.com/wp-content/uploads/2019/01/Fall-at-Perito-Moreno-Glacier.jpeg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Observation des baleines à Valdés",
+          "description": "Naviguez au milieu des baleines australes qui viennent mettre bas dans la péninsule Valdés.",
+          "tarif": "80€",
+          "image_url": "https://images.partir.com/2aMsDa_7b_QvcbnX2VM7A6bXPwU=/800x600/filters:sharpen(0.3,0.3,true)/lieux-interet/argentine/argentine-peninsule-valdes-4.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Bangkok",
+      "pays": "Thaïlande",
+      "phrase_accroche": "Temples dorés, pad thaï à minuit et tuk-tuks en folie — Bangkok ne s'arrête jamais de surprendre.",
+      "budget_categorie": "éco",
+      "type": "ville",
+      "meteo": "soleil",
+      "description": "Capitale vibrante mêlant temples dorés, street food légendaire et vie nocturne animée.",
+      "histoire": "Bangkok ne devient capitale du Siam qu'en 1782, lorsque le roi Rama Ier y fonde la dynastie Chakri après la destruction d'Ayutthaya par les Birmans. En deux siècles, cette ville de canaux surnommée la 'Venise de l'Orient' s'est transformée en mégapole de 10 millions d'habitants, tout en préservant ses 400 temples dorés qui étincellent au cœur du béton.",
+      "culture": "Bangkok vit à deux vitesses simultanément : les moines en robe safran collectent les offrandes à l'aube pendant que les food trucks servent leur pad thaï à 2 heures du matin. La cuisine de rue y est patrimoine mondial officieux — pad kra pao, khao man gai, mango sticky rice — et les marchés flottants perpétuent un mode de vie aquatique millénaire.",
+      "activites": [
+        {
+          "nom": "Grand Palais et Wat Phra Kaew",
+          "description": "Admirez le Bouddha d'émeraude dans l'enceinte du Grand Palais, chef-d'œuvre de l'architecture siamoise.",
+          "tarif": "15€",
+          "image_url": "https://images.unsplash.com/photo-1563492065599-3520f775eeed",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marchés flottants de Damnoen Saduak",
+          "description": "Naviguez entre les barques chargées de fruits exotiques et de soupes fumantes sur les canaux.",
+          "tarif": "25€",
+          "image_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Ruelles de Chinatown",
+          "description": "Plongez dans Yaowarat au crépuscule, quand les néons s'allument et que les effluves de durian envahissent l'air.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1508009603885-50cf7c579365",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Lisbonne",
+      "pays": "Portugal",
+      "phrase_accroche": "Sept collines, le fado dans l'air du soir et une lumière dorée qui ne ressemble à nulle autre.",
+      "budget_categorie": "moyen",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Capitale aux sept collines, berceau du fado et des Grandes Découvertes.",
+      "histoire": "L'une des plus anciennes capitales d'Europe, Lisbonne fut fondée par les Phéniciens, dominée par les Maures puis reconquise par Afonso Henriques en 1147. Son heure de gloire sonna au XVe siècle avec les Grandes Découvertes : Vasco de Gama, Bartolomeu Dias et Magellan partirent de ses quais pour changer la carte du monde. Le terrible tremblement de terre de 1755 la rasa, mais le marquis de Pombal la rebâtit en quelques décennies.",
+      "culture": "Lisbonne est une ville mélancolique et lumineuse à la fois — le fado, musique de l'âme portugaise, y est né dans les tavernes de l'Alfama. On y mange des pastéis de nata brûlants en terrasse, on boit du ginjinha (cerise à l'eau-de-vie) dans des cavistes minuscules et on regarde la lumière dorée du Tage depuis les miradouros au coucher du soleil.",
+      "activites": [
+        {
+          "nom": "Tramway 28 dans l'Alfama",
+          "description": "Embarquez dans l'iconique tramway jaune qui serpente les ruelles escarpées de l'Alfama jusqu'au château.",
+          "tarif": "3€",
+          "image_url": "https://cdn.travel-in-portugal.com/sites/default/files/tram-28-santa-catarina.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Monastère des Hiéronymites",
+          "description": "Perdez-vous dans la dentelle de pierre manuéline du monument le plus impressionnant du Portugal.",
+          "tarif": "10€",
+          "image_url": "https://cdn.getyourguide.com/img/tour/69e2951c20e9781d.jpeg/145.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Pastéis de nata et café",
+          "description": "Dégustez les célèbres tartelettes à la crème encore tièdes à la sortie du four chez Pastéis de Belém.",
+          "tarif": "2€",
+          "image_url": "https://cdn.e-konomista.pt/uploads/2020/11/pastel-nata-.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Excursion à Sintra",
+          "description": "Escaladez la montagne magique de Sintra pour découvrir ses palais féériques dans la brume atlantique.",
+          "tarif": "35€",
+          "image_url": "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1280,h_853/activities/wheldgfp2ojkhvds4a8g/Sintra,PenaPalace,Roca,andCascaisDayTourFromLisbon.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Kyoto",
+      "pays": "Japon",
+      "phrase_accroche": "Mille ans de grâce japonaise, des torii vermillon et des geishas au détour d'une ruelle.",
+      "budget_categorie": "élevé",
+      "type": "culture",
+      "meteo": "tempéré",
+      "description": "Ancienne capitale impériale du Japon, sanctuaire de la tradition.",
+      "histoire": "Capitale impériale du Japon pendant plus de mille ans (794–1868), Kyoto a été le berceau de la civilisation japonaise classique : nô, ikebana, cérémonie du thé, jardins zen et geishas sont nés dans ses quartiers. Épargnée des bombardements de 1945 grâce à son importance culturelle, elle conserve aujourd'hui plus de 1 600 temples et sanctuaires, formant le plus grand ensemble patrimonial du Japon.",
+      "culture": "Kyoto respire une élégance que les siècles n'ont pas altérée. Les geikos et maikos aux kimonos brodés traversent encore les ruelles de Gion au crépuscule, les jardins de gravier ratissé invitent à la méditation et la cuisine kaiseki — ode à la saisonnalité — est considérée comme la plus raffinée d'Asie. La ville vit au rythme des cerisiers en avril et des érables rouges en novembre.",
+      "activites": [
+        {
+          "nom": "Sanctuaire Fushimi Inari",
+          "description": "Traversez le tunnel de 10 000 torii vermillon qui serpente jusqu'au sommet du mont Inari au lever du soleil.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Cérémonie du thé à Gion",
+          "description": "Participez à un chado authentique dans un okiya traditionnel, guidé par une maîtresse de thé.",
+          "tarif": "40€",
+          "image_url": "https://th.bing.com/th/id/R.c1fb70cb13e0363249b50f46f5fbda03?rik=j8L18FDwJlatGA&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0250%2f3209%2f7885%2farticles%2fceremonie-du-the-japonaise_600x.jpg%3fv%3d1574986206&ehk=7iylqgo0y32F0ccKlvmTsQHnRaBO0r%2b%2fbxImUnDCRUM%3d&risl=&pid=ImgRaw&r=0",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Bambouseraies d'Arashiyama",
+          "description": "Promenez-vous sous les voûtes de bambous géants dans la lumière filtrée du matin.",
+          "tarif": "Gratuit",
+          "image_url": "https://tse4.mm.bing.net/th/id/OIP.3LuWMucSO6JpYRgpaJomcQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Temple Kinkaku-ji",
+          "description": "Contemplez le Pavillon d'Or entièrement recouvert de feuilles d'or se reflétant dans son étang de miroir.",
+          "tarif": "4€",
+          "image_url": "https://s1.it.atcdn.net/wp-content/uploads/2015/06/shutterstock_197101637.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Marrakech",
+      "pays": "Maroc",
+      "phrase_accroche": "Perdez-vous dans les souks, retrouvez-vous sur un rooftop au coucher du soleil — Marrakech opère sa magie.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "soleil",
+      "description": "La ville ocre envoûte par ses souks labyrinthiques et l'effervescence de Jemaa el-Fna.",
+      "histoire": "Fondée en 1070 par les Almoravides comme capitale d'un empire s'étendant du Sénégal à l'Espagne, Marrakech a toujours été le carrefour des routes caravanières sahariennes. Ses murailles ocre du XIIe siècle, ses médersas somptueuses et son réseau de souks médiévaux témoignent de l'apogée de la civilisation arabo-berbère d'Occident.",
+      "culture": "Marrakech est une immersion sensorielle totale : le muezzin appelle à la prière pendant que les conteurs de la place Jemaa el-Fna rivalisent d'éloquence. La cuisine marocaine est l'une des plus riches du monde — tagines parfumés au safran, pastilla au pigeon sucré-salé, couscous du vendredi et thé à la menthe versé de haut — et les riads-hôtels transforment l'art de vivre en spectacle.",
+      "activites": [
+        {
+          "nom": "Souks de la médina",
+          "description": "Laissez-vous absorber par le labyrinthe odorant des souks et marchandezquelques trésors en cuir ou en cuivre.",
+          "tarif": "Gratuit",
+          "image_url": "https://thumbs.dreamstime.com/b/colourful-souks-medina-marrakech-people-shopping-138111869.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Jardins Majorelle",
+          "description": "Promenez-vous dans cet écrin de cobalt créé par Jacques Majorelle et racheté par Yves Saint Laurent.",
+          "tarif": "8€",
+          "image_url": "https://www.voyageavecnous.fr/wp-content/uploads/2021/03/visiter-jardin-majorelle.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Dîner sur la place Jemaa el-Fna",
+          "description": "Installez-vous aux terrasses fumantes de la grande place et dînez au son des gnawas et des acrobates.",
+          "tarif": "12€",
+          "image_url": "https://oddviser.com/photo/place/1600/811.jpg?1495105530",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Nuit dans le désert",
+          "description": "Rejoignez les dunes de l'Agafay en dromadaire et dormez sous les étoiles dans un camp berbère.",
+          "tarif": "90€",
+          "image_url": "https://www.staysomedays.com/wp-content/uploads/2023/02/be-agafay-hotel-desert-morocco-800x800.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Reykjavik",
+      "pays": "Islande",
+      "phrase_accroche": "Là où le ciel danse en vert et où les geysers s'élèvent comme des cris de la terre.",
+      "budget_categorie": "élevé",
+      "type": "montagne",
+      "meteo": "froid",
+      "description": "Capitale la plus septentrionale du monde, point de départ pour les aurores boréales.",
+      "histoire": "Reykjavik fut le premier lieu de peuplement permanent d'Islande, fondé vers 874 par le viking norvégien Ingólfr Arnarson qui y aperçut de la vapeur s'élevant du sol — 'Reykjavik' signifie 'baie de fumée'. Pendant des siècles simple village de pêcheurs, elle ne devint capitale du Danemark insulaire qu'en 1786 et capitale d'un pays indépendant qu'en 1944.",
+      "culture": "La culture islandaise est une résistance tranquille au froid et à l'obscurité : on se retrouve dans les geothermal pools en plein hiver pour refaire le monde, on lit le plus de livres par habitant au monde et on célèbre la lumière de l'été avec des festivals qui durent toute la nuit. La gastronomie joue avec les produits bruts — agneau fumé, skyr, poissons séchés et alcool de carvi.",
+      "activites": [
+        {
+          "nom": "Chasse aux aurores boréales",
+          "description": "Partez en minibus dans la nuit islandaise et levez les yeux quand le ciel se met à danser en vert.",
+          "tarif": "65€",
+          "image_url": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Blue Lagoon",
+          "description": "Baignez-vous dans les eaux laiteuses et géothermales du lagon bleu au milieu des champs de lave.",
+          "tarif": "55€",
+          "image_url": "https://theplanetd.com/images/The-Blue-Lagoon-Iceland-Guide.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Cercle d'Or",
+          "description": "Admirez en une journée un geyser, la plus grande cascade d'Europe et le berceau de la démocratie mondiale.",
+          "tarif": "75€",
+          "image_url": "https://gti.images.tshiftcdn.com/385129/x/0/w4a5346-jpg?w=360&h=430&fit=crop&crop=center&auto=format%2Ccompress&q=32&dpr=2&ixlib=react-9.8.1",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Randonnée sur glacier",
+          "description": "Chaussez crampons et casque pour marcher sur la langue glaciaire de Sólheimajökull.",
+          "tarif": "85€",
+          "image_url": "https://res.cloudinary.com/manawa/image/private/f_auto,c_limit,w_3840,q_auto/kkjhravw8i1kfzwbxjp1",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Barcelone",
+      "pays": "Espagne",
+      "phrase_accroche": "Gaudí, tapas et soleil méditerranéen — Barcelone est une fête permanente avec vue sur la mer.",
+      "budget_categorie": "moyen",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Métropole méditerranéenne débordant d'architecture moderniste et de gastronomie catalane.",
+      "histoire": "Fondée par les Romains sous le nom de Barcino au Ier siècle av. J.-C., Barcelone a connu son âge d'or médiéval comme capitale de la Couronne d'Aragon. Au XIXe siècle, son expansion industrielle donna naissance à l'Eixample, ce quartier en damier où Gaudí laissa ses œuvres les plus folles. La ville fut un bastion républicain durant la guerre civile espagnole et resta longtemps sous la chape franquiste.",
+      "culture": "Barcelone vit à l'heure catalane, pas espagnole : on dîne à 22h, on danse jusqu'à l'aube et on discute politique à toute heure. La gastronomie est une fierté nationale : pa amb tomàquet (pain à la tomate), jambon ibérique, croquetas crémeuses et tapas infinies arrosées de cava. Gaudí, Miró et Dalí ont grandi dans cet humus culturel méditerranéen.",
+      "activites": [
+        {
+          "nom": "Sagrada Família",
+          "description": "Levez les yeux vers les tours-cierges de la cathédrale inachevée de Gaudí, chef-d'œuvre du génie humain.",
+          "tarif": "26€",
+          "image_url": "https://images.unsplash.com/photo-1583422409516-2895a77efded",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Ramblas et marché de la Boqueria",
+          "description": "Flânez sur la promenade emblématique et plongez dans le marché aux couleurs et aux arômes débordants.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.globotreks.com/wp-content/uploads/2017/01/Las-Ramblas-in-Barcelona.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Plages de Barceloneta",
+          "description": "Étendez-vous sur le sable chaud à deux pas du centre-ville et plongez dans la Méditerranée.",
+          "tarif": "Gratuit",
+          "image_url": "https://hotelgrumsbarcelona.com/wp-content/uploads/2022/07/La-Barceloneta-scaled.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Parc Güell",
+          "description": "Montez au parc mosaïqué de Gaudí pour une vue panoramique sur la ville et la mer.",
+          "tarif": "10€",
+          "image_url": "https://www.voyageavecnous.fr/wp-content/uploads/2018/07/visiter-parc-guell-1.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Bali",
+      "pays": "Indonésie",
+      "phrase_accroche": "L'île des dieux où chaque lever de soleil sur les rizières ressemble à une prière.",
+      "budget_categorie": "éco",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Île des dieux alliant temples hindous, rizières en terrasses et plages paradisiaques.",
+      "histoire": "Seule île majoritairement hindoue d'Indonésie, Bali a préservé sa civilisation millénaire grâce à son isolement relatif et à la profondeur de sa vie spirituelle. Les royaumes balinais du Moyen Âge ont développé un art de vivre raffiné — danse, sculpture, musique gamelan — que la colonisation hollandaise n'a jamais réussi à éteindre.",
+      "culture": "À Bali, le sacré et le quotidien sont indissociables : les habitants déposent chaque matin des offrandes de fleurs et de riz sur le seuil de leur porte, les cérémonies se succèdent 365 jours par an et la danse Kecak raconte le Ramayana sous les étoiles. La cuisine balinaise est piquante et parfumée — babi guling (cochon de lait rôti), nasi goreng et sate lilit.",
+      "activites": [
+        {
+          "nom": "Temple de Tanah Lot au coucher du soleil",
+          "description": "Admirez ce temple sur rocher au milieu des vagues, siluetté contre le soleil couchant de l'océan Indien.",
+          "tarif": "4€",
+          "image_url": "https://www.urlaubsguru.de/wp-content/uploads/2016/07/pura-tanah-lot-tempel-am-meer-istock-494560541.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Cours de surf à Kuta",
+          "description": "Apprenez à chevaucher les vagues de Kuta avec un moniteur local sur la plage la plus accessible de Bali.",
+          "tarif": "25€",
+          "image_url": "https://images.unsplash.com/photo-1502680390469-be75c86b636f",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Rizières en terrasses d'Ubud",
+          "description": "Marchez entre les paddies vert-émeraude de Tegallalang au petit matin, quand la brume effleure les terrasses.",
+          "tarif": "2€",
+          "image_url": "https://les-10-incontournables.com/wp-content/uploads/2023/08/riziere-a-voir-sejour-ubud-scaled.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Cérémonie dans un village balinais",
+          "description": "Assistez à une odalan (fête de temple) et laissez-vous envoûter par les gamelan et les danses sacrées.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1542897644-e04428948020?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Prague",
+      "pays": "République tchèque",
+      "phrase_accroche": "Une ville de conte médiéval où l'on trinque à la meilleure bière du monde sous des voûtes du XIIIe siècle.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "froid",
+      "description": "La ville aux cent clochers, préservée comme un joyau médiéval au cœur de l'Europe centrale.",
+      "histoire": "Fondée au IXe siècle comme résidence des princes Přemyslides, Prague a été au XIVe siècle la capitale du Saint-Empire romain germanique sous Charles IV. Sa vieille ville, son château et ses quartiers juifs constituent l'un des ensembles médiévaux les mieux préservés d'Europe, épargnés des destructions de la Seconde Guerre mondiale par un miracle qui tient encore du mystère.",
+      "culture": "Prague est une ville de philosophes, de musiciens et de brasseurs. L'horloge astronomique qui sonne chaque heure depuis 1410, les caves voûtées où l'on boit la meilleure bière du monde (la pilsner est née ici) et la littérature kafkaïenne qui hante les ruelles pavées — tout invite à ralentir et à se laisser glisser dans la mélancolie dorée de la Bohême.",
+      "activites": [
+        {
+          "nom": "Pont Charles au lever du soleil",
+          "description": "Traversez ce pont gothique du XIVe siècle à l'aube, avant les foules, entre les statues baroques.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1519677100203-a0e668c92439",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Château de Prague",
+          "description": "Explorez le plus grand complexe castral du monde et la cathédrale Saint-Guy qui le couronne.",
+          "tarif": "14€",
+          "image_url": "https://cdn.britannica.com/61/122161-050-FCA9AE55/Hradcany-Castle-Prague.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Taverne historique et bière tchèque",
+          "description": "Descendez dans une cave voûtée du XIIIe siècle et dégustez une pilsner fraîche comme nulle part ailleurs.",
+          "tarif": "8€",
+          "image_url": "https://thirdeyetraveller.com/wp-content/uploads/Prague-Medieval-Tavern-U-Krale-Brabantskeho-2-1400x1050.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Croisière panoramique sur la Vltava",
+          "description": "Naviguez sur la rivière de Smetana et contemplez le château, les ponts et les berges depuis l'eau.",
+          "tarif": "18€",
+          "image_url": "https://cdn.generationvoyage.fr/2025/02/Croisiere-sur-la-Vltava-a-Prague-.jpeg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Hanoï",
+      "pays": "Vietnam",
+      "phrase_accroche": "Un bol de pho fumant, des ruelles coloniales et mille ans d'histoire à portée de scooter.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "tempéré",
+      "description": "Capitale millénaire du Vietnam où temples séculaires et vieux quartier cohabitent.",
+      "histoire": "Fondée il y a plus de 1 000 ans sur les rives du Fleuve Rouge, Hanoï a été capitale de l'empire Đại Việt avant de devenir le centre administratif de l'Indochine française. Rebaptisée Hanoi par les Français qui y construisirent boulevards et opéra, elle a ensuite été la capitale de la résistance anticoloniale, bombardée pendant la guerre du Vietnam avant de renaître comme métropole dynamique.",
+      "culture": "Hanoï est une ville qui se mange : la cuisine du Nord du Vietnam est plus sobre que celle du Sud — le pho bo au bouillon limpide, les bun cha grillés à la braise, les bánh cuốn délicats. Le vieux quartier aux 36 rues de corporations — où chaque rue vendait autrefois un produit unique — reste le cœur vivant de la ville, animé jusqu'à minuit.",
+      "activites": [
+        {
+          "nom": "Vieux quartier aux 36 corporations",
+          "description": "Perdez-vous dans les rues coloniales du vieux Hanoï, chacune dédiée depuis des siècles à un artisanat.",
+          "tarif": "Gratuit",
+          "image_url": "https://i.pinimg.com/originals/9e/70/e5/9e70e5ad35669aa9f816f3636eceffaf.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Mausolée d'Hô Chi Minh",
+          "description": "Visitez le mausolée de marbre granit où repose le père de la nation vietnamienne en tenue d'apparat.",
+          "tarif": "Gratuit",
+          "image_url": "https://jeveuxpartir.com/wp-content/uploads/2022/12/Mausolee-de-Ho-Chi-Minh-Ville.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Excursion à la baie d'Halong",
+          "description": "Naviguez entre les 2 000 îlots karstiques qui surgissent de l'émeraude de la baie d'Halong en jonque.",
+          "tarif": "120€",
+          "image_url": "https://cdn.generationvoyage.fr/2014/03/baie-halong-ile-flottante.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marionnettes sur l'eau",
+          "description": "Assistez au spectacle ancestral de marionnettes aquatiques, art millénaire né dans les rizières du Delta.",
+          "tarif": "4€",
+          "image_url": "https://pintrip.in.th/i/blog/qzAOmg2l8GnOMEyjza0zXnqxuYkdKVl050jHiAiq.jpeg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Santorini",
+      "pays": "Grèce",
+      "phrase_accroche": "Des dômes bleus, un volcan au loin et des couchers de soleil qui vous feront pleurer de beauté.",
+      "budget_categorie": "élevé",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Île volcanique de la mer Égée, célèbre pour ses dômes bleus et ses couchers de soleil mythiques.",
+      "histoire": "Santorini est le fruit d'une catastrophe : vers 1600 avant J.-C., une éruption volcanique colossale — l'une des plus puissantes de l'histoire humaine — anéantit la civilisation minoenne de l'île et creusa la caldeira que l'on contemple aujourd'hui. Certains historiens voient dans ce cataclysme l'origine du mythe de l'Atlantide de Platon.",
+      "culture": "Santorini est une île de contrastes assumés : les dômes bleus d'Oia en carte postale contre le vin vinsanto produit sur des vignes en corbeille torsadées par le vent. La cuisine cycladique joue la sobriété — fava de Santorini, tomates cerises concentrées par la sécheresse volcanique, feta et poulpe séché — mais toujours avec un sens du beau qui touche à la perfection.",
+      "activites": [
+        {
+          "nom": "Coucher de soleil depuis Oia",
+          "description": "Trouvez votre place sur les remparts d'Oia et vibrez avec la foule quand le soleil plonge dans la caldeira.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Croisière dans la caldeira",
+          "description": "Naviguez jusqu'au volcan actif et baignez-vous dans les sources chaudes des eaux de la caldeira.",
+          "tarif": "45€",
+          "image_url": "https://cdn.generationvoyage.fr/2023/05/baignade-sources-chaudes-caldeira-santorin.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Dégustation dans les vignobles volcaniques",
+          "description": "Goûtez l'assyrtiko minéral et le vinsanto ambré dans un domaine viticole aux vues sur la mer.",
+          "tarif": "30€",
+          "image_url": "https://www.luxurylifestylemag.co.uk/wp-content/uploads/2019/10/Feature-Image-Copy.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Medellín",
+      "pays": "Colombie",
+      "phrase_accroche": "La ville la plus dangereuse du monde est devenue la plus inspirante — venez voir le miracle.",
+      "budget_categorie": "éco",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Ancienne ville industrielle transformée en modèle d'innovation urbaine et de culture.",
+      "histoire": "Medellín, fondée en 1616 dans la vallée d'Aburrá, était au XIXe siècle le centre de l'industrie textile colombienne. Elle devint tristement célèbre dans les années 1980-90 comme épicentre du cartel de Pablo Escobar, classée ville la plus dangereuse du monde. Sa renaissance depuis les années 2000 — transports innovants, bibliothèques de quartier, escaliers mécaniques dans les favelas — est considérée comme l'un des miracles urbains du XXIe siècle.",
+      "culture": "Medellín est la ville des Paisas, Colombiens réputés pour leur entrepreneuriat, leur humour et leur fierté. La cumbia et le vallenato rythment les fêtes, le café de la région d'Antioquia est parmi les meilleurs du monde et la cuisine locale — bandeja paisa, arepa de choclo — est généreuse à l'excès. La scène artistique a explosé avec la renaissance de la ville.",
+      "activites": [
+        {
+          "nom": "Métrocâble vers les quartiers hauts",
+          "description": "Survolez les toits de Medellín en télécabine et découvrez les communes populaires transformées.",
+          "tarif": "1€",
+          "image_url": "https://europefly.com/blog/uploads/public/20240828/medellin-metrocable2_dRlTFD.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Musée et sculptures de Botero",
+          "description": "Admirez les rondeurs généreuses des bronzes de Fernando Botero sur la plaza de l'artiste le plus célèbre de Colombie.",
+          "tarif": "Gratuit",
+          "image_url": "https://blog.redbus.co/wp-content/uploads/2017/10/Proyecto-nuevo-2025-03-10T203958.725.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Quartier d'El Poblado",
+          "description": "Explorez le quartier branché aux restaurants, bars et galeries d'art dans des maisons coloniales rénovées.",
+          "tarif": "Gratuit",
+          "image_url": "https://media.routard.com/image/51/9/photo.1582519.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Fête de rue à la Comuna 13",
+          "description": "Montez par les escaliers roulants de la favela transformée en musée de street art à ciel ouvert.",
+          "tarif": "Gratuit",
+          "image_url": "https://media.istockphoto.com/id/2048983905/photo/group-of-urban-dancers-performing-for-the-tourists-at-the-famous-comuna-13-in-medellin.jpg?s=612x612&w=0&k=20&c=9hEb3PLMV_rRJ3k9DtHwz5K0aSWk26tKzwDgyDhXAq8=",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Chamonix",
+      "pays": "France",
+      "phrase_accroche": "Au pied du toit de l'Europe, l'adrénaline et la fondue savoyarde vous attendent.",
+      "budget_categorie": "élevé",
+      "type": "montagne",
+      "meteo": "froid",
+      "description": "Station mythique au pied du Mont-Blanc, capitale mondiale de l'alpinisme.",
+      "histoire": "Chamonix est le berceau de l'alpinisme moderne : c'est depuis ici que Jacques Balmat et Michel-Gabriel Paccard accomplirent la première ascension du Mont-Blanc en 1786, ouvrant l'ère de la conquête des sommets. Dès le XIXe siècle, aristocrates et artistes romantiques affluèrent pour contempler la mer de Glace, faisant de Chamonix la première destination de montagne de l'histoire du tourisme.",
+      "culture": "La culture chamoniarde est celle du dépassement et du respect : on y célèbre autant les vieux guides de haute montagne que les nouveaux champions de ski-alpinisme. Les fondues savoyardes et la raclette sont des rituels d'après-ski, et les refuge-gardiens perpétuent une hospitalité de montagne où l'on accueille autant l'alpiniste épuisé que le randonneur du dimanche.",
+      "activites": [
+        {
+          "nom": "Aiguille du Midi en téléphérique",
+          "description": "Montez à 3 842 m en quelques minutes et marchez sur la passerelle de verre au-dessus du vide alpin.",
+          "tarif": "65€",
+          "image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Tour du Mont-Blanc",
+          "description": "Entamez quelques étapes du tour le plus mythique des Alpes, entre France, Italie et Suisse.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Ski sur la Vallée Blanche",
+          "description": "Dévalez 20 km de glacier hors-piste de l'Aiguille du Midi à Chamonix, expérience unique au monde.",
+          "tarif": "70€",
+          "image_url": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Istanbul",
+      "pays": "Turquie",
+      "phrase_accroche": "Un pied en Europe, un pied en Asie — Istanbul est la seule ville où l'Orient rencontre l'Occident sur l'eau.",
+      "budget_categorie": "moyen",
+      "type": "culture",
+      "meteo": "tempéré",
+      "description": "Seule ville du monde à cheval sur deux continents, où mosquées ottomanes et bazars millénaires se reflètent dans le Bosphore.",
+      "histoire": "Fondée vers 660 av. J.-C. sous le nom de Byzance, la ville devient Constantinople en 330 quand Constantin en fait la nouvelle capitale de l'Empire romain. Pendant mille ans elle fut le centre de la chrétienté orientale avant que Mehmet II ne la conquière en 1453 pour en faire la capitale de l'Empire ottoman. Cette triple identité — grecque, byzantine, ottomane — fait d'Istanbul l'une des villes les plus chargées d'histoire du monde.",
+      "culture": "Istanbul est une ville qui se vit entre deux rives : le thé çay dans des verres tulipe qu'on sert à toute heure, le simit (pain au sésame) mangé sur le pont de Galata, le hammam comme rituel hebdomadaire. La cuisine turque, héritière des cuisines impériales ottomanes, est une des plus riches du monde — kebabs, mezes infinis, baklava au miel — et les souks rivalisent de trésors en épices et tapis.",
+      "activites": [
+        {
+          "nom": "Sainte-Sophie et Mosquée Bleue",
+          "description": "Passez de l'ancienne basilique byzantine convertie en mosquée aux 20 000 carreaux d'Iznik de la Mosquée Bleue.",
+          "tarif": "17€",
+          "image_url": "https://images.unsplash.com/photo-1527838832700-5059252407fa",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Grand Bazar et Bazar aux épices",
+          "description": "Flânez dans le plus ancien centre commercial du monde et laissez-vous griser par les odeurs du Bazar aux épices.",
+          "tarif": "Gratuit",
+          "image_url": "https://th.bing.com/th/id/R.7c98a0103fa75d33098e7cc5f8c2661d?rik=roQYRjKxEd86Mg&riu=http%3a%2f%2fwww.youramazingplaces.com%2fwp-content%2fuploads%2f2015%2f01%2fGrand-Bazaar-in-Istanbul-Turkey-5.jpg&ehk=681HdKC%2fOWJQeeBJFFs5AQ5Gq%2fTizZMtjCys3tun3QE%3d&risl=&pid=ImgRaw&r=0",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Ferry sur le Bosphore au coucher du soleil",
+          "description": "Traversez le détroit entre Europe et Asie en ferry public, entre minarets et collines verdoyantes.",
+          "tarif": "1€",
+          "image_url": "https://www.fleewinter.com/wp-content/uploads/2021/03/Bosphorus-Boat-ride-Turkey-Istanbul-scaled.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Palais de Topkapi",
+          "description": "Parcourez les appartements des sultans et admirez le trésor de l'Empire ottoman dont le diamant Kaşıkçı.",
+          "tarif": "15€",
+          "image_url": "https://cdn.generationvoyage.fr/2021/07/visiter-palais-de-topkapi-5.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Sydney",
+      "pays": "Australie",
+      "phrase_accroche": "L'Opéra, Bondi Beach et un soleil qui ne connaît pas la modestie — Sydney est l'extravagance à l'australienne.",
+      "budget_categorie": "élevé",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Métropole solaire du Pacifique avec son opéra iconique et ses plages légendaires.",
+      "histoire": "Fondée en 1788 comme colonie pénitentiaire britannique sur les terres des Cadigal, Sydney est la plus ancienne ville européenne d'Australie. Longtemps rivale de Melbourne pour le titre de capitale, elle perdit cette bataille politique mais conserva son rang de première ville du pays. L'Opéra, construit entre 1959 et 1973 sur les plans du Danois Jørn Utzon, a fait de Sydney l'une des villes les plus reconnaissables du monde.",
+      "culture": "Sydney est une ville outdoor par excellence : on y branche le barbecue le soir du Nouvel An avec feux d'artifice sur le Harbour, on court tôt le matin à Bondi Beach et on brunche le week-end dans les cafés de Surry Hills. La cuisine multiculturelle — japonaise, libanaise, italienne, australienne moderne — reflète une ville construite par l'immigration.",
+      "activites": [
+        {
+          "nom": "Opéra et Harbour Bridge",
+          "description": "Contemplez les voiles de l'Opéra depuis Circular Quay et marchez sur le pont du port avec vue panoramique.",
+          "tarif": "30€",
+          "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Surf à Bondi Beach",
+          "description": "Prenez une leçon de surf sur la plage la plus célèbre d'Australie avec un moniteur certifié.",
+          "tarif": "55€",
+          "image_url": "https://www.surf-forecast.com/system/images/15292/large/Bondi-Beach-New-Years-Day-January-1_-2016-00022.jpg?1451717947",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Royal National Park en kayak",
+          "description": "Pagayez dans les criques du plus vieux parc national d'Australie, entre falaises de grès et plages sauvages.",
+          "tarif": "45€",
+          "image_url": "https://www.sydney.com/sites/sydney/files/styles/open_graph/public/2022-03/174784.jpg?itok=gbgz9lTc",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Vol en hélicoptère sur le port",
+          "description": "Survolez en hélico le Harbour Bridge, l'Opéra et les plages de Sydney pour une vue inoubliable.",
+          "tarif": "180€",
+          "image_url": "https://th.bing.com/th/id/R.0eecee7197232645ce0028b008600c9f?rik=9QSfeqt4Kf9V%2fg&pid=ImgRaw&r=0",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "La Havane",
+      "pays": "Cuba",
+      "phrase_accroche": "Des Chevrolet des années 50, du rhum Havana Club et la salsa dans les rues — Cuba, c'est une autre dimension.",
+      "budget_categorie": "moyen",
+      "type": "culture",
+      "meteo": "soleil",
+      "description": "Capitale figée dans le temps, où voitures américaines des années 50 et façades coloniales cohabitent.",
+      "histoire": "Fondée par les Espagnols en 1519, La Havane devint rapidement le carrefour incontournable du commerce colonial des Amériques, protégée par l'imposant fort El Morro. Après la révolution de 1959, Castro et Che Guevara en firent la capitale d'une expérience socialiste unique qui a préservé, souvent malgré elle, le tissu urbain colonial dans un état de belle décadence.",
+      "culture": "La Havane est musique, rhum et débrouillardise. Le son cubain — mambo, cha-cha-cha, son montuno — suinte des fenêtres ouvertes à toute heure, les habaneros vivent en grande partie dans la rue et partagent tout avec une générosité désarmante. La cuisine est simple — riz, haricots noirs, porc rôti — mais préparée avec un amour qui compense la pénurie.",
+      "activites": [
+        {
+          "nom": "Balade dans la Habana Vieja",
+          "description": "Déambulez dans ce labyrinthe colonial classé UNESCO entre palais baroques et bars de Hemingway.",
+          "tarif": "Gratuit",
+          "image_url": "https://deih43ym53wif.cloudfront.net/havana-cuba-october-12-2017-old-havana_df4cfc1128.jpeg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Concert de salsa",
+          "description": "Rejoignez les Cubains dans un bar de la rue Obispo et laissez vos hanches décider à votre place.",
+          "tarif": "10€",
+          "image_url": "https://www.cubamaniatour.com/wp-content/uploads/2017/04/62cec3e0b9841b25b4e36ccdba7da224.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Plantations de tabac de Viñales",
+          "description": "Visitez une ferme de tabac dans la vallée de Viñales et roulez un vrai cigare avec un veguero (attention fumer est dangereux pour la santé).",
+          "tarif": "25€",
+          "image_url": "https://tse4.mm.bing.net/th/id/OIP.4lXbxKZ2Fh_flgeuuu7eBQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Musée Hemingway Finca Vigía",
+          "description": "Visitez la villa tropicale où l'écrivain américain vécut 20 ans et écrivit Le Vieil Homme et la Mer.",
+          "tarif": "5€",
+          "image_url": "https://www.bonplanvoyage.com/photo/le-musee-hemingway-finca-vigia_47913-0.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Oslo",
+      "pays": "Norvège",
+      "phrase_accroche": "Des fjords à portée de kayak, des Vikings en musée et la meilleure qualité de vie du monde.",
+      "budget_categorie": "élevé",
+      "type": "culture",
+      "meteo": "froid",
+      "description": "Capitale scandinave durable et design, entre fjords et musées world-class.",
+      "histoire": "Fondée vers l'an 1000 par Harald Hardrada, Oslo — longtemps appelée Christiania puis Kristiania — fut pendant des siècles sous domination danoise puis suédoise avant de devenir la capitale d'une Norvège indépendante en 1905. La découverte du pétrole en mer du Nord dans les années 1960 transforma ce pays de pêcheurs en l'une des nations les plus riches et les plus égalitaires du monde.",
+      "culture": "La culture osloïte est celle du friluftsliv — la vie au grand air — : on skie au flambeau dans la forêt de Marka le jeudi soir, on pique-nique sur les rochers du fjord dès que le soleil pointe, et le brun-ost (fromage brun de chèvre caramélisé) sur tartine de pain croustillant est le petit déjeuner national. Le design, le développement durable et la transparence sont les vraies religions d'Oslo.",
+      "activites": [
+        {
+          "nom": "Kayak dans l'Oslofjord",
+          "description": "Pagayez entre les îles du fjord d'Oslo et plongez depuis les rochers dans les eaux froides et tonifiantes.",
+          "tarif": "40€",
+          "image_url": "https://www.shoreexcursionsgroup.com/img/tour/EUOSBSFJDCRS-2.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Musée des Vikings",
+          "description": "Contemplez de vrais drakkars vikings vieux de 1 200 ans, parmi les mieux préservés qui soient.",
+          "tarif": "18€",
+          "image_url": "https://cdn.generationvoyage.fr/2025/04/Musee-des-navires-vikings-dOslo.jpeg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Musée Munch",
+          "description": "Venez face à face avec Le Cri d'Edvard Munch dans son musée flambant neuf au bord du fjord.",
+          "tarif": "20€",
+          "image_url": "https://artslife.com/wp-content/uploads/2021/10/Munch-Photo_Einar_Aslaksen-01210_F_web-1024x842-1-1000x822.jpeg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Randonnée dans la forêt de Nordmarka",
+          "description": "Prenez le T-bane jusqu'à la lisière de la forêt et randonnez sur des sentiers que les Osloïtes considèrent comme leur jardin.",
+          "tarif": "4€",
+          "image_url": "https://guide.en-vols.com/wp-content/uploads/aftg/2022/06/OSL-la-foret-de-nordmarka-le-poumon-vert-d-oslo-2_1-1920x960-3.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Chiang Mai",
+      "pays": "Thaïlande",
+      "phrase_accroche": "Temples dorés dans la jungle, khao soi fumant et retraites de méditation — le Nord thaïlandais appelle.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "tempéré",
+      "description": "Rose du Nord de la Thaïlande, capitale de l'artisanat et des retraites de méditation.",
+      "histoire": "Fondée en 1296 comme capitale du royaume de Lanna, Chiang Mai est restée pendant des siècles un royaume indépendant aux confins du monde birman et laotien. Ses 300 temples dorés, son art du laque et ses textiles aux motifs géométriques distincts de ceux du Sud témoignent d'une civilisation distincte, absorbée par le royaume siamois seulement en 1892.",
+      "culture": "Chiang Mai vibre au rythme des tambours des temples et des marchés nocturnes. La cuisine du Nord est radicalement différente de Bangkok : le khao soi (curry laqué au lait de coco sur nouilles croustillantes) et le sai oua (saucisse aux herbes du Nord) sont des spécialités qui méritent le voyage seules. Les boutiques d'artisanat — soie, céramique celadon, ombrelles en papier — font de la ville le meilleur endroit de Thaïlande pour rapporter quelque chose de beau.",
+      "activites": [
+        {
+          "nom": "Temples Doi Suthep et Wat Chedi Luang",
+          "description": "Montez au temple doré du Doi Suthep qui domine la ville puis explorez les ruines du chedi du XVe siècle.",
+          "tarif": "3€",
+          "image_url": "https://th.bing.com/th/id/R.5c48c2df9d3d01ff97a437174b7fb57e?rik=O3eObkcMT5ApFQ&pid=ImgRaw&r=0",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Cours de cuisine thaïlandaise",
+          "description": "Apprenez à préparer khao soi et pad thaï en marché et en cuisine avec un chef local.",
+          "tarif": "30€",
+          "image_url": "https://www.agoda.com/wp-content/uploads/2019/11/Pad-Thai-Bangkok-itinerary-Thailand-1.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Trek chez les tribus Karen",
+          "description": "Passez deux jours dans les villages de montagne et dormez chez l'habitant dans la jungle du Nord.",
+          "tarif": "55€",
+          "image_url": "https://cdn.wisata.app/diary/7db0a2d9-2584-4369-a33b-3bf04f8c4b44_xs.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Cascade Sticky et parc Angel Waterfall",
+          "description": "Glissez naturellement sur les roches lisses de la cascade Sticky et baignez-vous dans ses vasques.",
+          "tarif": "15€",
+          "image_url": "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1080,h_1350/w_66,x_12,y_12,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/m1kyuooy7kfk0vobrags/DantewadaLandofAngelsStickyWaterfallTourfromChiangMai.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Buenos Aires",
+      "pays": "Argentine",
+      "phrase_accroche": "Tango au clair de lune, bœuf fondant sur la braise et librairies dans des théâtres — bienvenue dans le Paris du Sud.",
+      "budget_categorie": "éco",
+      "type": "ville",
+      "meteo": "soleil",
+      "description": "Paris de l'Amérique du Sud, ville du tango, des biftecks et d'une culture européenne transplantée.",
+      "histoire": "Fondée deux fois — en 1536 puis en 1580 — Buenos Aires devint la capitale du Vice-Royaume du Río de la Plata en 1776 avant d'être le berceau de l'indépendance argentine en 1816. Au XIXe siècle, des millions d'immigrants italiens, espagnols et juifs débarquèrent dans ses ports, lui donnant ce caractère européen si particulier en terre d'Amérique du Sud.",
+      "culture": "Buenos Aires est la ville de tous les excès doux : on dîne après 22h dans des parrillas où le bœuf argentin fond sur la braise, on danse le tango jusqu'à l'aube dans des milongas semi-secrètes et on débat de Borges et de football avec la même intensité. La librairie El Ateneo Grand Splendid, installée dans un théâtre du XIXe siècle, est à elle seule une raison de venir.",
+      "activites": [
+        {
+          "nom": "Quartier coloré de La Boca",
+          "description": "Photographiez les maisons peintes en couleurs vives de la Caminito, berceau du tango et du Boca Juniors.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.fodors.com/wp-content/uploads/2018/08/HERO-BA-Instagrammable-Neighborhood-La-Boca-18.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Spectacle de tango à San Telmo",
+          "description": "Assistez à un show de tango dans le quartier pavé de San Telmo, entre passion et mélancolie portègne.",
+          "tarif": "30€",
+          "image_url": "https://www.tangol.com/uploads/tango%201.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Dîner dans une parrilla",
+          "description": "Dégustez un asado complet — chorizo, morcilla, entrecôte — dans une parrilla de quartier avec du Malbec.",
+          "tarif": "25€",
+          "image_url": "https://cdn.tasteatlas.com/images/dishes/ee1a2c7d7ae84299a02d9680a556903f.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marché aux puces de Recoleta",
+          "description": "Chinezez antiquités, vinyls et créations artisanales le dimanche sur la plus belle place de Buenos Aires.",
+          "tarif": "Gratuit",
+          "image_url": "https://i.pinimg.com/736x/29/4f/da/294fda802a837548a2a0e90887954f36.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Katmandou",
+      "pays": "Népal",
+      "phrase_accroche": "Les stupas bouddhistes, l'Everest à l'horizon et l'encens dans l'air — Katmandou ouvre les portes de l'Himalaya.",
+      "budget_categorie": "éco",
+      "type": "montagne",
+      "meteo": "froid",
+      "description": "Porte d'entrée de l'Himalaya, ville sacrée aux stupas bouddhistes et aux temples hindous.",
+      "histoire": "Katmandou est habitée depuis au moins le IXe siècle, capitale de principautés qui contrôlaient les routes commerciales entre l'Inde et le Tibet. Les dynasties Malla puis Shah y ont laissé un patrimoine architectural bouddhiste et hindou d'une richesse exceptionnelle, partiellement détruit par le terrible séisme de 2015 qui a tué plus de 8 000 personnes et dont la reconstruction se poursuit.",
+      "culture": "Katmandou est une ville sacrée où le profane n'existe pas : le premier bruit du matin est le son des cloches de temple, les rues sont emplies d'odeur d'encens et de fleurs de souci offertes aux dieux. La cuisine népalaise est simple et nourrissante — dal bhat (lentilles et riz), momos (raviolis tibétains) et chaï épicé — servie avec la chaleur d'un peuple habituellement présenté comme le plus hospitalier du monde.",
+      "activites": [
+        {
+          "nom": "Stupas de Boudhanath et Swayambhunath",
+          "description": "Faites le tour méditatif des deux plus grands stupas bouddhistes du pays, les yeux de Bouddha vous observant.",
+          "tarif": "3€",
+          "image_url": "https://www.xflow.eu/en/wp-content/gallery/20181222_Boudhanath-Stupa/181002_XFLO0077_Boudhanath-Stupa_1200x.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Randonnée dans la vallée de Langtang",
+          "description": "Marchez dans la haute vallée glaciaire de Langtang entre rhododendrons et panoramas himalayens à couper le souffle.",
+          "tarif": "30€",
+          "image_url": "https://cdn.getyourguide.com/img/tour/5257db6bfb1717e4d0129ccb53d4910ca7601bbd58b077dde6ca0440e593be11.jpeg/98.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Vol panoramique vue Everest",
+          "description": "Embarquez à l'aube dans un petit avion et volez le long de la chaîne himalayenne face au sommet du monde.",
+          "tarif": "180€",
+          "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/8f/19/84/caption.jpg?w=1200&h=-1&s=1",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Nairobi",
+      "pays": "Kenya",
+      "phrase_accroche": "Des lions à portée de skyline — Nairobi est la seule ville au monde où le safari commence en ville.",
+      "budget_categorie": "moyen",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Capitale verte d'Afrique de l'Est, unique métropole avec un parc national en son cœur.",
+      "histoire": "Nairobi naît en 1899 comme simple dépôt ferroviaire sur le chemin de fer Uganda Railway, avant de devenir la capitale de l'Afrique orientale britannique en 1907. En moins d'un siècle, ce hameau de brousse est devenu la plus grande métropole d'Afrique de l'Est avec 5 millions d'habitants — et le seul endroit au monde où l'on peut voir des lions sauvages depuis les immeubles du centre-ville.",
+      "culture": "Nairobi est un carrefour de 40 ethnies kenyanes, d'une importante diaspora asiatique et d'une communauté d'expatriés venue du monde entier. La cuisine est une fusion jubilatoire : nyama choma (viande grillée), ugali (polenta de maïs), samossas et pilau expriment la richesse du métissage. La scène musicale, le milieu de la tech et la créativité de la jeunesse nairoïte en font l'une des villes les plus dynamiques du continent.",
+      "activites": [
+        {
+          "nom": "Safari au Nairobi National Park",
+          "description": "Partez en safari à l'aube dans le seul parc national du monde avec une skyline de gratte-ciels en toile de fond.",
+          "tarif": "60€",
+          "image_url": "https://www.amboseliparkkenya.com/wp-content/uploads/2021/10/nairobi-national-park.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Centre de girafes et orphelinat des éléphants",
+          "description": "Nourrissez des girafes de Rothschild à la main le matin, puis observez les éléphanteaux orphelins jouer dans la boue.",
+          "tarif": "15€",
+          "image_url": "https://www.tsavonationalparkkenya.com/wp-content/uploads/2022/05/giraffe-center-nairobi.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Quartier de Westlands",
+          "description": "Explorez le quartier branché aux restaurants fusion, galeries d'art contemporain et bars rooftop.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.buyrentkenya.com/discover/wp-content/uploads/2024/10/brkmarketing-image-of-the-westlands-area-in-nairobi-show-luxur-e2b43717-121a-4e47-b710-e9ea6ecb48dc.png",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Naples",
+      "pays": "Italie",
+      "phrase_accroche": "La pizza la plus épaisse du monde, le Vésuve en toile de fond et une énergie italienne décuplée — Napoli ti amo.",
+      "budget_categorie": "moyen",
+      "type": "culture",
+      "meteo": "soleil",
+      "description": "Ville italienne vibrante, célèbre pour son histoire, sa cuisine et sa proximité avec le Vésuve.",
+      "histoire": "Fondée par les Grecs vers 470 av. J.-C. sous le nom de Neapolis (la 'ville nouvelle'), Naples a été successivement capitale du royaume normand, de la couronne d'Aragon et du royaume des Deux-Siciles. Cette accumulation de dominations a engendré une culture hybride et résistante, exprimée dans ses quartiers espagnols, ses couvents baroques et sa langue napolitaine fièrement distincte de l'italien standard.",
+      "culture": "Naples est la capitale mondiale de la pizza — inventée ici au XVIIIe siècle — et ce n'est pas une métaphore : l'UNESCO a inscrit l'art des pizzaiolos napolitains au patrimoine immatériel de l'humanité. La ville vit dans la rue avec une intensité méditerranéenne maximale : les scooters zigzaguent entre les étals de marchés, le café est toujours debout au comptoir et on gesticule autant qu'on parle.",
+      "activites": [
+        {
+          "nom": "Ascension du Vésuve",
+          "description": "Grimpez au bord du cratère du volcan qui enterra Pompéi et contemplez la baie de Naples depuis son sommet.",
+          "tarif": "15€",
+          "image_url": "https://www.vesuviusnationalpark.it/assets/images/public/items/gallery/big/vesuvius-national-park-storia_1640182590.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Exploration de Pompéi",
+          "description": "Marchez dans les rues de la cité romaine figée par l'éruption du Vésuve en 79 après J.-C.",
+          "tarif": "16€",
+          "image_url": "https://cdn.finestresullarte.info/rivista/immagini/2024/fn/parco-archeologico-di-pompei.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Pizza napolitaine chez un maître pizzaïolo",
+          "description": "Savourez une Margherita dans l'une des pizzerias centenaires du Quartiere Spagnoli.",
+          "tarif": "8€",
+          "image_url": "https://italiasquisita.net/files/chunks/5ba49c3ba0d5560471000092/5ba4c42fa0d556046700007d.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Souterrains de Naples",
+          "description": "Descendez 40 mètres sous la ville dans les catacombes et aqueducs gréco-romains de Napoli Sotterranea.",
+          "tarif": "12€",
+          "image_url": "https://www.bellanapoli.fr/media/photos/naples-souterraine-entree-591.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Excursion à Capri",
+          "description": "Prenez le hydrofoil jusqu'à l'île des empereurs romains et plongez dans la Grotta Azzurra.",
+          "tarif": "45€",
+          "image_url": "https://tse4.mm.bing.net/th/id/OIP.cQDP6ctsiPLPNf1015SX0gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Sardaigne",
+      "pays": "Italie",
+      "phrase_accroche": "Des plages qui rivalisent avec les Caraïbes et une île farouchement italienne, hors du temps.",
+      "budget_categorie": "moyen",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Île italienne réputée pour ses plages paradisiaques et ses eaux turquoise.",
+      "histoire": "La Sardaigne porte en elle les traces de toutes les civilisations méditerranéennes : les Nuragiques y ont érigé 7 000 tours de pierre mystérieuses (les nuraghi) 3 500 ans avant J.-C., avant que Phéniciens, Carthaginois, Romains, Vandales, Arabes, Pisans et Aragonais se succèdent sur son sol. Cette superposition d'identités a forgé un peuple fier et une langue sarde considérée comme la plus proche du latin.",
+      "culture": "La Sardaigne est une île à part dans l'Italie : la langue, la cuisine, la musique (la cantu a tenore polyphonique) et même les tenues traditionnelles des fêtes sont uniques. On y mange porceddu (porcelet rôti à la braise), fromage pecorino affiné dans les collines, bottarga (œufs de mulet séchés) sur les pâtes et pain carasau croustillant à chaque repas.",
+      "activites": [
+        {
+          "nom": "Plages de la Costa Smeralda",
+          "description": "Étendez-vous sur un sable quasi blanc aux eaux turquoise qui rivalisent avec les Caraïbes.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.christophorus.at/wp-content/uploads/2020/03/schoenste-straende-costa-smeralda.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Catamaran dans l'archipel de La Maddalena",
+          "description": "Naviguez entre les îles et îlots de granit rose de l'archipel et baignez-vous dans des criques inaccessibles.",
+          "tarif": "65€",
+          "image_url": "https://www.tourismesardaigne.fr/wp-content/uploads/2022/07/plage-rose-budelli-893x1024.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Flamants roses du parc Molentargius",
+          "description": "Observez des milliers de flamants roses nichant dans les lagons salins aux portes de Cagliari.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.sardegnaturismo.it/sites/default/files/galleria/ssk_145950335_cagliari_stagno_molentargius_renata_apanaviciene_rsz.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Villages de l'intérieur et nuraghi",
+          "description": "Partez explorer les mystérieuses tours de pierre nuragiques et les villages sards hors du temps.",
+          "tarif": "8€",
+          "image_url": "https://maltetourisme.fr/wp-content/uploads/2025/07/Su-Nuraxi.webp",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Casablanca",
+      "pays": "Maroc",
+      "phrase_accroche": "La mosquée sur l'océan, la corniche animée et le vrai Maroc moderne — Casablanca ne ressemble à aucune autre.",
+      "budget_categorie": "éco",
+      "type": "ville",
+      "meteo": "soleil",
+      "description": "Plus grande ville du Maroc, Casablanca combine modernité et traditions.",
+      "histoire": "Petite bourgade de pêcheurs en 1900, Casablanca fut choisie par le protectorat français pour devenir le port économique du Maroc, transformée en quelques décennies en métropole de 4 millions d'habitants. Le film éponyme d'Hollywood (1942) lui a donné une aura internationale, et la mosquée Hassan II construite sur la mer en 1993 est devenue le symbole d'une ville réconciliée avec son identité islamique.",
+      "culture": "Casablanca est la capitale économique du Maroc et son pouls le plus contemporain : les jeunes Casablancais vivent entre la corniche animée, les restaurants branchés du quartier Gauthier et les cafés maures où l'on refait le monde autour d'un thé. La cuisine mêle tradition marocaine et influences françaises — tajines côtoient les croissants au beurre dans un métissage savoureux.",
+      "activites": [
+        {
+          "nom": "Mosquée Hassan II",
+          "description": "Visitez la troisième plus grande mosquée du monde, construite sur la mer avec son minaret de 200 mètres.",
+          "tarif": "14€",
+          "image_url": "https://www.casablancacity.ma/couvertures/article/Wf8vz0O0gh7zlEYcXDx6cBX3Tbl1buNqkBgX2JSw.png",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Corniche d'Aïn Diab",
+          "description": "Promenez-vous sur la corniche balnéaire animée face à l'Atlantique entre cafés et restaurants de poisson.",
+          "tarif": "Gratuit",
+          "image_url": "https://static.medias24.com/content/uploads/2016/12/vuegeneralecornicheaindiab.jpg?x86107",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Visite culinaire au Quartier Habous",
+          "description": "Déambulez dans ce quartier néo-mauresque et goûtez cornes de gazelle, msemen et pastilla au comptoir.",
+          "tarif": "20€",
+          "image_url": "https://aujourdhui.ma/wp-content/uploads/2016/02/274944249.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Promenade à cheval sur la plage d'Aïn Diab",
+          "description": "Galopez sur la plage atlantique au coucher du soleil avec les vagues pour seul horizon.",
+          "tarif": "30€",
+          "image_url": "https://vimigo.com/wp-content/uploads/2017/04/pexels-photo-1-min.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Luang Prabang",
+      "pays": "Laos",
+      "phrase_accroche": "Des moines en robe safran à l'aube, le Mékong au crépuscule — Luang Prabang ralentit le temps.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "soleil",
+      "description": "Ville sacrée au bord du Mékong, classée UNESCO, aux temples dorés et à l'âme sereine.",
+      "histoire": "Ancienne capitale du royaume de Lane Xang (le 'Royaume du Million d'Éléphants'), Luang Prabang a été fondée au XIVe siècle et resta capitale royale du Laos jusqu'en 1975. Colonisée par la France à la fin du XIXe siècle, elle a gardé un charme unique fait de temples khmers, de villas coloniales françaises et de rythme méditatif, ce qui lui valut d'être classée au patrimoine mondial de l'UNESCO en 1995.",
+      "culture": "Luang Prabang vit au rythme des bouddhistes : à l'aube, des dizaines de moines en robe safran défilent silencieusement dans les rues pour collecter les offrandes de riz des habitants — un rituel millénaire (tak bat) qui se perpétue chaque matin. La cuisine laotienne joue avec les herbes fraîches, la sauce de poisson et la vapeur : lap de viande citronnée, khao piak sen (soupe de nouilles) et bière Beerlao fraîche.",
+      "activites": [
+        {
+          "nom": "Coucher de soleil depuis le mont Phousi",
+          "description": "Gravissez les 350 marches jusqu'au stupa doré et contemplez le Mékong s'enflammer au couchant.",
+          "tarif": "3€",
+          "image_url": "https://laostravel.com/images/2020/10/Intro-phousi-mt-luangprabang.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Cérémonie du tak bat à l'aube",
+          "description": "Observez avec respect les moines qui collectent leurs offrandes au lever du soleil dans un silence sacré.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.asiatica-travel.fr/ckfinder/userfiles/images/tak-bat-marche-moines.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Navigation sur le Mékong",
+          "description": "Montez dans un bateau à longue queue et laissez le grand fleuve vous porter vers les grottes de Pak Ou.",
+          "tarif": "20€",
+          "image_url": "https://www.asiakingtravel.com/cuploads/files/mekong-river-laos-4.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Grottes de Pak Ou",
+          "description": "Visitez ces grottes sacrées tapissées de milliers de statuettes de Bouddha en bois doré.",
+          "tarif": "5€",
+          "image_url": "https://a.cdn-hotels.com/gdcs/production61/d555/355dbdb5-13f3-445d-bdb4-00b1ae9027f5.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marché nocturne artisanal",
+          "description": "Flânez parmi les étals de textiles, bijoux et nourriture de rue dans le plus authentique marché du Laos.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.voyagevietnam.co/wp-content/uploads/2017/10/Marche-Nocture-Luang-Prabang.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Marseille",
+      "pays": "France",
+      "phrase_accroche": "La bouillabaisse, les calanques et une âme méditerranéenne qui ne ressemble à aucune autre ville française.",
+      "budget_categorie": "moyen",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Ville portuaire dynamique, Marseille séduit par ses calanques et son ambiance méditerranéenne.",
+      "histoire": "Fondée vers 600 av. J.-C. par des marins grecs de Phocée, Marseille est la plus ancienne ville de France. Son Vieux-Port millénaire a accueilli Phéniciens, Romains, Arabes et croisés avant que la ville devienne, au XIXe siècle, le grand port colonial français ouvert sur l'Afrique et le Levant. Cette accumulation de vagues migratoires a forgé une identité marseillaise à nulle autre pareille.",
+      "culture": "Marseille est une ville qui s'assume sans complexes : la bouillabaisse — soupe de poissons de roche servie avec rouille et croûtons — est une institution, le pastis une religion et le football de l'OM une appartenance tribale. Les quartiers du Panier, de Noailles et de la Joliette vibrent de la diversité des communautés arméniennes, comoréennes, algériennes et provençales.",
+      "activites": [
+        {
+          "nom": "Vieux-Port et marché aux poissons",
+          "description": "Achetez votre rascasse directement aux pêcheuses du Vieux-Port à l'aube, comme au temps des Grecs.",
+          "tarif": "Gratuit",
+          "image_url": "https://media.routard.com/image/32/8/marseille-port.1558328.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Calanques en kayak ou randonnée",
+          "description": "Explorez les fjords calcaires entre Marseille et Cassis, réserve nationale d'une beauté minérale absolue.",
+          "tarif": "35€",
+          "image_url": "https://travelfrancebucketlist.com/wp-content/uploads/2019/05/Calanques-Port-Miou.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Notre-Dame de la Garde",
+          "description": "Montez à la Bonne Mère qui veille sur Marseille et jouissez du panorama sur la ville, le port et les îles.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.newsfrance.org/wp-content/uploads/Notre-Dame-de-la-Garde-Marseille-depuis-le-ciel-scaled.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Los Angeles",
+      "pays": "États-Unis",
+      "phrase_accroche": "Hollywood, Venice Beach et des tacos de rue à 3h du matin — LA vend le rêve américain sans complexes.",
+      "budget_categorie": "élevé",
+      "type": "ville",
+      "meteo": "soleil",
+      "description": "Capitale de la Californie, connue pour Hollywood, ses plages et son style de vie.",
+      "histoire": "Fondée en 1781 comme pueblo espagnol, Los Angeles reste une bourgade endormie jusqu'à l'arrivée du chemin de fer en 1876 et de l'industrie cinématographique en 1910, qui la transforme en capitale mondiale du rêve. La ville s'étale sur 100 km de littoral et attire chaque année des millions de migrants cherchant fortune, soleil et second souffle dans cette cité qui réinvente le bonheur à l'américaine.",
+      "culture": "LA est la ville des possibles : on y mange des tacos de rue au coin d'une avenue luxueuse, on surfe avant d'aller pitcher son scénario à Hollywood et on assiste à des concerts d'artistes avant-gardistes dans des galeries de nuit. La culture chicana, coréenne, japonaise et éthiopienne s'expriment dans des quartiers-mondes qui font de LA la ville la plus multiculturelle du monde.",
+      "activites": [
+        {
+          "nom": "Studios d'Hollywood",
+          "description": "Partez dans les coulisses des studios Universal ou Warner et vivez la magie du cinéma de l'intérieur.",
+          "tarif": "110€",
+          "image_url": "https://cdn.generationvoyage.fr/2019/03/visiter-universal-studios-hollywood-e1551776695908.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Venice Beach et la boardwalk",
+          "description": "Flânez sur la promenade des artistes, jongleurs, bodybuilders et guitaristes de la plage de Venice.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1608098123364-ec226278de84?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Randonnée à Mulholland Trail à cheval",
+          "description": "Galopez sur les sentiers des collines d'Hollywood avec vue sur la skyline de Los Angeles et l'océan.",
+          "tarif": "90€",
+          "image_url": "https://cdn.getyourguide.com/img/tour/630ce54c4f5c4.png/98.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Leçon de surf à Venice Beach",
+          "description": "Apprenez à surfer sur les vagues californiennes avec un moniteur et rejoignez la tribu des surfers de LA.",
+          "tarif": "75€",
+          "image_url": "https://venicebeachbar.com/wp-content/uploads/2023/12/surfers-at-beach-venice-a-beachfront-district-on-the-westside-of-los-angeles.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Amman",
+      "pays": "Jordanie",
+      "phrase_accroche": "Entre l'Antiquité et la modernité, Amman est la porte des plus grands trésors du Moyen-Orient.",
+      "budget_categorie": "moyen",
+      "type": "culture",
+      "meteo": "soleil",
+      "description": "Ville ancienne et moderne à la fois, porte d'entrée vers les trésors de la Jordanie.",
+      "histoire": "L'une des plus anciennes villes continuellement habitées du monde, Amman a été Rabbath-Ammon pour les Ammonites, Philadelphie pour les Ptolémées et un carrefour commercial romain florissant. Les tribus bédouines et les réfugiés palestiniens, irakiens et syriens y ont successivement afflué, faisant d'Amman une ville où les identités du Proche-Orient se croisent dans une relative harmonie.",
+      "culture": "Amman est une ville de contrastes harmonieux : les call à la prière des mosquées résonnent sur les terrasses de cafés hipsters à Jabal Weibdeh, les souks du centre vendent olives et épices à côté des galeries d'art contemporain arabe. La cuisine jordanienne est généreuse — mansaf (agneau au yaourt de brebis sur riz au safran), falafel, hummus et fattoush — servie dans des portions qui dépassent toujours vos espérances.",
+      "activites": [
+        {
+          "nom": "Citadelle et temple d'Hercule",
+          "description": "Montez à la citadelle perchée sur la plus haute colline d'Amman et contemplez les ruines romaines et omeyyades.",
+          "tarif": "3€",
+          "image_url": "https://www.voyageway.com/wp-content/uploads/2015/12/ruines-temple-d-hercule-amman-915x610.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Théâtre romain",
+          "description": "Descendez dans l'impressionnant amphithéâtre romain de 6 000 places taillé dans la colline de la ville.",
+          "tarif": "3€",
+          "image_url": "https://tse2.mm.bing.net/th/id/OIP.mvjTxIjDal8TPXvmqcIbfgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Cuisine locale et marché de Balad",
+          "description": "Dégustez mansaf et knafeh dans les restaurants populaires du centre historique animé.",
+          "tarif": "10€",
+          "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/72/6c/59/caption.jpg?w=800&h=800&s=1",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Excursion à la mer Morte",
+          "description": "Flottez sans effort dans les eaux hypersalines de la mer la plus basse du monde et enduisez-vous de boue.",
+          "tarif": "35€",
+          "image_url": "https://cdn.getyourguide.com/img/tour/5da1a34337719.jpeg/146.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Tirana",
+      "pays": "Albanie",
+      "phrase_accroche": "L'Europe la moins chère, la plus colorée et la plus méconnue — Tirana n'attend que vous.",
+      "budget_categorie": "éco",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Capitale colorée de l'Albanie, mélange d'architecture moderne et d'héritage communiste.",
+      "histoire": "Fondée en 1614 comme mosquée et bazar ottoman, Tirana ne devient capitale albanaise qu'en 1920. Durant 45 ans de régime stalinien sous Enver Hoxha (1944-1985), le pays le plus fermé d'Europe hérisse Tirana de 750 000 bunkers et impose une grisaille architecturale uniforme. Depuis 1991, la ville s'est réinventée avec une énergie explosive — façades peintes en couleurs vives, cafés branchés et scène culturelle bouillonnante.",
+      "culture": "Tirana est la capitale d'un pays où l'hospitalité est inscrite dans le Kanun (code d'honneur ancestral) : un étranger est toujours invité à partager le repas. La cuisine albanaise est une cousine balkanique généreuse — tavë kosi (agneau au yaourt au four), byrek (feuilleté épinards-fromage), raki de raisin distillée à la maison — servie dans des qebaptore (grills) animés.",
+      "activites": [
+        {
+          "nom": "Place Skanderbeg",
+          "description": "Admirez la grande place rénovée au cœur de Tirana autour de la statue du héros national albanais.",
+          "tarif": "Gratuit",
+          "image_url": "https://image.arrivalguides.com/x/10/f58821c1ee68e68c04eb7ff3f390c295.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Bunker Art et musées historiques",
+          "description": "Visitez BunkArt, un bunker nucléaire reconverti en musée de l'histoire communiste albanaise.",
+          "tarif": "5€",
+          "image_url": "https://eia476h758b.exactdn.com/wp-content/uploads/2023/07/Bunkart-1.jpeg?strip=all&lossy=1&ssl=1",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Randonnée au lac Bovilla",
+          "description": "Partez pour une journée de randonnée dans les montagnes au-dessus de Tirana jusqu'au lac turquoise.",
+          "tarif": "25€",
+          "image_url": "https://cdn.getyourguide.com/img/tour/6416f3db30579.jpeg/148.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Château de Petrela",
+          "description": "Visitez ce château médiéval restauré à 20 km de Tirana pour une vue panoramique sur la vallée de l'Erzen.",
+          "tarif": "3€",
+          "image_url": "https://cdn.getyourguide.com/img/tour/9ba93f9728b365dc.jpeg/145.jpg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Hurghada",
+      "pays": "Égypte",
+      "phrase_accroche": "Les coraux les plus riches de la mer Rouge, du soleil 365 jours par an — Hurghada, c'est l'évasion assurée.",
+      "budget_categorie": "moyen",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Station balnéaire populaire, idéale pour la mer Rouge et les activités nautiques.",
+      "histoire": "Petit village de pêcheurs au début du XXe siècle, Hurghada n'a commencé à se développer qu'avec la découverte de pétrole dans les années 1910 et l'explosion du tourisme balnéaire dans les années 1980. Aujourd'hui première station balnéaire d'Égypte avec 300 hôtels, elle attire plusieurs millions de touristes européens attirés par ses coraux parmi les plus riches de la planète.",
+      "culture": "Hurghada est une ville du tourisme international sans la profondeur culturelle égyptienne de Louxor ou Le Caire, mais ses habitants nubiennes et sa corniche animée témoignent d'une vie locale authentique derrière les resorts. La cuisine de la mer Rouge — riz aux crevettes, poisson grillé, koushary (plat national égyptien) — s'apprécie dans les petits restaurants hors des complexes hôteliers.",
+      "activites": [
+        {
+          "nom": "Plongée dans les récifs de la mer Rouge",
+          "description": "Explorez les récifs coralliens parmi les plus riches du monde, peuplés de requins-baleines et de raies.",
+          "tarif": "45€",
+          "image_url": "https://blogplongee.fr/wp-content/uploads/2016/06/meilleures-croisieres-plongee-en-mer-rouge-640x463.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Excursion en bateau vers Giftun",
+          "description": "Naviguez vers l'île protégée de Giftun pour snorkeler dans des eaux d'une clarté exceptionnelle.",
+          "tarif": "35€",
+          "image_url": "https://cdn.getyourguide.com/img/location/5a7da3a69a57c.jpeg/99.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Safari quad, chameau et barbecue",
+          "description": "Foncez en quad dans le désert, montez à dos de chameau et dînez sous les étoiles dans un camp bédouin.",
+          "tarif": "50€",
+          "image_url": "https://cdn.getyourguide.com/img/tour/60b6e42415174.jpeg/146.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Le Caire",
+      "pays": "Égypte",
+      "phrase_accroche": "Les pyramides, le Nil éternel et 5 000 ans d'histoire à portée de regard — le Caire vous dépasse.",
+      "budget_categorie": "éco",
+      "type": "culture",
+      "meteo": "soleil",
+      "description": "Capitale historique de l'Égypte, célèbre pour ses pyramides, ses musées et son patrimoine.",
+      "histoire": "Le Caire a été fondée en 969 par les Fatimides sur les rives du Nil, à quelques kilomètres des pyramides de Gizeh érigées 2 500 ans auparavant. Mégapole de 20 millions d'habitants, elle est à la fois la plus grande ville d'Afrique et le foyer de l'une des plus anciennes civilisations du monde, dont les traces sont visibles à chaque carrefour dans un chaos organisé et fascinant.",
+      "culture": "Le Caire est une ville qui ne dort jamais et qui mange à toute heure : les kushari (pâtes, lentilles et sauce tomate) se vendent du kiosque du coin, les cafés à chicha bruissent de conversations politiques jusqu'à l'aube et les vendeurs de jus de canne pressée animent chaque trottoir. Le ramadan y est la plus grande fête de l'année, transformant la ville en spectacle nocturne permanent.",
+      "activites": [
+        {
+          "nom": "Pyramides de Gizeh",
+          "description": "Contemplez les seules merveilles du monde antique encore debout et montez à dos de chameau face au Sphinx.",
+          "tarif": "18€",
+          "image_url": "https://th.bing.com/th/id/R.c8432c31f3e8559dddf607f360e159a2?rik=QMkC0jexcaeGaA&riu=http%3a%2f%2fkordouane.k.o.pic.centerblog.net%2fo%2f456c4d8f.jpg&ehk=nFACdJRGB1UTi29RQJHV9mNQMXH9Ptsw2bafcAYz4GM%3d&risl=&pid=ImgRaw&r=0",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Musée égyptien et la momie de Toutânkhamon",
+          "description": "Découvrez le masque funéraire en or de Toutânkhamon et 120 000 artefacts dans le musée le plus riche du monde.",
+          "tarif": "15€",
+          "image_url": "https://images.unsplash.com/photo-1707068226685-27a15039f19b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Souk Khan el-Khalili",
+          "description": "Marchandezépices, papyrus et lanternes en cuivre dans ce bazar mameluk du XIVe siècle.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.liveenhanced.com/wp-content/uploads/2020/04/Khan-el-Khalili-Cairo-2.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Felouque sur le Nil au coucher du soleil",
+          "description": "Voguez en felouque à voile sur le Nil éternel et regardez Le Caire s'allumer dans le soir.",
+          "tarif": "15€",
+          "image_url": "https://photos.altai-travel.com/1600x0/coucher-de-soleil-sur-le-nil-11439.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Vol en ULM au-dessus des pyramides",
+          "description": "Survolez Gizeh en ultra-léger motorisé et voyez les pyramides comme les pharaons ne les ont jamais vues.",
+          "tarif": "90€",
+          "image_url": "https://images.bfmtv.com/O2dNT9Pl1o-RjQ5fvXzEfyWnJBU=/0x0:1280x720/1280x0/images/A-250-km-h-ces-deux-Francais-volent-en-wingsuit-au-dessus-des-pyramides-de-Gizeh-en-Egypte-1190258.jpg",
+          "intensite": "Elevée"
+        }
+      ]
+    },
+    {
+      "nom": "Rio de Janeiro",
+      "pays": "Brésil",
+      "phrase_accroche": "Entre le Christ Rédempteur et Copacabana, Rio vous embrasse avec toute la chaleur du Brésil.",
+      "budget_categorie": "moyen",
+      "type": "plage",
+      "meteo": "soleil",
+      "description": "Ville iconique entre mer et montagnes, célèbre pour ses plages, son carnaval et son ambiance festive.",
+      "histoire": "Fondée par les Portugais en 1565, Rio a été pendant plus de deux siècles la capitale du Brésil colonial, puis du premier empire indépendant. La statue du Christ Rédempteur, inaugurée en 1931, est devenue le symbole d'une ville dont la géographie exceptionnelle — entre Atlantique, baie de Guanabara et forêt tropicale — n'a d'égal que l'énergie débordante de ses habitants, les Cariocas.",
+      "culture": "Rio vibre au rythme de la samba, du funk carioca et du choro dans les bars du Lapa. Les Cariocas ont inventé la bossa nova, le Carnaval le plus spectaculaire du monde et une philosophie de vie — le 'jogo bonito' — qui transforme chaque instant en art. La cuisine carioca fait la fête : feijoada completa le samedi midi, caïpirinhas à toute heure et pastéis de carne dans les marchés.",
+      "activites": [
+        {
+          "nom": "Christ Rédempteur et Corcovado",
+          "description": "Montez au sommet du Corcovado en train à crémaillère et levez les yeux vers les bras ouverts du Christ.",
+          "tarif": "25€",
+          "image_url": "https://travel.usnews.com/images/Christ_the_Redeemer_Rio_Getty_Christian_Adams.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Plage de Copacabana",
+          "description": "Installez-vous sur le croissant de sable le plus célèbre du monde et vivez la vie à la carioca.",
+          "tarif": "Gratuit",
+          "image_url": "https://images.unsplash.com/photo-1637876308735-74230b34461a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Pain de Sucre en téléphérique",
+          "description": "Montez en gondole au sommet du Pain de Sucre pour une vue à 360° sur la baie de Guanabara.",
+          "tarif": "28€",
+          "image_url": "https://media.ceetiz.com/activity/GRARIO002/ascension-pain-de-surce-city-tour-rio-ceetiz-5.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Randonnée en forêt tropicale",
+          "description": "Partez en jungle trek dans la Tijuca, la plus grande forêt urbaine du monde, à 30 minutes du centre.",
+          "tarif": "40€",
+          "image_url": "https://www.voyageavecnous.fr/wp-content/uploads/2024/07/foret-tropicale-jardin-botanique-rio-de-janeiro.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Match de football au Maracanã",
+          "description": "Vibrez dans le stade mythique du football mondial lors d'un Fla-Flu ou d'un grand match de championnat.",
+          "tarif": "20€",
+          "image_url": "https://www.localriotours.com.br/wp-content/uploads/2021/04/football-stadium.jpeg",
+          "intensite": "Elevée"
+        }
+      ],
+      "a_la_une": true
+    },
+    {
+      "nom": "Dubai",
+      "pays": "Émirats arabes unis",
+      "phrase_accroche": "Le plus haut, le plus grand, le plus doré — Dubai réinvente l'impossible depuis un désert.",
+      "budget_categorie": "élevé",
+      "type": "ville",
+      "meteo": "soleil",
+      "description": "Ville futuriste du désert, connue pour ses gratte-ciels, ses malls géants et ses expériences luxueuses.",
+      "histoire": "Simple village de pêcheurs de perles en 1900, Dubai s'est transformée en moins d'un siècle en l'une des métropoles les plus spectaculaires du monde grâce au pétrole et à la vision de la famille Al Maktoum. Depuis les années 1970, elle a construit île artificielle après île artificielle, gratte-ciel après gratte-ciel, pour s'imposer comme carrefour mondial du commerce, du luxe et du tourisme.",
+      "culture": "Dubai est une ville de superlatifs et de contrastes : le plus haut bâtiment du monde côtoie des souks d'or et d'épices, des voitures de sport roulent sur des autoroutes bordées de désert et 200 nationalités coexistent dans une mosaïque humaine unique. La cuisine dubaiote reflète ce métissage extrême — biryani indien, mezze libanais, sushis japonais — dans des restaurants qui défient souvent les lois de la gravité.",
+      "activites": [
+        {
+          "nom": "Burj Khalifa : sommet du monde",
+          "description": "Montez au 148e étage de la plus haute tour du monde et regardez les nuages en dessous de vous.",
+          "tarif": "35€",
+          "image_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Nuit dans le désert",
+          "description": "Roulez en 4x4 sur les dunes de l'Hatta, dînez sous les étoiles et dormez dans un camp de luxe bédouin.",
+          "tarif": "150€",
+          "image_url": "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Dubai Mall et fontaines du Burj",
+          "description": "Flânez dans le plus grand centre commercial du monde et regardez le spectacle de fontaines géantes.",
+          "tarif": "Gratuit",
+          "image_url": "https://media.admiddleeast.com/photos/6666a0658f4d59b9cc452255/16:9/w_3548,h_1996,c_limit/Dubai%20mall%20expansion%201.jpeg",
+          "intensite": "Calme"
+        }
+      ]
+    },
+    {
+      "nom": "Oran",
+      "pays": "Algérie",
+      "phrase_accroche": "Le berceau du raï, la Méditerranée à perte de vue et une âme oranaise qu'on n'oublie pas.",
+      "budget_categorie": "éco",
+      "type": "éco",
+      "meteo": "soleil",
+      "description": "Ville dynamique de l'ouest algérien, connue pour sa musique, son ambiance festive et son patrimoine culturel.",
+      "histoire": "Fondée par des marchands andalous et berbères en 902, Oran a été dominée successivement par les Espagnols (pendant 300 ans), les Ottomans puis les Français avant l'indépendance algérienne en 1962. Cette multiplicité d'influences a forgé une culture oranaise unique — le raï, musique de la liberté, y est né dans les années 1930 — et une identité locale aussi fière que l'est la ville elle-même.",
+      "culture": "Oran est la capitale du raï : Cheb Khaled, Cheb Mami et Rachid Taha y ont fait leurs premières armes dans les cabarets de la rue de la Bastille. La cuisine oranaise est généreuse et métissée — chorba aux vermicelles, rechta aux amandes, tajine d'agneau — et les Oranais sont réputés pour leur humour caustique et leur art de vivre méditerranéen.",
+      "activites": [
+        {
+          "nom": "Fort de Santa Cruz",
+          "description": "Montez à ce fort espagnol du XVIe siècle qui domine Oran et contemplez la baie depuis ses remparts.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.boonyaninfo.com/wp-content/uploads/2023/02/Boonyan-Images-Articles-1-780x470.png",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Corniche oranaise",
+          "description": "Promenez-vous sur la corniche animée face à la Méditerranée entre cafés et familles en bord de mer.",
+          "tarif": "Gratuit",
+          "image_url": "https://th.bing.com/th/id/R.97ed69256b081049cd72e957f3bae536?rik=mv6tNTrgMZOS3A&riu=http%3a%2f%2fimg.over-blog-kiwi.com%2f1%2f36%2f60%2f27%2f20160809%2fob_f4bcc9_plageoran.jpg&ehk=P%2fm8Jsunow6t3LyBxtKPFRmYCf5Psw%2bPZ19pmfJC4bU%3d&risl=&pid=ImgRaw&r=0",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Centre-ville et place du 1er Novembre",
+          "description": "Explorez l'architecture coloniale française, les boulevards animés et les souvenirs musicaux du raï.",
+          "tarif": "Gratuit",
+          "image_url": "https://th.bing.com/th/id/R.352186d03bb7bcc295a43aa298b64a3b?rik=zf47z3X5D%2frwQA&riu=http%3a%2f%2fwww.oran-dz.com%2fpics%2ftourisme%2fque-visiter%2fplace-1er-novembre-oran.jpg&ehk=jNywPqbzQ8VZG5QA5F34ZIdJubMVO%2f4qqJ4a8QbI9YE%3d&risl=&pid=ImgRaw&r=0",
+          "intensite": "Calme"
+        }
+      ],
+      "a_la_une": true,
+      "prenom_coeur": "Ines.A"
+    },
+    {
+      "nom": "Alger",
+      "pays": "Algérie",
+      "phrase_accroche": "La Blanche dégringole vers la mer — Alger est une déclaration d'amour entre l'Afrique et la Méditerranée.",
+      "budget_categorie": "éco",
+      "type": "éco",
+      "meteo": "soleil",
+      "description": "Surnommée la 'Blanche', Alger offre un mélange unique entre architecture coloniale et médina historique.",
+      "histoire": "Fondée au Xe siècle par des Berbères Ketama sur les ruines d'une cité phénicienne et romaine, Alger devint aux XVIe-XVIIe siècles la capitale de la régence ottomane et le repaire de la piraterie barbaresque qui terrorisa la Méditerranée. Capitale de la résistance anticoloniale dans les années 1950 — la Bataille d'Alger immortalisée par Pontecorvo — elle est aussi le berceau de la Natiion algérienne.",
+      "culture": "Alger est une ville de passions : le football de l'USMA et du CR Belouizdad, la musique chaabi et andalouse, les cafés maures où l'on joue aux dominos jusqu'au soir. La cuisine algéroise est l'une des plus raffinées du Maghreb — couscous aux sept légumes, pastilla au pigeon, briouates dorées — et l'hospitalité légendaire des Algérois s'exprime sans réserve.",
+      "activites": [
+        {
+          "nom": "Casbah d'Alger",
+          "description": "Explorez le dédale de la médina ottomane classée UNESCO, entre palais beylicaux et maisons à patio.",
+          "tarif": "Gratuit",
+          "image_url": "https://ulysse.com/news/wp-content/uploads/2024/01/Dar-Aziza-Alger-Algerie--1536x931.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Basilique Notre-Dame d'Afrique",
+          "description": "Visitez cette basilique néo-byzantine perchée sur les hauteurs qui domine la baie d'Alger.",
+          "tarif": "Gratuit",
+          "image_url": "https://tse3.mm.bing.net/th/id/OIP.40fNaTJnWNxeSz1ZsTiPhQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Front de mer et Grande Poste",
+          "description": "Promenez-vous sur le front de mer Art déco et admirez l'architecture coloniale de la Grande Poste.",
+          "tarif": "Gratuit",
+          "image_url": "https://lavoiedalgerie.dz/wp-content/uploads/2024/11/Front-de-mer-Alger600x400-.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Monument des Martyrs",
+          "description": "Contemplez ce monument en forme de palmier de béton qui rend hommage aux martyrs de l'indépendance.",
+          "tarif": "Gratuit",
+          "image_url": "https://sp.schreder.com/sites/default/files/2020-03/accent-architectural-maqam-echahid-algiers-algeria-sculpdot-78a8868.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Cuisine algérienne dans un restaurant local",
+          "description": "Dégustez un couscous traditionnel ou une chakhchoukha dans un restaurant de quartier loin des circuits touristiques.",
+          "tarif": "8€",
+          "image_url": "https://www.algerie360.com/wp-content/uploads/2022/12/meilleur-plat-algerie.jpg",
+          "intensite": "Calme"
+        }
+      ],
+      "a_la_une": true,
+      "prenom_coeur": "Laetitia"
+    },
+    {
+      "nom": "Tunis",
+      "pays": "Tunisie",
+      "phrase_accroche": "Carthage, le blanc et bleu de Sidi Bou Saïd et une médina millénaire — Tunis vous prend par surprise.",
+      "budget_categorie": "éco",
+      "type": "éco",
+      "meteo": "soleil",
+      "description": "Capitale de la Tunisie, Tunis mêle histoire et modernité avec sa médina classée UNESCO.",
+      "histoire": "Héritière de Carthage — capitale de l'empire phénicien qui défia Rome pendant trois siècles — Tunis a été fondée par les Arabes au VIIe siècle comme capitale de l'Ifriqiya. Successivement aghlabide, fatimide, hafside puis ottomane, la ville a absorbé des siècles d'influences croisées pour produire une culture tunisoise d'une sophistication rare, portée par des dynasties de marchands lettrés.",
+      "culture": "Tunis est une ville douce et cultivée : on y boit le café avec des fleurs de jasmin à la boutonnière, on écoute la malouf andalou dans les cafés des hafsia et on débat de politique et de philosophie avec une ardeur toute méditerranéenne. La cuisine tunisienne est relevée et parfumée — brik à l'œuf, lablabi (soupe de pois chiches), couscous au poisson de Bizerte — avec la harissa comme fil rouge.",
+      "activites": [
+        {
+          "nom": "Médina de Tunis",
+          "description": "Explorez la médina classée UNESCO entre souks aux spécialités millénaires, zaouïas et demeures nobiliaires.",
+          "tarif": "Gratuit",
+          "image_url": "https://th.bing.com/th/id/R.6c587b515ad432660554c0b5ab7b52b8?rik=Ma6kLsVSsY%2botA&riu=http%3a%2f%2ftheblog.lamegara.com%2fwp-content%2fuploads%2f2017%2f05%2fmedina3.jpg&ehk=i%2bDRf3sTZu5yfdwD32dnE7jWBvkqpfTdNN0oBlmKsg4%3d&risl=&pid=ImgRaw&r=0",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Ruines de Carthage",
+          "description": "Marchez sur les traces de Hannibal dans les ruines de la cité punique et romaine au bord de la mer.",
+          "tarif": "8€",
+          "image_url": "https://www.artnews.com/wp-content/uploads/2025/07/GettyImages-2160011013.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Sidi Bou Saïd",
+          "description": "Perdez-vous dans les ruelles blanc et bleu de ce village de peintre au-dessus du golfe de Tunis.",
+          "tarif": "Gratuit",
+          "image_url": "https://www.tripsavvy.com/thmb/sRxRJ--R5cG8vZWLb99WE06sav4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-575664325-59704d2922fa3a001031bc5d.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Musée du Bardo",
+          "description": "Admirez la plus grande collection de mosaïques romaines au monde dans un palais beylical du XIXe siècle.",
+          "tarif": "10€",
+          "image_url": "https://carthagemagazine.com/wp-content/uploads/2020/12/Bardo-Museum-scaled.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Cuisine tunisienne dans un restaurant local",
+          "description": "Goûtez une vrai brick croustillante, une slata mechouia fumée et un couscous au poisson dans une gargote du centre.",
+          "tarif": "7€",
+          "image_url": "https://www.diari.tn/sites/default/files/image/recette/couscous-poisson_0.jpg",
+          "intensite": "Calme"
+        }
+      ],
+      "a_la_une": true,
+      "prenom_coeur": "Inès.H"
+    },
+    {
+      "nom": "Saint-Malo",
+      "pays": "France",
+      "phrase_accroche": "Des remparts de granit face à l'Atlantique, des huîtres fraîches et le souffle des corsaires — Saint-Malo est une aventure.",
+      "budget_categorie": "moyen",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Cité corsaire des mers, Saint-Malo dresse ses remparts de granit face à l'Atlantique dans une lumière que les peintres n'ont jamais fini de capturer.",
+      "histoire": "Fondée au VIe siècle par des moines gallois venus évangéliser l'Armorique, Saint-Malo doit son caractère à la mer et à ses habitants, les Malouins, qui refusèrent toujours d'appartenir entièrement ni à la France ni à la Bretagne — leur devise reste 'ni Français ni Breton, Malouin suis'. Bastion des corsaires sous Louis XIV, ville de Duguay-Trouin et de Surcouf, berceau de Jacques Cartier qui en repartit découvrir le Canada en 1534, la cité intra-muros fut rasée à 80 % lors de la Libération en 1944 puis reconstruite à l'identique pierre par pierre, dans un exploit patrimonial rarissime.",
+      "culture": "Saint-Malo sent le sel, le varech et le beurre salé. Les crêperies y servent des galettes de sarrasin arrosées de cidre bouché, les bars des remparts s'animent au coucher du soleil et les marchés du week-end regorgent de fruits de mer — huîtres de Cancale, homards bleus, coquilles Saint-Jacques — vendus par des pêcheurs en ciré jaune. Le Festival Étonnants Voyageurs attire chaque année les plus grands auteurs de voyage et d'aventure du monde.",
+      "activites": [
+        {
+          "nom": "Tour des remparts",
+          "description": "Faites le tour complet des remparts du XVIIe siècle à pied, avec l'Atlantique qui frappe les fortifications à vos pieds.",
+          "tarif": "Gratuit",
+          "image_url": "https://koreus.cdn.li/media/201403/84-insolite-02.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marée basse et îlot du Grand Bé",
+          "description": "Traversez à pied sec jusqu'à l'îlot où repose Chateaubriand, mais surveillez la marée montante !",
+          "tarif": "Gratuit",
+          "image_url": "https://littleweekends.fr/wp-content/uploads/2022/12/Grand-Be-Petit-Be-Saint-Malo.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Dégustation d'huîtres à Cancale",
+          "description": "Roulez jusqu'aux parcs ostréicoles de Cancale et avalez des huîtres N°2 face à la baie du Mont-Saint-Michel.",
+          "tarif": "12€",
+          "image_url": "https://thumbs.dreamstime.com/b/crates-fresh-oysters-sale-cancale-france-july-stand-french-coast-brittany-141625132.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Kayak de mer autour des forts",
+          "description": "Pagayez autour du fort National et du fort de la Conchée, accessibles uniquement par la mer.",
+          "tarif": "35€",
+          "image_url": "https://osensaintmalo.fr/wp-content/uploads/Corsaires-Malouins_kayak-mer_OSEN_nautisme_Saint-Malo.png-1-scaled.jpg",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Musée du château et histoire corsaire",
+          "description": "Plongez dans l'histoire des corsaires malouins dans le donjon médiéval avec vue sur la rade.",
+          "tarif": "8€",
+          "image_url": "https://storage.canalblog.com/84/82/1039903/128680136_o.jpg",
+          "intensite": "Calme"
+        }
+      ],
+      "a_la_une": true,
+      "prenom_coeur": "s fondatrices"
+    },
+    {
+      "nom": "Quimper",
+      "pays": "France",
+      "phrase_accroche": "Cathédrale gothique, faïence peinte à la main et fest-noz jusqu'au bout de la nuit — la Bretagne dans toute sa splendeur.",
+      "budget_categorie": "éco",
+      "type": "ville",
+      "meteo": "tempéré",
+      "description": "Capitale de la Cornouaille bretonne, Quimper préserve avec fierté la langue, les costumes et l'art de vivre d'une Bretagne profonde et lumineuse.",
+      "histoire": "Quimper est l'une des plus anciennes villes de Bretagne, fondée au Ve siècle par saint Corentin, son premier évêque, à la confluence (quemper en breton) de l'Odet et du Steïr. Capitale du comté de Cornouaille, rivale de Rennes pour le titre de 'vraie capitale bretonne', elle a su garder une âme celtique que les siècles de centralisation parisienne n'ont pas entamée. Sa cathédrale gothique Saint-Corentin, dont la nef déviée de 4° reste un mystère architectural, domine une vieille ville médiévale parmi les mieux conservées de Bretagne.",
+      "culture": "À Quimper, le breton se parle encore dans les marchés, les fest-noz (fêtes de nuit bretonnes) réunissent jeunes et vieux dans des danses en chaîne, et la faïence de Quimper — ses petits Bretons peints à la main depuis le XVIIe siècle — est exportée dans le monde entier. La galette de sarrasin au beurre salé, le kouign-amann fondant et le far breton aux pruneaux sont les piliers d'une gastronomie rurale généreuse et sans chichis.",
+      "activites": [
+        {
+          "nom": "Cathédrale Saint-Corentin et vieille ville",
+          "description": "Admirez la nef gothique mystérieusement déviée de la cathédrale, puis flânez dans les rues à colombages du centre médiéval.",
+          "tarif": "Gratuit",
+          "image_url": "https://plus.unsplash.com/premium_photo-1697730291430-b2eabbd480f6?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Musée de la Faïence",
+          "description": "Découvrez 300 ans de faïence quimpéroise peinte à la main, des premières pièces hollandaises aux créations contemporaines.",
+          "tarif": "5€",
+          "image_url": "https://th.bing.com/th/id/R.4d5a2c5389791cf9542361bedead38bf?rik=Nxkvvrwwgin%2bPw&riu=http%3a%2f%2fwww.musee-faience-quimper.com%2fwp-content%2fuploads%2f2024%2f05%2fAFFICHE-Nuit-des-musees.png&ehk=tLSFfRM1wOaNYJ0BvfX0ezVkBHrnntxAQu1AVG%2f%2fRzk%3d&risl=&pid=ImgRaw&r=0",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Festival de Cornouaille (juillet)",
+          "description": "Plongez dans le plus grand rassemblement de culture bretonne au monde : musiques, danses, costumes et bagads (orchestres de cornemuses).",
+          "tarif": "15€",
+          "image_url": "https://www.letelegramme.fr/images/2022/07/19/le-dernier-vrai-defile-du-festival-de-cornouaille-date-de_6687929_1000x526.jpg?v=1",
+          "intensite": "Elevée"
+        },
+        {
+          "nom": "Balade en bateau sur l'Odet",
+          "description": "Descendez la 'rivière la plus belle de France' en bateau jusqu'à Bénodet et ses plages de l'Atlantique.",
+          "tarif": "22€",
+          "image_url": "https://www.vedettes-odet.com/wp-content/uploads/2024/03/odet-croisiere-promenade-riviere-600x400.jpg",
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Marché du samedi et galette chez l'habitant",
+          "description": "Arpentez le marché des Halles Saint-François et dégustez une galette complète dans une crêperie de quartier loin des circuits touristiques.",
+          "tarif": "10€",
+          "image_url": "https://mamanguide.com/wp-content/uploads/2025/12/Crepe-sarrasin.webp",
+          "intensite": "Calme"
+        }
+      ],
+      "prenom_coeur": ""
+    },
+    {
+      "nom": "Montreal",
+      "image_url": "https://www.fodors.com/wp-content/uploads/2022/05/Hero-UltMontreal-shutterstock_1839500569-1600x1067.jpg",
+      "phrase_accroche": "Des ruelles fleuries en été, des marchés de Noël féeriques en hiver et des tables qui font voyager à chaque bouchée — Montréal, c'est le coup de cœur qu'on n'avait pas planifié.",
+      "histoire": "Fondée en 1642 par Paul Chomedey de Maisonneuve sur le territoire des Mohawks, Montréal — d'abord appelée Ville-Marie — s'est imposée comme carrefour du commerce des fourrures avant de devenir le cœur économique du Canada au XIXe siècle. Ville francophone enclavée dans un continent anglophone, elle a été le théâtre des grandes tensions entre les deux solitudes canadiennes, avant de renaître comme métropole cosmopolite après l'Expo 67 et les Jeux olympiques de 1976 qui l'ont projetée sur la scène mondiale.",
+      "culture": "Montréal est une ville qui vit dehors malgré le froid : les festivals y sont une religion — le Festival de Jazz, les Francofolies, le Festival Juste pour Rire — et les terrasses s'animent dès les premiers rayons d'avril comme pour rattraper l'hiver. La gastronomie montréalaise est une fierté hybride : le bagel du Mile End cuit au feu de bois, le smoked meat du Schwartz's et une scène de restaurants qui rivalise avec les meilleures tables du monde. Le quartier du Plateau, de Rosemont et de Griffintown vibrent d'une créativité artistique qui fait de Montréal la capitale culturelle francophone des Amériques.",
+      "note": "4.8",
+      "prenom_coeur": "Inès.H",
+      "budget_categorie": "moyen",
+      "a_la_une": true,
+      "activites": [
+        {
+          "nom": "Croisière sur le Saint-Laurent — Bateau-Mouche",
+          "pays": null,
+          "image_url": "https://images.radio-canada.ca/q_auto,w_1250/v1/ici-info/16x9/navette-fluviale-traverse-montreal-longueuil.jpg",
+          "description": "Découvrez Montréal depuis le fleuve lors d'une croisière d'une heure au départ du Vieux-Port, avec vue sur le pont Jacques-Cartier, le stade olympique et la skyline de la ville.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "22€",
+          "jour": 1,
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Basilique Notre-Dame et spectacle AURA",
+          "pays": null,
+          "image_url": "https://images.unsplash.com/photo-1599457435394-63f83db8f0d6?q=80&w=734&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "Visitez la plus belle église néo-gothique du Canada le jour, puis revenez le soir pour le spectacle son et lumière AURA de Moment Factory — un chef-d'œuvre visuel projeté sur les voûtes de la basilique.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "16€ (visite seule) / 32€ (forfait visite + AURA)",
+          "jour": 1,
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Pointe-à-Callière — Musée d'archéologie du Vieux-Montréal",
+          "pays": null,
+          "image_url": "https://pacmusee.qc.ca/workspace/uploads/modeles/images/pointe_a_calliere_cite_panoramique-fr-1472158130.jpg",
+          "description": "Plongez sous les rues du Vieux-Montréal dans un circuit archéologique souterrain construit sur le lieu même de fondation de la ville en 1642, avec spectacle multimédia projeté sur les vestiges.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "21€",
+          "jour": 1,
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Biodôme de Montréal",
+          "pays": null,
+          "image_url": "https://images.unsplash.com/photo-1704925081180-0ba43c21333e?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "Traversez cinq écosystèmes des Amériques — forêt tropicale, forêt laurentienne, Saint-Laurent marin, Labrador et îles sub-antarctiques — abrités dans l'ancien vélodrome des JO de 1976.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "17€",
+          "jour": 1,
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Tyrolienne MTL Zipline — Vieux-Port",
+          "pays": null,
+          "image_url": "https://tse4.mm.bing.net/th/id/OIP.1HNqkRR-yYxIwV7RfUvioQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+          "description": "Survolez le Vieux-Port de Montréal en tyrolienne sur le premier circuit urbain du Canada, avec une vue spectaculaire sur le fleuve Saint-Laurent et les toits du Vieux-Montréal.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "25€",
+          "jour": 1,
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Déguster la célèbre Smoked meat chez Schwartz's",
+          "pays": null,
+          "image_url": "https://www.mtlblog.com/media-library/a-smoked-meat-sandwich-from-schwartz-s-deli-right-schwartz-s-deli-on-boulevard-saint-laurent-in-montreal.jpg?id=32246494&width=1245&height=700&quality=85&coordinates=6%2C0%2C0%2C0",
+          "description": "Faites la queue devant l'adresse la plus mythique de Montréal et commandez un sandwich au smoked meat fumé maison — une institution depuis 1928 que même les Montréalais font la queue pour retrouver.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "~13€",
+          "jour": 1,
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Déguster la fameuse poutine",
+          "pays": null,
+          "image_url": "https://img.freepik.com/premium-photo/delicious-traditional-canadian-poutine-with-french-fries-cheese-curds-rich-brown-gravy_996993-11217.jpg",
+          "description": "Frites croustillantes, fromage en grains qui couine sous la dent et sauce brune fumante — la vraie poutine montréalaise se déguste tard le soir dans un casse-croûte de quartier, et elle vaut chaque calorie.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "~7€",
+          "jour": 1,
+          "intensite": "Calme"
+        },
+        {
+          "nom": "Flâner au Marché Jean-Talon",
+          "pays": null,
+          "image_url": "https://media.cntraveler.com/photos/619bd5b9db92f6dee8542d64/16:9/w_2560%2Cc_limit/Marche%25CC%2581%2520Jean-Talon_W2BNEG.jpg",
+          "description": "Le plus grand marché en plein air du Canada se trouve à deux pas de la Petite Italie — fromageries québécoises, sirop d'érable, étals de fruits et légumes colorés, épiceries italiennes et cafés animés font de cette balade matinale un incontournable montréalais.",
+          "histoire": null,
+          "culture": null,
+          "budget_categorie": null,
+          "type": null,
+          "meteo": null,
+          "note": "4.8",
+          "prenom_coeur": null,
+          "a_la_une": false,
+          "activites": [],
+          "tarif": "Gratuit",
+          "jour": 1,
+          "intensite": "Calme"
+        }
+      ],
+      "description": "Métropole bilingue posée sur le Saint-Laurent, Montréal est une ville qui vit à cent à l'heure entre festivals, gastronomie créative et quartiers qui ont chacun leur âme.",
+      "pays": "Canada",
+      "type": "ville",
+      "meteo": "froid"
+    },
+    {
+      "nom": "Tallinn",
+      "image_url": "https://images.unsplash.com/photo-1601297830297-738d875c18c8?q=80&w=651&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "phrase_accroche": "Une vieille ville médiévale si bien conservée qu'on croit rêver — Tallinn est le conte de fées que l'Europe vous cachait.",
+      "histoire": "Fondée au XIIIe siècle par les croisés danois et teutoniques sur les terres des peuples finno-ougriens, Tallinn — alors appelée Reval — devient rapidement une puissance commerciale de la Ligue hanséatique, ce réseau de villes marchandes qui dominait le commerce baltique au Moyen Âge. Successivement danoise, suédoise puis russe, l'Estonie proclame son indépendance en 1918, la perd sous l'occupation soviétique en 1940 et la retrouve en 1991 lors de la révolution chantante, l'une des plus pacifiques de l'histoire. Aujourd'hui, Tallinn est l'une des capitales numériques les plus avancées du monde — le pays qui a inventé Skype.",
+      "culture": "Tallinn vit dans la tension créative entre son âme médiévale et son identité résolument tournée vers le futur : la vieille ville aux rues pavées côtoie des quartiers branchés comme Telliskivi où les start-ups et les cafés de spécialité ont investi d'anciennes usines soviétiques. La cuisine estonienne est robuste et nordique — pain noir au carvi, hareng mariné, gibier et fromages fumés — arrosée d'une bière locale ou d'un verre de kali, boisson fermentée ancestrale. En hiver, les marchés de Noël de la place de l'Hôtel de Ville sont parmi les plus magiques d'Europe.",
+      "note": "4.8",
+      "prenom_coeur": "",
+      "budget_categorie": "éco",
+      "a_la_une": true,
+      "activites": [
+        {
+          "nom": "Vieille ville médiévale — balade libre",
+          "description": "Perdez-vous dans les ruelles pavées de la vieille ville classée UNESCO, entre la place de l'Hôtel de Ville, les tours de rempart et les maisons de marchands hanseatiques du XVe siècle — l'une des vieilles villes médiévales les mieux conservées d'Europe.",
+          "tarif": "Gratuit",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://res.cloudinary.com/yit/image/upload/q_auto:eco,f_auto,fl_lossy,w_1920,c_limit/v1488395896/105552.jpg"
+        },
+        {
+          "nom": "Musée Kiek in de Kök et tunnels du bastion",
+          "description": "Montez dans cette tour d'artillerie du XVe siècle dont le nom signifie 'coup d'œil dans les cuisines' en allemand, puis descendez dans les souterrains des bastions du XVIIe siècle pour un parcours fascinant sous les remparts de la ville.",
+          "tarif": "14€",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/96000/96619-Tallinn.jpg"
+        },
+        {
+          "nom": "Dîner médiéval chez Olde Hansa",
+          "description": "Plongez dans le Moyen Âge le temps d'un dîner aux chandelles dans la maison d'un riche marchand du XVe siècle — serveurs en costumes d'époque, troubadours en live, gibier de wapiti et bière au miel servie dans des chopes de chevalier.",
+          "tarif": "40-60€",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://thirdeyetraveller.com/wp-content/uploads/TALLINNESTONIA-36-of-57-1024x768.jpg"
+        },
+        {
+          "nom": "Quartier créatif de Telliskivi",
+          "description": "Quittez le Moyen Âge pour plonger dans le Tallinn d'aujourd'hui : cette ancienne friche industrielle soviétique reconvertie en quartier branché regorge de cafés de spécialité, de galeries d'art, de marchés vintage et de restaurants fusion estoniens.",
+          "tarif": "Gratuit",
+          "jour": 1,
+          "intensite": "Intense",
+          "image_url": "https://maybeifindmyself.com/wp-content/uploads/2019/01/telliskivi-murales.jpg"
+        },
+        {
+          "nom": "Palais et parc de Kadriorg",
+          "description": "Flânez dans ce somptueux parc baroque dessiné pour le tsar Pierre le Grand au XVIIIe siècle, et visitez le palais qui abrite le musée d'art de Kadriorg — les jardins sont particulièrement féeriques au printemps.",
+          "tarif": "6,50€ (musée) / Gratuit (parc)",
+          "jour": 1,
+          "intensite": "Modérée",
+          "image_url": "https://images.unsplash.com/photo-1570302156974-8cca80c1f901?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+      ],
+      "type": "culture",
+      "meteo": "froid",
+      "description": "Une vieille ville médiévale si bien conservée qu'on croit rêver — Tallinn est le conte de fées que l'Europe vous cachait.",
+      "pays": "Estonie"
+    },
+    {
+      "nom": "Kotor",
+      "image_url": "https://images.unsplash.com/photo-1558971067-6edfd413e506?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "phrase_accroche": "Des remparts médiévaux plongeant dans un fjord adriatique — Kotor est le secret le mieux gardé de la Méditerranée.",
+      "histoire": "Fondée par les Illyriens et développée sous l'Empire romain, Kotor a connu son âge d'or sous la domination de la République de Venise du XIVe au XVIIIe siècle, qui y a laissé palais baroques, cathédrales et remparts imposants. Successivement autrichienne, française puis yougoslave, la ville a traversé les siècles en préservant miraculeusement son tissu médiéval, aujourd'hui classé au patrimoine mondial de l'UNESCO. Le terrible tremblement de terre de 1979, qui l'a en partie dévastée, a donné lieu à une reconstruction minutieuse qui lui a rendu son caractère d'origine.",
+      "culture": "Kotor est une ville à taille humaine où il fait bon se perdre — les chats sont rois dans ses ruelles (il y en a partout, comme des habitants à part entière), les terrasses de fruits de mer se remplissent au coucher du soleil et la cuisine monténégrine mêle influences vénitiennes et balkaniques dans une générosité méditerranéenne. La baie de Kotor, surnommée les 'Bouches de Kotor', est un monde à elle seule : une succession de baies intérieures encadrées de montagnes calcaires où chaque village semble suspendu entre ciel et mer.",
+      "note": "4.6",
+      "prenom_coeur": "s fondatrices",
+      "budget_categorie": "éco",
+      "a_la_une": true,
+      "type": null,
+      "meteo": null,
+      "activites": [
+        {
+          "nom": "Montée aux remparts et forteresse Saint-Jean",
+          "description": "Gravissez les 1 390 marches qui serpentent le long des remparts médiévaux jusqu'à la forteresse Saint-Jean à 280 mètres au-dessus de la mer — la vue panoramique sur la baie de Kotor et les toits orangés de la vieille ville récompense chaque effort.",
+          "tarif": "15€",
+          "jour": 1,
+          "intensite": "Intense",
+          "image_url": "https://photo.comptoir.fr/asset/mot-cle/8231/forteresse-saint-jean-montenegro-327713-1440x670.jpg"
+        },
+        {
+          "nom": "Balade dans la vieille ville vénitienne",
+          "description": "Perdez vous dans le labyrinthe de ruelles pavées de la vieille ville classée UNESCO, entre palais baroques vénitiens, places ombragées et dizaines de chats qui règnent en maîtres absolus sur chaque recoin.",
+          "tarif": "Gratuit",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://www.okvoyage.com/wp-content/uploads/2020/08/vieille-ville-kotor-1024x683.jpg"
+        },
+        {
+          "nom": "Croisière journée dans les Bouches de Kotor",
+          "description": "Partez pour une journée complète à bord d'un bateau collectif pour explorer les 28 km de baie intérieure : forteresse de Mamula, baignade à la Grotte Bleue aux eaux turquoise, arrêt plage à Žanjice et retour au coucher de soleil sur Kotor.",
+          "tarif": "45-75€",
+          "jour": 1,
+          "intensite": "Intense",
+          "image_url": "https://www.terra-balka.com/wp-content/uploads/adobestock-86295885-kotor-bay-1.jpeg"
+        },
+        {
+          "nom": "Excursion en speedboat — Notre-Dame du Rocher et Perast",
+          "description": "Embarquez sur un hors-bord depuis le port de Kotor et naviguez jusqu'à l'île artificielle de Notre-Dame du Rocher — construite pierre par pierre par des marins depuis le XVe siècle — puis explorez les ruelles baroques de Perast, le plus beau village de la baie.",
+          "tarif": "15-25€",
+          "jour": 1,
+          "intensite": "Modérée",
+          "image_url": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/c5/88/7c.jpg"
+        },
+        {
+          "nom": "Dîner de fruits de mer au bord de l'eau",
+          "description": "Installez-vous en terrasse dans l'un des restaurants du bord de quai, les pieds presque dans l'eau, et dégustez les fruits de mer locaux — coquillages, poulpe grillé, poisson du jour — avec la baie illuminée en toile de fond.",
+          "tarif": "20-35€",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://content.api.news/v3/images/bin/b6ea2b8e768848cf3f82e3d0df8eb1e1"
+        },
+        {
+          "nom": "Emprunter le téléphérique Kotor–Lovćen",
+          "description": "En 11 minutes seulement, passez de la baie aux hauteurs du mont Lovćen avec une vue carte postale à couper le souffle sur les toits de la vieille ville et les méandres de la Boka. Le plan idéal quand la chaleur tape fort en été — préférez une journée météo stable, le vent peut suspendre les rotations.",
+          "tarif": "18€ aller-retour",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/59/f9/7c.jpg"
+        },
+        {
+          "nom": "Randonnée au mont Lovćen et mausolée de Njegoš",
+          "description": "Grimpez jusqu'au sommet du mont Lovćen pour une vue à 360° sur tout le Monténégro — mer, montagnes et baie à perte de vue. Sur le chemin, traversez le village de Njeguši, berceau de la famille royale des Petrović-Njegoš, avant d'atteindre le mausolée monumental de Petar II, perché à 1 657 mètres d'altitude. Prévoyez de bonnes chaussures de rando.",
+          "tarif": "Gratuit (accès mausolée ~3€)",
+          "jour": 1,
+          "intensite": "Intense",
+          "image_url": "https://www.en-vols.com/wp-content/uploads/afmm/2025/03/mausolee-mont-lovcen-montenegro.jpg"
+        },
+        {
+          "nom": "Déguster les spécialités monténégrines",
+          "description": "La cuisine monténégrine puise dans les traditions balkaniques et orientales pour un résultat généreux et savoureux. À ne pas manquer : les popeci (escalopes de veau ou de porc façon cordon bleu), le burek (pâtisserie feuilletée salée incontournable des Balkans), l'ajvar (purée de poivrons rouges et d'aubergines fumées) et le kajmak (produit laitier épais et crémeux qui accompagne absolument tout).",
+          "tarif": "5-15€",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://putnikofer.hr/wp-content/uploads/2022/07/popecci-od-tikvica.jpg"
+        },
+        {
+          "nom": "Cathédrale Saint-Tryphon",
+          "description": "L'un des monuments religieux les plus importants du Monténégro, cette cathédrale catholique romaine dont les fondations remontent au XIIe siècle a été minutieusement restaurée après le séisme de 1979 qui avait détruit la moitié de la ville. À l'intérieur, fresques du XIVe siècle, collection d'armes et d'artefacts locaux racontent l'histoire tumultueuse de Kotor.",
+          "tarif": "3€",
+          "jour": 1,
+          "intensite": "Calme",
+          "image_url": "https://d6qyz3em3b312.cloudfront.net/upload/images/media/2013/06/09/shutterstock_115361497.2048x1024.jpg"
+        }
+      ],
+      "description": "Joyau de l'Adriatique classé à l'UNESCO, Kotor se niche au creux des Bouches de Kotor, un labyrinthe de baies intérieures où l'architecture vénitienne rencontre les sommets vertigineux du Monténégro.",
+      "pays": "Monténégro"
+    }
+  ]
+}

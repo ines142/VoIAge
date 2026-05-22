@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-2xl mx-auto py-10 px-4 font-sans text-stone-800">
+
+  <h1 class="text-3xl font-black mb-6">Modifier la ville : {{ ville.nom }}</h1>
+
+  <form method="POST" class="space-y-4">
+
+    <div>
+        <label class="block text-xs font-bold text-stone-500 mb-1">NOM DE LA VILLE</label>
+        <input type="text" name="nom" value="{{ ville.nom }}" class="w-full p-3 border rounded-xl bg-stone-50">
+    </div>
+
+    <div>
+        <label class="block text-xs font-bold text-stone-500 mb-1">PAYS</label>
+        <input type="text" name="pays" value="{{ ville.pays }}" class="w-full p-3 border rounded-xl bg-stone-50">
+    </div>
+
+    <div>
+        <label class="block text-xs font-bold text-stone-500 mb-1">PHRASE D'ACCROCHE</label>
+        <input type="text" name="phrase_accroche" value="{{ ville.phrase_accroche if ville.phrase_accroche and ville.phrase_accroche != 'None' else '' }}" placeholder="Ex: Une escapade romantique..." class="w-full p-3 border rounded-xl bg-stone-50">
+    </div>
+
+    <div>
+        <label class="block text-xs font-bold text-stone-500 mb-1">DESCRIPTION GENERALE</label>
+        <textarea name="description" rows="3" class="w-full p-3 border rounded-xl bg-stone-50">{{ ville.description }}</textarea>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+        <div>
+            <label class="block text-xs font-bold text-stone-500 mb-1">CATÉGORIE BUDGÉTAIRE</label>
+            <input type="text" name="budget" value="{{ ville.budget_categorie }}" class="w-full p-3 border rounded-xl bg-stone-50">
+        </div>
+        <div>
+            <label class="block text-xs font-bold text-stone-500 mb-1">COUP DE COEUR DE</label>
+            <input type="text" name="prenom_coeur" value="{{ ville.prenom_coeur }}" class="w-full p-3 border rounded-xl bg-stone-50">
+        </div>
+    </div>
+
+    <div class="mt-8 pt-6 border-t border-stone-200">
+        <h3 class="text-lg font-bold text-stone-800 mb-2">⚙️ Mode Configuration Avancée (JSON)</h3>
+        <p class="text-xs text-stone-400 mb-4 leading-relaxed">
+            Modifiez directement le texte ci-dessous pour ajuster l'histoire, la culture ou les détails des activités. Attention à bien respecter les guillemets et la syntaxe.
+        </p>
+        <textarea name="bloc_expert" rows="12" class="w-full p-4 rounded-2xl bg-stone-900 text-green-400 font-mono text-xs border-none focus:ring-2 focus:ring-indigo-400">{{ code_json }}</textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-700 transition-all mt-4">
+        💾 Sauvegarder les modifications
+    </button>
+    
+  </form>
+
+</div>
+{% endblock %}

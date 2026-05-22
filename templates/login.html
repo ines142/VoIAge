@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Connexion — Voya'IA{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-center py-16 px-4">
+  <div class="bg-white shadow-md rounded-2xl p-10 w-full max-w-md">
+
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-gray-800">Bon retour !</h2>
+      <p class="text-gray-400 text-sm mt-1">Connectez-vous à votre compte Voya'IA</p>
+    </div>
+
+    {% if error %}
+    <div class="bg-red-50 border border-red-200 text-red-600 text-sm rounded-lg px-4 py-3 mb-6">
+      {{ error }}
+    </div>
+    {% endif %}
+
+    <form method="POST" action="/login" class="flex flex-col gap-5">
+
+      <div class="flex flex-col gap-1">
+        <label for="email" class="text-sm font-medium text-gray-700">Adresse email</label>
+        <input
+          type="email" id="email" name="email" required
+          placeholder="exemple@email.com"
+          class="border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+        />
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <label for="password" class="text-sm font-medium text-gray-700">Mot de passe</label>
+        <input
+          type="password" id="password" name="password" required
+          placeholder="Votre mot de passe"
+          class="border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition mt-2">
+        Se connecter
+      </button>
+
+    </form>
+
+    <p class="text-center text-sm text-gray-400 mt-6">
+      Pas encore de compte ?
+      <a href="/register" class="text-indigo-600 hover:underline font-medium">S'inscrire</a>
+    </p>
+
+  </div>
+</div>
+{% endblock %}

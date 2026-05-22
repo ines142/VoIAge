@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Inscription — Voya'IA{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-center py-16 px-4">
+  <div class="bg-white shadow-md rounded-2xl p-10 w-full max-w-md">
+
+    <!-- En-tête -->
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-gray-800">Créer un compte</h2>
+      <p class="text-gray-400 text-sm mt-1">Rejoignez Voya'IA et planifiez vos aventures</p>
+    </div>
+
+    <!-- Message d'erreur (affiché uniquement si Flask en envoie un) -->
+    {% if error %}
+    <div class="bg-red-50 border border-red-200 text-red-600 text-sm rounded-lg px-4 py-3 mb-6">
+      {{ error }}
+    </div>
+    {% endif %}
+
+    <!-- Formulaire -->
+    <form method="POST" action="/register" class="flex flex-col gap-5">
+      
+      <div class="flex flex-col gap-1">
+        <label for="name" class="text-sm font-medium text-gray-700">Prénom</label>
+        <input
+    type="text" id="name" name="name" required
+    placeholder="Votre prénom"
+    class="border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+        />
+      </div>
+      
+      <div class="flex flex-col gap-1">
+        <label for="email" class="text-sm font-medium text-gray-700">Adresse email</label>
+        <input
+          type="email" id="email" name="email" required
+          placeholder="exemple@email.com"
+          class="border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+        />
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <label for="password" class="text-sm font-medium text-gray-700">Mot de passe</label>
+        <input
+          type="password" id="password" name="password" required
+          placeholder="Minimum 4 caractères"
+          class="border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+        />
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <label for="confirm" class="text-sm font-medium text-gray-700">Confirmer le mot de passe</label>
+        <input
+          type="password" id="confirm" name="confirm" required
+          placeholder="Répétez votre mot de passe"
+          class="border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition mt-2">
+        Créer mon compte
+      </button>
+
+    </form>
+
+    <!-- Lien vers connexion -->
+    <p class="text-center text-sm text-gray-400 mt-6">
+      Déjà un compte ?
+      <a href="/login" class="text-indigo-600 hover:underline font-medium">Se connecter</a>
+    </p>
+
+  </div>
+</div>
+{% endblock %}

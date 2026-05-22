@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-5xl mx-auto py-12 px-4 font-sans">
+    
+    <div class="flex justify-between items-end mb-10">
+        <div>
+            <h1 class="text-4xl font-black text-stone-800">Dashboard Admin</h1>
+            <p class="text-stone-400 mt-2">Gérez vos destinations et les coups de cœur</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <div class="lg:col-span-1">
+            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-stone-100 sticky top-6">
+                <h2 class="text-xl font-bold mb-6 text-stone-800">Ajouter une ville</h2>
+                
+                <form method="POST" class="space-y-4">
+                    <input type="text" name="nom" placeholder="Nom de la ville" required 
+                           class="w-full p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                    
+                    <input type="text" name="image_url" placeholder="Lien de l'image (URL)" required 
+                           class="w-full p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+
+                    <input type="text" name="description" placeholder="Description de la ville (ex: La ville lumière...)" 
+                           class="w-full p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                    <input type="text" name="phrase_accroche" placeholder="Phrase d'accroche (ex: Une escapade romantique)" required 
+       class="w-full p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                    <input type="text" name="pays" placeholder="Pays">
+<select name="meteo" required>
+  <option value="" disabled selected>Choisir une météo</option>
+  <option value="chaud">Soleil</option>
+  <option value="tempéré">Tempéré</option>
+  <option value="froid">Froid</option>
+</select>
+
+<select name="type" required>
+  <option value="" disabled selected>Choisir un type</option>
+  <option value="ville">Ville</option>
+  <option value="nature">Montagne / Nature</option>
+  <option value="plage">Plage</option>
+  <option value="culture">Culture</option>
+</select>
+                    <select name="budget">
+  <option value="éco">Éco</option>
+  <option value="moyen">Moyen</option>
+  <option value="élevé">Élevé</option>
+</select>
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" name="note" placeholder="Note (ex: 4.9)" 
+                               class="p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                        <input type="text" name="prenom_coeur" placeholder="Coup de cœur de..." 
+                               class="p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                    </div>
+
+                    <textarea name="histoire" placeholder="Histoire complète..." rows="3" 
+                              class="w-full p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400"></textarea>
+                    
+                    <textarea name="culture" placeholder="Culture complète..." rows="3" 
+                              class="w-full p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400"></textarea>
+                    
+                    <label class="flex items-center gap-3 p-2 cursor-pointer group">
+                        <input type="checkbox" name="a_la_une" class="w-5 h-5 rounded-md border-stone-300 text-indigo-500">
+                        <span class="text-sm font-medium text-stone-600">Afficher sur l'accueil</span>
+                    </label>
+
+                    <button type="submit" class="w-full bg-indigo-600 text-white py-4 rounded-2xl font-bold shadow-lg hover:bg-indigo-700 transition-all">
+                        Enregistrer la destination
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+            <h2 class="text-xl font-bold mb-6 text-stone-800 italic">Destinations en base ({{ destinations|length }})</h2>
+            
+            {% for dest in destinations %}
+            <div class="bg-white p-5 rounded-[2rem] border border-stone-100 flex items-center gap-5 shadow-sm">
+                <img src="{{ dest.activites[0].image_url if dest.activites and dest.activites[0].image_url else 'https://via.placeholder.com/150' }}" 
+     class="w-16 h-16 rounded-2xl object-cover bg-stone-100">
+                
+                <div class="flex-1">
+                    <h3 class="font-bold text-stone-800">{{ dest.nom }}</h3>
+                    <p class="text-xs text-stone-400 italic">"{{ dest.phrase_accroche }}"</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <a href="{{ url_for('admin_modifier_ville', index=loop.index0) }}">
+  ✏️
+</a>
+                    <a href="{{ url_for('admin_voir_activites', nom_ville=dest.nom) }}"
+       class="p-3 rounded-xl bg-indigo-50 text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors">
+        ✨
+    </a>
+                    <a href="{{ url_for('admin_toggle_une', index=loop.index0) }}" 
+                       class="p-3 rounded-xl {% if dest.a_la_une %}bg-amber-500 text-white{% else %}bg-stone-50 text-stone-400{% endif %}">
+                        ★
+                    </a>
+<form action="{{ url_for('admin_supprimer_ville', index=loop.index0) }}" method="POST">
+    <button type="submit">🗑️ Supprimer</button>
+</form>
+<a href="{{ url_for('admin_gerer_contenu', nom_ville=dest.nom) }}" 
+   class="p-3 rounded-xl bg-emerald-50 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all flex items-center gap-1 text-xs font-bold">
+   ✏️ Gérer / Modifier
+</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-4xl mx-auto py-12 px-4 font-sans text-stone-800">
+    
+    <div class="mb-8">
+        <a href="{{ url_for('admin') }}" class="text-sm text-indigo-600 hover:underline">← Retour au Dashboard</a>
+        <h1 class="text-3xl font-black mt-2">Édition du contenu : {{ nom_ville }}</h1>
+        <p class="text-stone-400 text-sm">Modifiez l'histoire, la culture ou le détail des activités.</p>
+    </div>
+
+    <form method="POST" class="space-y-8">
+        
+        <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-stone-100 space-y-4">
+            <h2 class="text-lg font-bold text-stone-800 border-b pb-2">📖 Histoire & Culture du pays</h2>
+            
+            <div>
+                <label class="block text-xs font-bold text-stone-500 mb-1">HISTOIRE COMPLETE</label>
+                <textarea name="histoire" rows="4" class="w-full p-4 rounded-xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">{{ ville.histoire }}</textarea>
+            </div>
+            
+            <div>
+                <label class="block text-xs font-bold text-stone-500 mb-1">CULTURE COMPLETE</label>
+                <textarea name="culture" rows="4" class="w-full p-4 rounded-xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">{{ ville.culture }}</textarea>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <h2 class="text-lg font-bold text-stone-800 px-2">🎯 Modifier les activités enregistrées</h2>
+            
+            {% if ville.activites %}
+                {% for activite in ville.activites %}
+                <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-stone-100 space-y-4 relative">
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <span class="text-xs font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">ACTIVITÉ N°{{ loop.index }}</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-stone-500 mb-1">NOM DE L'ACTIVITÉ</label>
+                            <input type="text" name="act_nom_{{ loop.index0 }}" value="{{ activite.nom }}" class="w-full p-3 rounded-xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-stone-500 mb-1">TARIF</label>
+                            <input type="text" name="act_tarif_{{ loop.index0 }}" value="{{ activite.tarif }}" class="w-full p-3 rounded-xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-stone-500 mb-1">JOUR N°</label>
+                            <input type="number" name="act_jour_{{ loop.index0 }}" value="{{ activite.jour | default(1) }}" class="w-full p-3 rounded-xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-stone-500 mb-1">INTENSITÉ Actuelle : <span class="italic text-indigo-600 font-bold">{{ activite.intensite }}</span></label>
+                            <select name="act_intensite_{{ loop.index0 }}" class="w-full p-3 rounded-xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">
+                                <option value="Calme" {% if activite.intensite == 'Calme' %}selected{% endif %}>Calme</option>
+                                <option value="Modérée" {% if activite.intensite == 'Modérée' %}selected{% endif %}>Modérée</option>
+                                <option value="Intense" {% if activite.intensite == 'Intense' %}selected{% endif %}>Intense</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-stone-500 mb-1">DESCRIPTION DE L'ACTIVITÉ</label>
+                        <textarea name="act_desc_{{ loop.index0 }}" rows="2" class="w-full p-3 rounded-xl bg-stone-50 border-none focus:ring-2 focus:ring-indigo-400">{{ activite.description }}</textarea>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="text-sm text-stone-400 italic px-2">Aucune activité enregistrée pour le moment.</p>
+            {% endif %}
+        </div>
+
+        <button type="submit" class="w-full bg-indigo-600 text-white py-4 rounded-2xl font-bold shadow-lg hover:bg-indigo-700 transition-all text-center block">
+            💾 Sauvegarder toutes les modifications du contenu
+        </button>
+    </form>
+</div>
+{% endblock %}

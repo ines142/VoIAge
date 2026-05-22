@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    .admin-bg {
+        background-color: #0f0f0f;
+        min-height: 100vh;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .mono { font-family: 'IBM Plex Mono', monospace; }
+
+    .admin-input:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #22c55e;
+        border-color: #22c55e;
+    }
+    .btn-primary { transition: background 0.15s ease, transform 0.1s ease; }
+    .btn-primary:hover { background: #16a34a; transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-delete { transition: color 0.15s, background 0.15s; }
+    .btn-delete:hover { color: #f87171; background: rgba(248,113,113,0.08); }
+
+    .row-fade {
+        opacity: 0;
+        animation: rowIn 0.3s ease forwards;
+    }
+    @keyframes rowIn {
+        from { opacity: 0; transform: translateX(-8px); }
+        to   { opacity: 1; transform: translateX(0); }
+    }
+
+    .scanline::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: repeating-linear-gradient(
+            0deg, transparent, transparent 2px,
+            rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px
+        );
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* Chips d'intensité */
+    .chip { transition: background 0.15s, border-color 0.15s; cursor: pointer; }
+    .chip input[type="radio"] { display: none; }
+    .chip input:checked + span {
+        background: #166534;
+        border-color: #22c55e;
+        color: #bbf7d0;
+    }
+</style>
+
+<div class="admin-bg scanline text-gray-200">
+<div class="relative z-10 max-w-6xl mx-auto px-6 py-12">
+
+    <!-- Header -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 pb-6 border-b border-white/10">
+        <div>
+            <a href="{{ url_for('admin') }}"
+               class="mono text-xs text-gray-500 hover:text-gray-300 transition-colors inline-flex items-center gap-2 mb-3">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Retour au tableau de bord
+            </a>
+            <p class="mono text-xs text-green-400 tracking-widest mb-1">// ACTIVITÉS · {{ dest.nom | upper }}</p>
+            <h1 class="text-3xl font-semibold text-white">
+                {{ dest.nom }}
+                <span class="text-gray-600 text-xl font-light ml-2">{{ dest.pays }}</span>
+            </h1>
+        </div>
+        <div class="mono text-xs text-gray-600 text-right">
+            <span class="text-2xl font-semibold text-white">{{ dest.activites | length }}</span><br>
+            activité(s) enregistrée(s)
+        </div>
+    </div>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="space-y-2 mb-8">
+        {% for category, message in messages %}
+        <div class="mono text-xs px-4 py-3 rounded border
+            {% if category == 'success' %}bg-green-950 border-green-700 text-green-300
+            {% else %}bg-red-950 border-red-700 text-red-300{% endif %}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <!-- Grille : formulaire + liste -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+
+        <!-- ── Formulaire ajout activité (2/5) ── -->
+        <div class="lg:col-span-2 bg-white/5 border border-white/10 rounded-2xl p-8 self-start sticky top-6">
+            <h2 class="mono text-sm text-green-400 font-semibold mb-6 tracking-wider">+ NOUVELLE ACTIVITÉ</h2>
+
+            <form method="POST"
+                  action="{{ url_for('admin_ajouter_activite', nom_ville=dest.nom) }}"
+                  class="space-y-5">
+
+                <!-- Nom -->
+                <div>
+                    <label class="block mono text-xs text-gray-400 mb-2">NOM *</label>
+                    <input type="text" name="nom" required placeholder="Tour Eiffel"
+                           class="admin-input w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 transition-all">
+                </div>
+
+                <!-- Description -->
+                <div>
+                    <label class="block mono text-xs text-gray-400 mb-2">DESCRIPTION</label>
+                    <textarea name="description" rows="3" placeholder="Une courte description de l'activité..."
+                              class="admin-input w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 transition-all resize-none"></textarea>
+                </div>
+
+                <!-- Tarif + Jour -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block mono text-xs text-gray-400 mb-2">TARIF</label>
+                        <input type="text" name="tarif" placeholder="Gratuit / 15€"
+                               class="admin-input w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 transition-all">
+                    </div>
+                    <div>
+                        <label class="block mono text-xs text-gray-400 mb-2">JOUR N°</label>
+                        <input type="number" name="jour" min="1" max="30" value="1"
+                               class="admin-input w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-sm text-white transition-all">
+                    </div>
+                </div>
+
+                <!-- Intensité (chips) -->
+                <div>
+                    <label class="block mono text-xs text-gray-400 mb-3">INTENSITÉ</label>
+                    <div class="flex flex-wrap gap-2">
+                        {% for niveau in ['Calme', 'Modérée', 'Intense'] %}
+                        <label class="chip">
+                            <input type="radio" name="intensite" value="{{ niveau }}"
+                                   {% if loop.first %}checked{% endif %}>
+                            <span class="mono text-xs px-3 py-1.5 rounded-full border border-white/15 bg-black/30 text-gray-400 block">
+                                {{ niveau }}
+                            </span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Image URL -->
+                <div>
+                    <label class="block mono text-xs text-gray-400 mb-2">URL DE L'IMAGE</label>
+                    <input type="url" name="image_url" placeholder="https://..."
+                           class="admin-input w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 transition-all">
+                </div>
+
+                <button type="submit"
+                        class="btn-primary w-full bg-green-600 text-white mono text-xs font-semibold py-3.5 rounded-xl tracking-wider">
+                    ENREGISTRER L'ACTIVITÉ
+                </button>
+            </form>
+        </div>
+
+        <!-- ── Liste des activités existantes (3/5) ── -->
+        <div class="lg:col-span-3">
+            <h2 class="mono text-sm text-gray-400 font-semibold mb-5 tracking-wider">
+                ACTIVITÉS ENREGISTRÉES
+            </h2>
+            {% if dest.activites %}
+            <div class="space-y-3">
+                {% for activite in dest.activites %}
+                
+                <div class="relative block md:flex items-stretch gap-0 bg-white/5 border border-white/10 rounded-2xl overflow-hidden h-auto w-full z-10"
+                     style="animation-delay: {{ loop.index0 * 0.06 }}s">
+
+                    {% if activite.image_url %}
+                    <img src="{{ activite.image_url }}" alt="{{ activite.nom }}"
+                         class="w-full md:w-24 h-24 object-cover flex-shrink-0 opacity-80">
+                    {% else %}
+                    <div class="w-full md:w-24 h-24 bg-white/5 flex-shrink-0 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    {% endif %}
+
+                    <div class="flex-1 px-5 py-4 flex flex-col justify-between min-w-0">
+                        <div>
+                            <div class="flex items-start justify-between gap-3 mb-1">
+                                <h3 class="font-semibold text-white text-sm truncate">{{ activite.nom }}</h3>
+                                <div class="flex items-center gap-2 flex-shrink-0">
+                                    <span class="mono text-xs bg-indigo-900/50 border border-indigo-700/50 text-indigo-300 px-2 py-0.5 rounded-full">
+                                        Jour {{ activite.jour | default(1) }}
+                                    </span>
+                                    {% if activite.intensite %}
+                                    <span class="mono text-xs bg-white/5 border border-white/10 text-gray-500 px-2 py-0.5 rounded-full">
+                                        {{ activite.intensite }}
+                                    </span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% if activite.description %}
+                            <p class="text-xs text-gray-500 leading-relaxed block w-full whitespace-normal break-words mb-4">
+    {{ activite.description }}
+</p>
+                            {% endif %}
+                        </div>
+                        <div class="flex items-center justify-between mt-3">
+                            {% if activite.tarif %}
+                            <span class="mono text-xs text-amber-500 font-semibold">{{ activite.tarif }}</span>
+                            {% else %}
+                            <span></span>
+                            {% endif %}
+                            
+                            <form method="POST"
+                                  action="{{ url_for('admin_supprimer_activite', nom_ville=dest.nom, index=loop.index0) }}"
+                                  onsubmit="return confirm('Supprimer « {{ activite.nom }} » ?')"
+                                  class="inline-block m-0">
+                                <button type="submit"
+                                        class="btn-delete mono text-xs text-gray-700 px-2.5 py-1 rounded border border-transparent hover:text-red-400 transition-all">
+                                    ✕ Supprimer
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            {% else %}
+            <div class="border-2 border-dashed border-white/10 rounded-2xl py-16 text-center">
+                <p class="mono text-sm text-gray-600">Aucune activité pour cette destination.</p>
+                <p class="mono text-xs text-gray-700 mt-2">Utilisez le formulaire pour en ajouter.</p>
+            </div>
+            {% endif %}
+        </div>
+
+
+    </div>
+
+</div>
+</div>
+
+{% endblock %}

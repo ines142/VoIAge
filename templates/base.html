@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}Voya'IA{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+  <nav class="bg-white shadow-sm border-b border-gray-200">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold text-indigo-600 tracking-tight">
+        Voya'IA ✈️
+      </a>
+
+      <div class="flex items-center gap-6">
+        <a href="/" class="text-gray-600 hover:text-indigo-600 font-medium transition">Accueil</a>
+        <a href="/planifier" class="text-gray-600 hover:text-indigo-600 font-medium transition">Planifier</a>
+        
+        {% if current_user.is_authenticated %}
+        <a href="/itineraire" class="relative group">
+          <span class="text-gray-600 group-hover:text-indigo-600 transition flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                <line x1="9" y1="3" x2="9" y2="18"></line>
+                <line x1="15" y1="6" x2="15" y2="21"></line>
+            </svg>
+            Mon Itinéraire
+          </span>
+          {% if session.planning %}
+              <span class="absolute -top-2 -right-3 bg-red-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">
+                  !
+              </span>
+          {% endif %}
+        </a>
+        {% endif %}
+        {% if current_user.is_authenticated %}
+          <span class="text-gray-600 font-medium">
+            Bienvenue, <span class="text-indigo-600 font-semibold">{{ current_user.name }}</span> 👋
+          </span>
+          <a href="/logout" class="border border-red-400 text-red-500 hover:bg-red-50 font-semibold px-4 py-2 rounded-lg transition">
+            Déconnexion
+          </a>
+        {% else %}
+          <a href="/register" class="text-gray-600 hover:text-indigo-600 font-medium transition">Inscription</a>
+          <a href="/login" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg transition">Connexion</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-1 container mx-auto px-6 py-6">
+    
+    {% if request.args.get('succes') == '1' %}
+      <div class="max-w-6xl mx-auto mb-6 px-4 py-3 rounded-xl bg-green-50 border border-green-200 text-green-700 font-medium flex items-center shadow-sm">
+        <span class="text-lg mr-3">✅</span>
+        <span>L'activité "{{ request.args.get('activite_nom', 'sélectionnée') }}" a bien été ajoutée à votre planning !</span>
+      </div>
+    {% endif %}
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flex flex-col gap-3 mb-6 max-w-6xl mx-auto">
+          {% for category, message in messages %}
+            {% if request.args.get('succes') != '1' or 'ajouté' not in message %}
+              <div class="flex items-start gap-3 px-4 py-3 rounded-lg text-sm font-medium border 
+                {% if category == 'error' or '❌' in message %}bg-red-50 border-red-200 text-red-700
+                {% elif category == 'warning' %}bg-orange-50 border-orange-200 text-orange-700
+                {% else %}bg-green-50 border-green-200 text-green-700{% endif %}">
+                <span>{% if category == 'error' or '❌' in message %}⛔{% elif category == 'warning' %}⚠️{% else %}✅{% endif %}</span>
+                <span>{{ message }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+
+    
+  </main>
+
+  <footer class="text-center text-gray-400 text-sm py-6">
+    © 2026 Voya'IA — Tous droits réservés
+  </footer>
+
+</body>
+</html>

@@ -427,8 +427,8 @@ def admin_voir_activites(nom_ville):
 @app.route("/ajouter_activite/<nom_ville>", methods=['POST'])
 @login_required
 def admin_ajouter_activite(nom_ville):
-    activite_index = request.args.get("activite_index", type=int)
-    jour = request.args.get("jour", default=1, type=int)
+    activite_index = request.form.get("activite_index", type=int)
+    jour = request.form.get("jour", default=1, type=int)
 
     # 1. Charger les destinations pour récupérer les infos de l'activité
     with open('destinations.json', 'r', encoding='utf-8') as f:

@@ -424,9 +424,9 @@ def admin_voir_activites(nom_ville):
         return "Ville non trouvée", 404
     return render_template("admin_activites.html", dest=destination)
 
-@app.route("/ajouter_activite/<nom_ville>")
+@app.route("/ajouter_activite/<nom_ville>", methods=['POST'])
 @login_required
-def ajouter_activite(nom_ville):
+def admin_ajouter_activite(nom_ville):
     activite_index = request.args.get("activite_index", type=int)
     jour = request.args.get("jour", default=1, type=int)
 

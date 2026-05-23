@@ -88,5 +88,5 @@ def recommander(budget_total: float, nombre_jours: int,
     # Tri par score décroissant
     resultats.sort(key=lambda x: x['score'], reverse=True)
     
-    # Retourne les résultats sans la bride stricte des 5 premiers
+    
     return resultats[:10]

@@ -30,13 +30,14 @@
         <h2 class="text-3xl font-bold text-gray-800 mb-2">Les pépites de la ville</h2>
         <p class="text-gray-500 italic">Choisissez un jour et ajoutez l'activité à votre planning</p>
     </div>
-    <div class="mt-8 p-6 bg-indigo-50 rounded-3xl border border-indigo-100">
-    <p class="text-indigo-900 text-sm leading-relaxed">
-        <span class="font-bold">✨ Douceur de voyage :</span> 
-        Parce que votre énergie est précieuse, si votre programme inclut une étape à <strong>intensité élevée</strong>, nous vous encourageons à équilibrer votre journée avec des moments de calme. Écouter son rythme, c'est s'offrir le plus beau des souvenirs.
-    </p>
-</div>
-</div>
+
+    <div class="mt-8 p-6 bg-indigo-50 rounded-3xl border border-indigo-100 mb-12">
+        <p class="text-indigo-900 text-sm leading-relaxed">
+            <span class="font-bold">✨ Douceur de voyage :</span> 
+            Parce que votre énergie est précieuse, si votre programme inclut une étape à <strong>intensité élevée</strong>, nous vous encourageons à équilibrer votre journée avec des moments de calme. Écouter son rythme, c'est s'offrir le plus beau des souvenirs.
+        </p>
+    </div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
        {% for activite in destination.activites %}
         <div class="group bg-white rounded-[25px] overflow-hidden shadow-lg border border-gray-50 transition-all hover:-translate-y-2 hover:shadow-2xl">
@@ -54,27 +55,26 @@
                         {{ activite.intensite }}
                     </span>
                 </div>
-                <p class="text-sm text-stone-600 leading-relaxed block w-full whitespace-normal break-words">
-    {{ activite.description }}
-</p>
-                
-                <form action="{{ url_for('ajouter_activite', nom_ville=destination.nom) }}" method="GET" class="space-y-3">
-    <input type="hidden" name="activite_index" value="{{ loop.index0 }}">
-    
-    <div class="flex flex-col">
-        <label class="text-[10px] uppercase font-bold text-gray-400 mb-1 ml-1">Sélectionner le jour</label>
-        <select name="jour" class="w-full border border-indigo-100 rounded-xl p-2.5 text-sm bg-gray-50 focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer">
-            {% for i in range(1, (nb_jours|default(5)) + 1) %}
-                <option value="{{ i }}">Jour {{ i }}</option>
-            {% endfor %}
-        </select>
-    </div>
-    
-    <button type="submit" class="w-full block text-center py-3 rounded-xl bg-indigo-600 text-white font-bold text-sm shadow-md hover:bg-indigo-700 transition-all">
-        + Ajouter au planning
-    </button>
-</form>
-            </div>
+                <p class="text-sm text-stone-600 leading-relaxed block w-full whitespace-normal break-words mb-4">
+                    {{ activite.description }}
+                </p>
+
+                <form action="{{ url_for('admin_ajouter_activite', nom_ville=destination.nom) }}" method="POST" class="space-y-4">
+                    <input type="hidden" name="activite_index" value="{{ loop.index0 }}">
+                    
+                    <div class="flex flex-col">
+                        <label class="text-[10px] uppercase font-bold text-gray-400 mb-1 ml-1">Sélectionner le jour</label>
+                        <select name="jour" class="w-full border border-indigo-100 rounded-xl p-2.5 text-sm bg-gray-50 focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer">
+                            {% for i in range(1, (nb_jours|default(5)) + 1) %}
+                                <option value="{{ i }}">Jour {{ i }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="w-full block text-center py-3 rounded-xl bg-indigo-600 text-white font-bold text-sm shadow-md hover:bg-indigo-700 transition-all">
+                        + Ajouter au planning
+                    </button>
+                </form> </div>
         </div>
         {% endfor %}
     </div>

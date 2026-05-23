@@ -1,2 +1,2 @@
-# Voya-IA
+# VoIAge
 Planificateur de voyage

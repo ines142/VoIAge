@@ -1,0 +1,419 @@
+\documentclass[a4paper, 12pt, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}		
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{ae,aecompl}
+\usepackage[top=2.5cm, bottom=2cm, 
+			left=3cm, right=2.5cm,
+			headheight=15pt]{geometry}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{array} 
+\usepackage{hyperref}
+\usepackage{amsmath}
+\input{pagedegarde}
+
+
+\title{VoIAge - Planificateur de voyage intelligent}
+\entreprise{Université Paris Nanterre}
+\datedebut{13 Mars 2026}
+\datefin{22 Mai 2026}
+
+\membrea{HCHAICHI Inès 45006427}
+\membreb{AIT OUAKLI Ines 45009503}
+\membrec{LEFILE Laëtitia 45004074}
+\membred{Lien Github: \url{https://github.com/ines142/VoIAge}}
+\membree{}
+
+\begin{document}
+\pagedegarde
+
+
+\section*{Remerciements}
+Nous tenons à remercier nos professeurs Mme. JEDIDI et M. DELBOT pour leurs précieux conseils tout au long de ce projet, notamment pour nous avoir guidées dans la mise en place de l'interface administrateur et dans la compréhension des bonnes pratiques de développement web.
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Aujourd'hui, organiser un voyage peut rapidement devenir complexe. Entre le budget, la météo, les activités, la durée du séjour ou encore les préférences personnelles, il est parfois difficile de trouver une destination réellement adaptée à ses envies.
+
+L'objectif de notre projet était donc de créer \textbf{VoIAge}, une application web capable de recommander des destinations personnalisées à partir de plusieurs critères renseignés par l'utilisateur.
+
+Notre site agit comme un assistant de voyage simplifié : l'utilisateur indique ses préférences, puis le système propose des destinations cohérentes grâce à un algorithme de recommandation.
+
+Nous avons également souhaité apporter une dimension plus humaine au projet. Notre objectif n'était pas seulement de proposer des activités, mais aussi d'encourager une manière plus équilibrée de voyager. Certaines fiches destinations contiennent donc des conseils bienveillants afin d'inciter l'utilisateur à respecter son rythme et à équilibrer les journées les plus intenses avec des moments plus calmes.
+
+\section{Environnement de travail}
+
+Le projet a été développé en local sur nos machines personnelles. Nous avons utilisé les outils suivants :
+
+\begin{itemize}
+    \item \textbf{Visual Studio Code} comme éditeur de code principal ;
+    \item \textbf{Python 3} pour le développement backend ;
+    \item \textbf{Git et GitHub} pour la gestion de version et le partage du code entre les membres du groupe ;
+    \item \textbf{Un navigateur web} (Google Chrome) pour tester l'application en local ;
+    \item \textbf{Claude, Gemini et Chat GPT} comme outil d'assistance par intelligence artificielle. Ils nous ont notamment aidé à nous organiser pour avancer au mieux petit à petit sur ce projet mais aussi à résoudre toutes les erreurs, les blocages...
+\end{itemize}
+
+Le projet est hébergé sur un dépôt GitHub public, accessible à l'adresse suivante : \url{https://github.com/ines142/VoIAge}
+
+\section{Description du projet et objectifs}
+
+\subsection{Présentation générale}
+
+VoIAge est une application web de recommandation de destinations de voyage. L'utilisateur renseigne plusieurs critères personnels (son budget, la durée du séjour, son type et sa météo) et le système lui propose les destinations les mieux adaptées parmi celles présentes dans notre base de données.
+
+\subsection{Objectifs du projet}
+
+Ce projet avait plusieurs objectifs :
+
+\begin{itemize}
+    \item développer une application web dynamique avec Flask ;
+    \item concevoir un système de recommandation ;
+    \item gérer des données de manière structurée avec JSON ;
+    \item créer une interface administrateur ;
+    \item développer une interface moderne et responsive ;
+    \item apprendre à utiliser l'intelligence artificielle comme outil d'assistance au développement.
+\end{itemize}
+
+Nous souhaitions également créer un projet proche du fonctionnement réel d'un site web moderne.
+
+\section{Bibliothèques, Outils et technologies}
+
+\subsection{Python et Flask}
+
+Le backend du projet a été développé avec Python et Flask \cite{flask}. Flask permet de gérer :
+
+\begin{itemize}
+    \item les routes du site ;
+    \item les formulaires ;
+    \item l'authentification ;
+    \item l'affichage dynamique des pages.
+\end{itemize}
+
+Ce framework nous a permis de structurer efficacement notre application tout en gardant un projet relativement léger.
+
+\subsection{HTML et Tailwind CSS}
+
+L'interface utilisateur a été développée en HTML avec Tailwind CSS \cite{tailwind}. Tailwind CSS nous a permis de concevoir une interface moderne, responsive, claire et agréable visuellement. Nous avons notamment utilisé Tailwind pour les cartes de destinations, les animations, les effets de survol et la mise en page générale du site.
+
+\subsection{JSON}
+
+Les données du projet sont stockées dans un fichier \texttt{destinations.json}. Ce fichier contient les destinations, les activités, les budgets, les images et les phrases d'accroche. Nous avons choisi JSON car il s'agit d'un format léger, facilement lisible et simple à manipuler.
+
+\subsection{Jinja2}
+
+Le moteur de template Jinja2 \cite{jinja2} permet d'afficher dynamiquement les données dans les pages HTML. Grâce à lui, les destinations et les activités sont automatiquement générées à partir des données présentes dans le fichier JSON.
+
+\section{Travail réalisé}
+
+\subsection{Organisation du projet}
+
+Afin de structurer correctement notre application, nous avons séparé le projet en plusieurs fichiers et dossiers ayant chacun un rôle précis, comme indiqué dans le tableau \ref{tab:organisation}.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|p{4cm}|p{9cm}|}
+\hline
+\textbf{Fichier / Dossier} & \textbf{Rôle} \\
+\hline
+\texttt{app.py} & Coeur de l'application Flask : routes, formulaires, connexions, affichage \\
+\hline
+\texttt{recommendation.py} & Logique du système de recommandation et calcul des scores \\
+\hline
+\texttt{destinations.json} & Stockage de l'ensemble des données du projet: toutes les villes, activités \\
+\hline
+\texttt{templates/} & Pages HTML avec Jinja2 pour l'affichage dynamique \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Organisation des fichiers du projet}
+\label{tab:organisation}
+\end{table}
+
+\subsection{Fonctionnalités réalisées}
+
+\begin{itemize}
+    \item \textbf{Système de recommandation} : l'utilisateur renseigne son budget, la durée du séjour (obligatoire), ses préférences et le type de voyage souhaité. Le programme compare ces informations avec les données JSON et propose 8 destinations les plus cohérentes via un système de score afin de rendre vraiment l'expérience plus personnalisé pour l'utilisateur.
+    \item \textbf{Gestion du budget} : nous avons choisi d'utiliser un budget journalier plutôt qu'un budget global. Le calcul repose sur la formule suivante :
+    \[
+        \text{Budget journalier} = \frac{\text{Budget total}}{\text{Nombre de jours}}
+    \]
+    Cette approche permet d'obtenir des recommandations plus précises, quelle que soit la durée du séjour. Nous nous sommes concentrées sur le coût de la vie sur place plutôt que sur le prix des billets d'avion.
+    \item \textbf{Interface administrateur} : cette interface permet de gérer dynamiquement le contenu du site sans modifier directement le code source. Depuis cet espace, il est possible d'ajouter ou modifier des destinations, d'ajouter des activités, de gérer les destinations mises \og à la une \fg{}, de modifier la partie histoire/culture de la ville et de supprimer une ville.
+    \item \textbf{Validation des données} : une durée minimale de 1 jour et un budget minimal de 1€ est imposée dans le formulaire et dans le traitement Python afin d'éviter une division par zéro dans les calculs et/ou d'obtenir un budget journalier égal à 0 (n'ayant absolument aucun sens). 
+    \item \textbf{Interface utilisateur responsive} : développée avec Tailwind CSS, l'interface est moderne, claire et adaptée à différentes tailles d'écran.
+    \item \textbf{Fiches destinations enrichies} : chaque destination possède une description, une histoire, une présentation culturelle, une phrase d'accroche et une liste d'activités avec tarifs.
+\end{itemize}
+
+\subsection{Fonctionnalités non réalisées}
+
+\begin{itemize}
+    \item \textbf{Base de données SQL} : par manque de temps et par choix pédagogique, nous avons conservé le fichier JSON comme système de stockage. Cela reste néanmoins une amélioration prévue.
+    \item \textbf{API météo externe} : l'intégration d'une API météo en temps réel n'a pas été réalisée dans cette version. Nous avons préféré maîtriser pleinement le fonctionnement interne de l'application avant d'ajouter des dépendances externes.
+    \item \textbf{Comptes utilisateurs avancés} : le système d'authentification est limité à l'interface administrateur. Un système de comptes utilisateurs avec favoris et historique de recherches n'a pas été implémenté.
+    \item \textbf{Amélioration de la fiche itinéraire à imprimer} : ajout d'une carte de la ville avec un point de localisation qui repréésente toutes les activités qu'il a sélectionner pourr permettre à l'utilisateur de se repérer dans la ville en toute circonstance(même quand il n'y a plus de batterie).
+    \item \textbf{Génération de carnet de voyage} : cette fonctionnalité, envisagée initialement, n'a pas pu être développée dans les délais impartis.
+\end{itemize}
+
+\subsection{Répartition réelle du travail}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|p{4.5cm}|p{8.5cm}|}
+\hline
+\textbf{Membre} & \textbf{Tâches réalisées} \\
+\hline
+HCHAICHI Inès & Backend Flask, système de recommandation, interface administrateur, rédaction du rapport \\
+\hline
+AIT OUAKLI Ines & Interface utilisateur, design avec Tailwind CSS, phrases d'accroche \\
+\hline
+LEFILE Laëtitia & Gestion des données JSON,fiches destinations, rédaction du rapport \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Répartition réelle du travail}
+\label{tab:repartition}
+\end{table}
+
+Les phases de test, de correction des bugs et de rédaction du rapport ont été réalisées en commun.
+
+\section{Difficultés rencontrées}
+
+Plusieurs difficultés ont été rencontrées durant le développement du projet.
+
+\begin{itemize}
+    \item \textbf{Affichage des images avec Flask} : la gestion des fichiers statiques et l'organisation des dossiers d'images nous a posé des problèmes au début du projet.
+    \item \textbf{Harmonisation des données JSON} : nous avons dû adapter progressivement la structure de notre fichier JSON afin que toutes les destinations possèdent les mêmes attributs techniques. Certaines destinations ajoutées depuis l'interface administrateur ne possédaient pas toutes les clés nécessaires, ce qui provoquait des erreurs \texttt{KeyError} dans le système de recommandation.
+    \item \textbf{Bugs dans le système de recommandation} : l'erreur \texttt{KeyError} a été l'une des principales difficultés. Nous avons résolu ce problème en sécurisant l'accès aux données dans le code Python grâce à la méthode \texttt{.get()}.
+    \item \textbf{Validation des données utilisateur} : nous avons dû gérer le cas d'une durée de séjour égale à zéro, qui aurait provoqué une division par zéro dans le calcul du budget journalier. Mais aussi de gérer le cas où l'utilisateur pourrait entre 0 en nombre de jours, or la division aurait fait 0 ce qui n'aurait eu aucune logique
+\end{itemize}
+
+Mais grâce aux IA, nous avons pu non facilement résoudre ces problèmes. Malgré tout, ces difficultés nous ont permis de mieux comprendre le fonctionnement d'une application web dynamique. C'est ce que nous avons trouvé particulièrement intéressant : se demander quelle est l'erreur et tenter de la résoudre.
+
+\section{Bilan}
+
+\subsection{Conclusion}
+
+Ce projet nous a permis de découvrir les différentes étapes du développement d'une application web dynamique. Nous avons appris à utiliser Flask, organiser un projet web, gérer des données JSON, développer une interface administrateur et corriger des erreurs techniques.
+
+Ce projet nous a également permis de comprendre l'intérêt de l'intelligence artificielle dans le développement informatique, notamment comme outil d'assistance et d'apprentissage. L'IA a été utilisée pour comprendre certains bugs, corriger des erreurs Flask, améliorer l'interface utilisateur, restructurer certaines parties du code et harmoniser les données JSON.
+
+Enfin, cette expérience nous a permis de travailler en équipe tout en développant une réflexion plus concrète sur la conception d'un véritable service web.
+
+\subsection{Perspectives}
+
+Si nous devions poursuivre le projet, plusieurs améliorations pourraient être envisagées :
+
+\begin{itemize}
+    \item utilisation d'une base de données SQL ;
+    \item intégration d'une API météo en temps réel ;
+    \item intégration d'une carte de la ville dans l'itinéraire;
+    \item système de favoris pour les utilisateurs ;
+    \item génération automatique d'un carnet de voyage personnalisé ;
+    \item amélioration du système de recommandation avec des algorithmes plus avancés ;
+    \item ajout de comptes utilisateurs avec historique de recherches.
+\end{itemize}
+
+Ces évolutions permettraient de rendre l'application encore plus complète et plus réaliste.
+
+\newpage
+\section{Bibliographie}
+\renewcommand{\bibname}{}
+\renewcommand{\refname}{}
+\begin{thebibliography}{2}
+   \bibitem[FLASK]{flask} A. RONACHER, {\it Flask Documentation}, Pallets Projects, 2026. \url{https://flask.palletsprojects.com}
+   \bibitem[LAM94]{lam1} L. LAMPORT, {\it \LaTeX : A Document preparation system}, Addison-Wesley, 1994
+\end{thebibliography}
+
+\newpage
+\section{Webographie}
+\begin{thebibliography}{2}
+   \bibitem[TAIL]{tailwind} \url{https://tailwindcss.com}
+   \bibitem[JIN]{jinja2} \url{https://jinja.palletsprojects.com}
+\end{thebibliography}
+
+\newpage
+\section{Annexes}
+\appendix
+\makeatletter
+\def\@seccntformat#1{Annexe~\csname the#1\endcsname:\quad}
+\makeatother
+
+    \section{Cahier des charges}
+
+    L'objectif du projet était de développer une application web de recommandation de voyages répondant aux critères suivants :
+
+    \begin{itemize}
+        \item Recommandation de destinations selon le budget, la durée, le type de voyage et les préférences météo ;
+        \item Affichage de fiches destinations détaillées avec activités, tarifs et images ;
+        \item Interface administrateur pour gérer le contenu du site ;
+        \item Interface utilisateur moderne et responsive ;
+        \item Validation des données saisies par l'utilisateur.
+    \end{itemize}
+
+    \section{Exemple d'exécution du projet}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-04-14 163243.png}
+        \caption{Premier script à Claude}
+        \label{fig:placeholder}
+    \end{figure}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-04-14 173927.png}
+        \caption{Première page d'accueil}
+        \label{fig:placeholder}
+    \end{figure}
+    
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-04-15 165331.png}
+        \caption{Page d'inscription}
+        \label{fig:placeholder}
+    \end{figure}
+    
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-04-15 175026.png}
+        \caption{Page de connexion avec détection d'email ou mot de passe incorrect}
+        \label{fig:placeholder}
+    \end{figure}
+    
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-04-15 221732.png}
+        \caption{Gestion et sécurité des mots de passe}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-04-16 002614.png}
+        \caption{Réussite de l'authentification d'un utilisateur test}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-04-19 023107.png}
+        \caption{Fichier des destinations}
+        \label{fig:placeholder}
+    \end{figure}
+    
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.6\linewidth]{Capture d'écran 2026-04-18 130846.png}
+        %\caption{Enter Caption}
+        \includegraphics[width=0.6\linewidth]{Capture d'écran 2026-04-18 130904.png}
+        \caption{Premier formulaire et résultats de recherche}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-05-23 225956.png}
+        \caption{Page d'accueil finale}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-05-23 230145.png}
+        \caption{Formulaire pour planifier son voyage}
+        \label{fig:placeholder}
+    \end{figure}
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-05-23 230221.png}
+        \caption{Résultat final d'une recherche}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-05-23 230056.png}
+        \caption{Fiche d'une ville avec ses activités}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-05-23 230315.png}
+        \caption{Itinéraire avec les activités choisies}
+        \label{fig:placeholder}
+    \end{figure}
+    
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-05-23 230445.png}
+        \caption{Enregistrement/Impression de son itinéraire}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Capture d'écran 2026-05-23 230523.png}
+        \caption{Partie admin}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.4\linewidth]{Capture d'écran 2026-05-23 230542.png}
+        %\caption{Modi}
+        \includegraphics[width=0.4\linewidth]{Capture d'écran 2026-05-23 230702.png}
+        \caption{Modification d'une ville}   
+        \label{fig:placeholder}
+    \end{figure}
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.5\linewidth]{Capture d'écran 2026-05-22 124948.png}
+        \caption{Ajout d'activités}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.5\linewidth]{Capture d'écran 2026-04-19 134005.png}
+        %\caption{Enter Caption}
+        \includegraphics[width=0.5\linewidth]{Capture d'écran 2026-04-19 140228.png}
+        %\caption{Enter Caption}
+        \includegraphics[width=0.5\linewidth]{Capture d'écran 2026-05-20 014527.png}
+        \caption{Plusieurs bugs que nous avons rencontrés }
+        \label{fig:placeholder}
+    \end{figure}
+
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.5\linewidth]{Capture d'écran 2026-05-23 233928.png}
+        \caption{Aide de l'IA dans la résolution de nos problèmes}
+        \label{fig:placeholder}
+    \end{figure}
+    
+    \textbf{Accès administrateur de démonstration :}
+    \begin{itemize}
+        \item Adresse e-mail : \texttt{vivelabretagne@22.fr}
+        \item Mot de passe : \texttt{stmalocesttropbeau}
+    \end{itemize}
+
+\clearpage
+    \section{Manuel utilisateur}
+
+    \begin{enumerate}
+        \item Accéder à la page d'accueil de VoIAge.
+        \item Inscrivez-vous/ Connectez-vous
+        \item Renseigner ses préférences dans le formulaire : budget total, nombre de jours (obligatoires), type de voyage souhaité et préférences météo (optionnels).
+        \item Valider le formulaire pour obtenir les 8 destinations recommandées.
+        \item Cliquer sur une destination pour accéder à sa fiche détaillée avec les activités disponibles.
+        \item Puis ajouter les activités qui vous tentent au jour souhaité.
+        \item Aller dans votre itinéraire pour voir votre planning de voyage.
+        \item Enregistrer en PDF/ Imprimer votre itinéraire pour le garder au près de vous tout au long de votre séjour.
+        \item Pour accéder à l'interface administrateur, se connecter avec les identifiants fournis en Annexe B.
+    \end{enumerate}
+
+\end{document}

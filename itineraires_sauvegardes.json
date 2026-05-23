@@ -194,17 +194,5 @@
             }
         ]
     },
-    "I LOVE BRETAGNE": {
-        "Luang Prabang": [
-            {
-                "nom": "Grottes de Pak Ou",
-                "tarif": "5€",
-                "intensite": "Calme",
-                "jour": 1,
-                "ville_nom": "Luang Prabang",
-                "ville": "Luang Prabang",
-                "activite_index": 3
-            }
-        ]
-    }
+    "I LOVE BRETAGNE": {}
 }
